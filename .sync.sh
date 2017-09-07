@@ -15,9 +15,7 @@ sh @extra/appthemes/qt5ct/0nyX/qss/maketheme.sh
 #done
 #cd $basedir/@extra/0nyX-icons
 #add a padding for bigger icons!
-##22px fake
-
-##symbolic icons!
+#symbolic icons!
 cd $basedir/@extra/icons/0nyX/symbolic
 if [ -f "xfce_badge.svg" ]; then
 	rm -f *-symbolic.svg
@@ -32,6 +30,7 @@ if [ -f "xfce_badge.svg" ]; then
 		fi
 	done
 fi
+##22px fake
 cd $basedir
 if [ -d $basedir/@extra/icons/0nyX/symbolic-22 ]; then
 	rm -rfv $basedir/@extra/icons/0nyX/symbolic-22
@@ -88,8 +87,8 @@ for f in $(find . -type f -name "*.svg");do
 	sed -i 's/viewBox="0 0 16 16"/viewBox="0 0 16 16" width="32" height="32"/' $f
 done
 cd $basedir
-#gtk-update-icon-cache -f --include-image-data $basedir/@extra/icons/0nyX/
-gtk-update-icon-cache -f $basedir/@extra/icons/0nyX
+gtk-update-icon-cache -f --include-image-data $basedir/@extra/icons/0nyX/
+#gtk-update-icon-cache -f $basedir/@extra/icons/0nyX
 
 ###Inverted
 #if [ -d $basedir/@extra/icons/0nyX-lighter ];then
