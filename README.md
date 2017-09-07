@@ -102,7 +102,7 @@ Note: You have to symlink the subthemes instead of copying otherwise they might 
 
 ### Packages
 
-Packages for Debian, SuSE and Manjaro can be found on the [Opendesktop-page](https://www.opendesktop.org/p/1175851).
+Packages for Debian, and Manjaro can be found on the [Opendesktop-page](https://www.opendesktop.org/p/1175851).
 
 ## Optional
 
@@ -112,7 +112,6 @@ Packages for Debian, SuSE and Manjaro can be found on the [Opendesktop-page](htt
 
 ```
 sh $prefix/share/themes/0nyX/@extra/scripts/changecolor.sh 
-sh $prefix/share/themes/0nyX/@extra/scripts/changecolor_light.sh 
 ```
 
 or 
@@ -121,16 +120,7 @@ or
 sh $prefix/share/themes/0nyX/@extra/scripts/changecolor.sh -c "#16A085"
 ```
 
-Remember that there is text to display above that color(eg: on selections)
-
-Some popular colors:
-
-| Color | Description | Color | Description |
-| :---: | :---: | :---: | :---: |
-| ![#6F6A83](https://placehold.it/150x80/6F6A83/f1f2f2?text=6F6A83) | #6F6A83 | ![#D96459](https://placehold.it/150x80/bf584e/f1f2f2?text=bf584e) | #bf584e |
-| ![#16A085](https://placehold.it/150x80/16A085/f1f2f2?text=16A085) | #16A085 | ![#0199AE](https://placehold.it/150x80/0199AE/f1f2f2?text=0199AE) | #0199AE |
-| ![#a070be](https://placehold.it/150x80/a070be/f1f2f2?text=a070be) | #a070be | ![#94618E](https://placehold.it/150x80/94618E/f1f2f2?text=94618E) | #94618E |
-| ![#4e84bf](https://placehold.it/150x80/4e84bf/f1f2f2?text=4e84bf) | #4484CE | ![#B37D4E](https://placehold.it/150x80/B37D4E/f1f2f2?text=B37D4E) | #B37D4E |
+Remember that there is text to display above that color(eg: on selections) !!!
 
 ### Set all themes
 

@@ -93,7 +93,7 @@ for _folder in $_folders; do
 	find "$basedir/$_folder" -type f -exec sed -i 's/#bf584e/'$newcolor'/g' {} \;
 	cd $basedir
 done
-sed -i 's/#bf584e/'$newcolor'/g' "$basedir/@extra/scripts/$0"
+sed -i 's/#bf584e/'$newcolor'/g' "$basedir/@extra/scripts/changecolor.sh"
 cat <<\EOF
 
 
