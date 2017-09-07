@@ -33,41 +33,41 @@ fi
 ##22px fake
 cd $basedir
 if [ -d $basedir/@extra/icons/0nyX/symbolic-22 ]; then
-	rm -rfv $basedir/@extra/icons/0nyX/symbolic-22
+	rm -rf $basedir/@extra/icons/0nyX/symbolic-22
 fi
 cp -R $basedir/@extra/icons/0nyX/symbolic $basedir/@extra/icons/0nyX/symbolic-22
 cd $basedir/@extra/icons/0nyX/symbolic-22
-for f in $(find . -type f -name "*.svg");do 
+for f in $(find $basedir/@extra/icons/0nyX/symbolic-22 -type f -name "*.svg");do 
 	sed -i 's/viewBox="0 0 16 16"/viewBox="-3 -3 22 22"/' $f
 done
 cd $basedir
 ##24px fake
 if [ -d $basedir/@extra/icons/0nyX/symbolic-24 ]; then
-	rm -rfv $basedir/@extra/icons/0nyX/symbolic-24
+	rm -rf $basedir/@extra/icons/0nyX/symbolic-24
 fi
 cp -R $basedir/@extra/icons/0nyX/symbolic $basedir/@extra/icons/0nyX/symbolic-24
 cd $basedir/@extra/icons/0nyX/symbolic-24
-for f in $(find . -type f -name "*.svg");do 
+for f in $(find $basedir/@extra/icons/0nyX/symbolic-24 -type f -name "*.svg");do 
 	sed -i 's/viewBox="0 0 16 16"/viewBox="-4 -4 24 24"/' $f
 done
 cd $basedir
 ##32px fake
 if [ -d $basedir/@extra/icons/0nyX/symbolic-32 ]; then
-	rm -rfv $basedir/@extra/icons/0nyX/symbolic-32
+	rm -rf $basedir/@extra/icons/0nyX/symbolic-32
 fi
 cp -R $basedir/@extra/icons/0nyX/symbolic $basedir/@extra/icons/0nyX/symbolic-32
 cd $basedir/@extra/icons/0nyX/symbolic-32
-for f in $(find . -type f -name "*.svg");do 
+for f in $(find $basedir/@extra/icons/0nyX/symbolic-32 -type f -name "*.svg");do 
 	sed -i 's/viewBox="0 0 16 16"/viewBox="0 0 16 16" width="32" height="32"/' $f
 done
 cd $basedir
 #emblems
 if [ -d $basedir/@extra/icons/0nyX/emblems-24 ]; then
-	rm -rfv $basedir/@extra/icons/0nyX/emblems-24
+	rm -rf $basedir/@extra/icons/0nyX/emblems-24
 fi
 cp -R $basedir/@extra/icons/0nyX/emblems $basedir/@extra/icons/0nyX/emblems-24
 cd $basedir/@extra/icons/0nyX/emblems-24
-for f in $(find . -type f -name "*.svg");do 
+for f in $(find $basedir/@extra/icons/0nyX/emblems-24 -type f -name "*.svg");do 
 	sed -i 's/viewBox="0 0 16 16"/viewBox="-4 -4 24 24"/' $f
 done
 cd $basedir
@@ -79,11 +79,11 @@ done
 cd $basedir
 ##32px emblemsfake
 if [ -d $basedir/@extra/icons/0nyX/emblems-32 ]; then
-	rm -rfv $basedir/@extra/icons/0nyX/emblems-32
+	rm -rf $basedir/@extra/icons/0nyX/emblems-32
 fi
 cp -R $basedir/@extra/icons/0nyX/emblems $basedir/@extra/icons/0nyX/emblems-32
 cd $basedir/@extra/icons/0nyX/emblems-32
-for f in $(find . -type f -name "*.svg");do 
+for f in $(find $basedir/@extra/icons/0nyX/emblems-32 -type f -name "*.svg");do 
 	sed -i 's/viewBox="0 0 16 16"/viewBox="0 0 16 16" width="32" height="32"/' $f
 done
 cd $basedir
