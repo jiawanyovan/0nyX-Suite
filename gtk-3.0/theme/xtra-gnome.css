@@ -1,0 +1,35 @@
+.nautilus-window notebook scrolledwindow,
+.nautilus-window notebook scrolledwindow:backdrop{
+margin:0px 3px 3px 0px;
+border:1px solid @border_color;
+background-color:@base_color;}
+
+nautilus-desktop-window.nautilus-window notebook box grid scrolledwindow,
+nautilus-desktop-window.nautilus-window notebook box grid scrolledwindow:backdrop{
+border:none;
+background-color:transparent;}
+
+.nautilus-window .linked.path-bar button.text-button,
+.nautilus-window .linked.path-bar button.toggle,
+.nautilus-window .linked.path-bar button.text-button:backdrop,
+.nautilus-window .linked.path-bar button.toggle:backdrop{
+border-color:transparent;
+background:transparent;
+border-bottom: 2px solid transparent;}
+
+.nautilus-window .linked.path-bar .text-button:checked,
+.nautilus-window .linked.path-bar .text-button:checked:backdrop,
+.nautilus-window .linked.path-bar button:checked:not(.image-button),
+.nautilus-window .linked.path-bar button:checked:not(.image-button):backdrop {
+border-bottom: 2px solid @selected_bg_color}
+
+#pathbarbox,
+#pathbarbox:backdrop {
+background:@bg_color;}
+
+.nautilus-window .linked.path-bar button.slider-button,
+.nautilus-window .linked.path-bar button.slider-button:checked,
+.nautilus-window .linked.path-bar button.slider-button:backdrop,
+.nautilus-window .linked.path-bar button.slider-button:checked:backdrop{
+border-color:transparent;
+background:transparent;}

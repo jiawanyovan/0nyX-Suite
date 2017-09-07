@@ -1,0 +1,149 @@
+.QScrollBar:horizontal {
+background: rgba(0,0,0,0.3);
+border:1px solid rgba(0,0,0,0.8);
+border-width: 1px 0px 1px 0px;
+height: 18px;
+margin: 0px 18px 0 18px;}
+.QScrollBar:vertical {
+background: rgba(0,0,0,0.3);
+border:1px solid rgba(0,0,0,0.8);
+border-width: 0px 1px 0px 1px;
+width: 18px;
+margin: 18px 0px 18px 0px;}
+.QScrollBar::handle:horizontal {
+border:1px solid  rgba(0,0,0,0.8);
+background: palette(highlight);
+min-width: 35px;
+margin:-1px 0px;}
+.QScrollBar::handle:vertical {
+border:1px solid  rgba(0,0,0,0.8);
+background: palette(highlight);
+min-height: 35px;
+margin:0px -1px;}
+.QScrollBar::add-page,
+.QScrollBar::sub-page {
+background: none;}
+.QScrollBar::add-line:horizontal {
+border:solid rgba(0,0,0,0.6);
+border-width:1px 1px 1px 0px;
+width: 17px;
+subcontrol-position: right;
+subcontrol-origin: margin;}
+.QScrollBar::sub-line:horizontal {
+border:solid rgba(0,0,0,0.6);
+border-width:1px 0px 1px 1px;
+width: 17px;
+subcontrol-position: left;
+subcontrol-origin: margin;}
+.QScrollBar::add-line:vertical {
+border:solid rgba(0,0,0,0.6);
+border-width:0px 1px 1px 1px;
+height: 17px;
+subcontrol-position: bottom;
+subcontrol-origin: margin;}
+.QScrollBar::sub-line:vertical {
+border:solid rgba(0,0,0,0.6);
+border-width:1px 1px 0px 1px;
+height: 17px;
+subcontrol-position: top;
+subcontrol-origin: margin;}
+.QScrollBar::up-arrow:vertical{
+width: 17px;
+height: 17px;
+background: rgba(0,0,0,0.3);
+background-position: center; 
+background-repeat: no-repeat;
+background-image: url("/usr/share/themes/0nyX/images/gtk-2.0/arrow-up_normal.svg");}
+.QScrollBar::down-arrow:vertical{
+width: 17px;
+height: 17px;
+background: rgba(0,0,0,0.3);
+background-position: center; 
+background-repeat: no-repeat;
+background-image: url("/usr/share/themes/0nyX/images/gtk-2.0/arrow-down_normal.svg");}
+.QScrollBar::left-arrow:horizontal{
+width: 17px;
+height: 17px;
+background: rgba(0,0,0,0.3);
+background-position: center; 
+background-repeat: no-repeat;
+background-image: url("/usr/share/themes/0nyX/images/gtk-2.0/arrow-left_normal.svg");}
+.QScrollBar::right-arrow:horizontal{
+width: 17px;
+height: 17px;
+background: rgba(0,0,0,0.3);
+background-position: center; 
+background-repeat: no-repeat;
+background-image: url("/usr/share/themes/0nyX/images/gtk-2.0/arrow-right_normal.svg");}
+
+QListView .QScrollBar:horizontal,
+QTreeWidget .QScrollBar:horizontal,
+QTableWidget .QScrollBar:horizontal,
+QMdiArea .QScrollBar:horizontal,
+QGraphicsView .QScrollBar:horizontal,
+QTextEdit .QScrollBar:horizontal,
+QPlainTextEdit.QScrollBar:horizontal,
+QIconView .QScrollBar:horizontal{
+border-width:1px 0px 0px 0px;}
+
+QListView .QScrollBar:vertical,
+QTreeWidget .QScrollBar:vertical,
+QTableWidget .QScrollBar:vertical,
+QMdiArea .QScrollBar:vertical,
+QGraphicsView .QScrollBar:vertical,
+QTextEdit .QScrollBar:vertical,
+QPlainTextEdit.QScrollBar:vertical,
+QIconView .QScrollBar:vertical{
+border-width:0px 0px 0px 1px;}
+
+QListView .QScrollBar::add-line:horizontal
+QTreeWidget .QScrollBar::add-line:horizontal,
+QTableWidget .QScrollBar::add-line:horizontal,
+QMdiArea .QScrollBar::add-line:horizontal,
+QGraphicsView .QScrollBar::add-line:horizontal,
+QTextEdit .QScrollBar::add-line:horizontal,
+QPlainTextEdit.QScrollBar::add-line:horizontal,
+QIconView .QScrollBar::add-line:horizontal{
+border:0px;
+border-top:1px solid rgba(0,0,0,0.8);
+border-left:1px solid rgba(0,0,0,0.3);
+height: 17px;}
+
+QListView .QScrollBar::sub-line:horizontal
+QTreeWidget .QScrollBar::sub-line:horizontal,
+QTableWidget .QScrollBar::sub-line:horizontal,
+QMdiArea .QScrollBar::sub-line:horizontal,
+QGraphicsView .QScrollBar::sub-line:horizontal,
+QTextEdit .QScrollBar::sub-line:horizontal,
+QPlainTextEdit.QScrollBar::sub-line:horizontal,
+QIconView .QScrollBar::sub-line:horizontal {
+border:0px;
+border-top:1px solid rgba(0,0,0,0.8);
+border-right:1px solid rgba(0,0,0,0.3);
+height: 17px;}
+
+QListView .QScrollBar::add-line:vertical
+QTreeWidget .QScrollBar::add-line:vertical,
+QTableWidget .QScrollBar::add-line:vertical,
+QMdiArea .QScrollBar::add-line:vertical,
+QGraphicsView .QScrollBar::add-line:vertical,
+QTextEdit .QScrollBar::add-line:vertical,
+QPlainTextEdit.QScrollBar::add-line:vertical,
+QIconView .QScrollBar::add-line:vertical {
+border:0px;
+border-left:1px solid rgba(0,0,0,0.8);
+border-bottom:1px solid rgba(0,0,0,0.3);
+height: 17px;}
+
+QListView .QScrollBar::sub-line:vertical
+QTreeWidget .QScrollBar::sub-line:vertical,
+QTableWidget .QScrollBar::sub-line:vertical,
+QMdiArea .QScrollBar::sub-line:vertical,
+QGraphicsView .QScrollBar::sub-line:vertical,
+QTextEdit .QScrollBar::sub-line:vertical,
+QPlainTextEdit.QScrollBar::sub-line:vertical,
+QIconView .QScrollBar::sub-line:vertical {
+border:0px;
+border-left:1px solid rgba(0,0,0,0.8);
+border-top:1px solid rgba(0,0,0,0.3);
+height: 17px;}

@@ -1,0 +1,11 @@
+.QMenu {
+background:palette(window);
+border: 1px solid rgba(0,0,0,0.8);}
+.QMenu::item{
+background-color: transparent;}
+.QMenu::item:selected {
+background:palette(highlight);}
+.QMenu::separator {
+height:1px;
+background: palette(window);
+border-top:1px solid rgba(0,0,0,0.8);}

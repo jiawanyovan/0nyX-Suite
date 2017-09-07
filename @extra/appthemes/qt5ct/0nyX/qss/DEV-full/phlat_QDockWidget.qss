@@ -1,0 +1,21 @@
+QDockWidget {
+border:1px solid rgba(0,0,0,0.8);
+titlebar-close-icon: url(/usr/share/themes/0nyX/images/close.svg);
+titlebar-normal-icon:  url(/usr/share/themes/0nyX/images/restore.svg);}
+QDockWidget::title {
+text-align: center;
+font-weight:bold;
+margin:-1px;
+border:1px solid rgba(0,0,0,0.8);
+background-color: palette(window);}
+QDockWidget::close-button, 
+QDockWidget::float-button {
+border:0px;
+padding:0px;
+icon-size: 22px; }
+QDockWidget::close-button:pressed{
+border:0px;
+background:#cc0000}
+QDockWidget::float-button:pressed{
+border:0px;
+background:palette(highlight);}

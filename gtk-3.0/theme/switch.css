@@ -1,0 +1,21 @@
+switch,
+switch:backdrop{
+font-size:0px;
+min-width:24px;
+background:@object_color;
+border:1px solid @border_color;}
+
+switch:checked,
+switch:checked:backdrop{
+border:1px solid @border_color;
+background:@selected_base_color;
+color:@selected_text_color}
+
+switch slider,
+switch slider:backdrop{
+min-height:16px;
+min-width:16px;
+margin:2px;
+padding:2px;
+background-color:@bg_color;
+border:1px solid @border_color;}

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   viewBox="-3 -3 22 22"
+   id="svg8">
+  <metadata
+     id="metadata9">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs7" />
+  <circle
+     cy="8"
+     r="8"
+     style="paint-order:fill markers stroke;fill:#333333"
+     cx="8"
+     id="path823" />
+  <path
+     d="m8 0.99805c-1.8329 0-3.6551 0.75472-4.9512 2.0508-1.296 1.2961-2.0508 3.1183-2.0508 4.9512s0.75472 3.6551 2.0508 4.9512c1.2961 1.296 3.1183 2.051 4.9512 2.051s3.6551-0.75472 4.9512-2.0508c1.296-1.296 2.051-3.1181 2.051-4.951s-0.75472-3.6551-2.0508-4.9512c-1.296-1.296-3.1181-2.0508-4.951-2.0508z"
+     style="paint-order:fill markers stroke;fill:#bf584e;fill-opacity:1"
+     id="circle817" />
+</svg>

@@ -1,0 +1,39 @@
+.QCheckBox {
+spacing: 5px;}
+.QCheckBox::indicator {
+border:1px solid rgba(0,0,0,0.8);
+width: 16px;
+height: 16px;}
+.QCheckBox::indicator:unchecked,
+.QCheckBox::indicator:unchecked:hover,
+.QCheckBox::indicator:unchecked:pressed {
+background-color:rgba(0,0,0,0.25);}
+.QCheckBox::indicator:checked,
+.QCheckBox::indicator:checked:hover,
+.QCheckBox::indicator:checked:pressed {
+background-color:palette(highlight);
+background-position: center; 
+background-repeat: no-repeat;
+background-image: url("/usr/share/themes/0nyX/images/gtk-2.0/check-check.svg");}
+.QCheckBox::indicator:indeterminate,
+.QCheckBox::indicator:indeterminate:hover,
+.QCheckBox::indicator:indeterminate:pressed {
+background-color:palette(highlight);
+background-position: center; 
+background-repeat: no-repeat;
+background-image: url("/usr/share/themes/0nyX/images/gtk-2.0/check-semi.svg");}
+
+.QCheckBox::indicator:checked:disabled,
+.QCheckBox::indicator:checked:hover:disabled,
+.QCheckBox::indicator:checked:pressed:disabled {
+background-color:rgba(0,0,0,0.25);
+background-position: center; 
+background-repeat: no-repeat;
+background-image: url("/usr/share/themes/0nyX/images/gtk-2.0/check-check_insensitive.svg");}
+.QCheckBox::indicator:indeterminate:disabled,
+.QCheckBox::indicator:indeterminate:hover:disabled,
+.QCheckBox::indicator:indeterminate:pressed:disabled {
+background-color:rgba(0,0,0,0.25);
+background-position: center; 
+background-repeat: no-repeat;
+background-image: url("/usr/share/themes/0nyX/images/gtk-2.0/check-semi_insensitive.svg");}

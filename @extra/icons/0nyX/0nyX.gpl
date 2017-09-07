@@ -1,0 +1,10 @@
+GIMP Palette
+Name: 0nyX
+Columns: 1
+#
+51 51 51	emblemborder
+241 242 242	iconwhite
+204   0   0	off-error
+102 153   0	success
+ 94 134 215	info
+255 102   0	warning

@@ -1,0 +1,91 @@
+#!/bin/sh
+set -e
+#clean first
+if [ -f /usr/share/themes/0nyX/files ];then
+	for _file in $(cat /usr/share/themes/0nyX/files) ; do
+		if [ -L $_file ]; then
+			rm -fv "$_file"
+		fi
+		if [ -f $_file ]; then
+			rm -fv "$_file"
+		fi
+	done
+#dirs!
+	rm -f /usr/share/themes/0nyX/files
+#re-enable the overlay scrollbars
+	sed -i '/^#0nyX$/,+1 d' /etc/environment
+fi
+#start here
+_tmpdir="/tmp/0nyX.tmp"
+if [ -d ${_tmpdir} ]; then
+	rm -r ${_tmpdir}
+fi
+#dirs!
+mkdir -p ${_tmpdir}/usr/share/themes
+#downloading and extracting
+cd /tmp
+curl -L https://codeload.github.com/sixsixfive/0nyX/zip/master > /tmp/0nyX.zip
+if [ -f ${_tmpdir}/../0nyX.zip ]; then
+	unzip ${_tmpdir}/../0nyX.zip -d ${_tmpdir}/usr/share/themes
+	mv ${_tmpdir}/usr/share/themes/0nyX-master ${_tmpdir}/usr/share/themes/0nyX
+fi
+###link all themes
+if [ -d ${_tmpdir}/usr/share/themes/0nyX ]; then
+#icewm theme
+	mkdir -p ${_tmpdir}/usr/share/icewm/themes
+	#ln -sf ../../themes/0nyX/@extra/appthemes/icewm/0nyX ${_tmpdir}/usr/share/icewm/themes/0nyX
+	for _f in $(find ${_tmpdir}/usr/share/themes/0nyX/@extra/appthemes/icewm/ -mindepth 1 -type d|sed 's\^.*/\\g'); do
+		ln -sf ../../themes/0nyX/@extra/appthemes/icewm/$_f ${_tmpdir}/usr/share/icewm/themes/$_f
+	done
+#plank theme
+	#mkdir -p ${_tmpdir}/usr/share/plank/themes
+	#ln -sf ../../themes/0nyX/@extra/plank/0nyX ${_tmpdir}/usr/share/plank/themes/0nyX
+	mkdir -p ${_tmpdir}/usr/share/plank/themes
+	for _f in $(find ${_tmpdir}/usr/share/themes/0nyX/@extra/appthemes/plank/ -mindepth 1 -type d|sed 's\^.*/\\g'); do
+		ln -sf ../../themes/0nyX/@extra/appthemes/plank/$_f ${_tmpdir}/usr/share/plank/themes/$_f
+	done
+#onboard
+	#mkdir -p ${_tmpdir}/usr/share/onboard/themes
+	#ln -sf ../../themes/0nyX/@extra/onboard/0nyX/0nyX.colors ${_tmpdir}/usr/share/onboard/themes
+	#ln -sf ../../themes/0nyX/@extra/onboard/0nyX/0nyX.theme ${_tmpdir}/usr/share/onboard/themes
+	mkdir -p ${_tmpdir}/usr/share/onboard/themes
+	for _f in $(find ${_tmpdir}/usr/share/themes/0nyX/@extra/appthemes/onboard -type f|sed 's\^.*/\\g'); do
+		ln -sf ../../themes/0nyX/@extra/appthemes/onboard/$_f ${_tmpdir}/usr/share/onboard/themes/$_f
+	done
+#qt5ct
+	mkdir -p ${_tmpdir}/usr/share/qt5ct/colors ${_tmpdir}/usr/share/qt5ct/qss
+	ln -sf ../../themes/0nyX/@extra/appthemes/qt5ct/0nyX/colors/0nyX.conf ${_tmpdir}/usr/share/qt5ct/colors
+	ln -sf ../../themes/0nyX/@extra/appthemes/qt5ct/0nyX/qss/0nyX_QGtkStyle.qss ${_tmpdir}/usr/share/qt5ct/qss
+	ln -sf ../../themes/0nyX/@extra/appthemes/qt5ct/0nyX/qss/0nyX_QFusionStyle.qss ${_tmpdir}/usr/share/qt5ct/qss
+#albert(app does not support symlinks!)
+	mkdir -p ${_tmpdir}/usr/share/albert/themes
+	cp ${_tmpdir}/usr/share/themes/0nyX/@extra/appthemes/albert/0nyX/0nyX.qss ${_tmpdir}/usr/share/albert/themes/0nyX.qss
+#subthemes theme
+	#ln -sf 0nyX/@extra/subthemes/0nyX-hidpi ${_tmpdir}/usr/share/themes/0nyX-HiDPI
+	#ln -sf 0nyX/@extra/subthemes/0nyX-highcontrast ${_tmpdir}/usr/share/themes/0nyX-highcontrast
+	#ln -sf 0nyX/@extra/subthemes/0nyX-lighter ${_tmpdir}/usr/share/themes/0nyX-lighter
+#icon theme
+	mkdir -p ${_tmpdir}/usr/share/icons
+	ln -sf ../themes/0nyX/@extra/icons/0nyX ${_tmpdir}/usr/share/icons/0nyX
+#WinAMP theme
+	mkdir -p ${_tmpdir}/usr/share/audacious/Skins
+	ln -sf ../../themes/0nyX/@extra/appthemes/WinAMP/0nyX ${_tmpdir}/usr/share/audacious/Skins/0nyX
+	mkdir -p  ${_tmpdir}/usr/share/qmmp/skins
+	ln -sf ../../themes/0nyX/@extra/appthemes/WinAMP/0nyX ${_tmpdir}/usr/share/qmmp/skins/0nyX
+#no overlay scrollbars
+#	mkdir -p ${_tmpdir}/etc/X11/Xsession.d
+#	printf "export GTK_OVERLAY_SCROLLING=0\nexport LIBOVERLAY_SCROLLBAR=0\n" > ${_tmpdir}/etc/X11/Xsession.d/98_0nyX
+#xsession.d was a good idea however it wont work with root apps like synaptic so use /etc/environment instead
+	printf '\n#0nyX\nGTK_OVERLAY_SCROLLING=0\n#0nyX\nLIBOVERLAY_SCROLLBAR=0'>> /etc/environment
+#######Debian-only!
+#chromium scrollbars
+	mkdir -p ${_tmpdir}/etc/chromium.d
+	cat <<\EOF > ${_tmpdir}/etc/chromium.d/0nyX
+export CHROMIUM_FLAGS="$CHROMIUM_FLAGS --load-extension=/usr/share/themes/0nyX/@extra/appthemes/Chromium_unpackedextension/0nyX"
+EOF
+#create a file list!
+	find ${_tmpdir} > ${_tmpdir}/usr/share/themes/0nyX/files
+	sed -i 's|^/tmp/0nyX.tmp||g' ${_tmpdir}/usr/share/themes/0nyX/files
+	chmod -R 755 ${_tmpdir}
+	cp -R ${_tmpdir}/* /
+fi

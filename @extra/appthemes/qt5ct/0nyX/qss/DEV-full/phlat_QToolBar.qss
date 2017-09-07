@@ -1,0 +1,11 @@
+QToolBar {
+background-color: palette(window);
+color: palette(window-text);
+border: 1px solid transparent;}
+.QToolBar::handle:horizontal{
+image: url(/usr/share/themes/0nyX/images/gtk-2.0/handle_vertical.svg);}
+.QToolBar::handle:vertical{
+image: url(/usr/share/themes/0nyX/images/gtk-2.0/handle_horizontal.svg);}
+.QToolBar::separator:horizontal{
+margin:2px;
+background:transparent}

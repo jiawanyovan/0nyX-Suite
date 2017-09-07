@@ -1,0 +1,7 @@
+tooltip.chromium {
+color: @text_color;
+background-color: @base_color}
+
+window.background.chromium menubar{
+color: @text_color;
+background-color:shade(@base_color,1.15);}

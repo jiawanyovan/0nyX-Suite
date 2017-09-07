@@ -1,0 +1,40 @@
+.QRadioButton {
+spacing: 5px;}
+.QRadioButton::indicator {
+border-radius:9px;
+border:1px solid rgba(0,0,0,0.8);
+width: 16px;
+height: 16px;}
+.QRadioButton::indicator:unchecked,
+.QRadioButton::indicator:unchecked:hover,
+.QRadioButton::indicator:unchecked:pressed {
+background-color:rgba(0,0,0,0.25);}
+.QRadioButton::indicator:checked,
+.QRadioButton::indicator:checked:hover,
+.QRadioButton::indicator:checked:pressed {
+background-color:palette(highlight);
+background-position: center; 
+background-repeat: no-repeat;
+background-image: url("/usr/share/themes/0nyX/images/gtk-2.0/radio-check.svg");}
+.QRadioButton::indicator:indeterminate,
+.QRadioButton::indicator:indeterminate:hover,
+.QRadioButton::indicator:indeterminate:pressed {
+background-color:palette(highlight);
+background-position: center; 
+background-repeat: no-repeat;
+background-image: url("/usr/share/themes/0nyX/images/gtk-2.0/radio-semi.svg");}
+
+.QRadioButton::indicator:checked:disabled,
+.QRadioButton::indicator:checked:hover:disabled,
+.QRadioButton::indicator:checked:pressed:disabled {
+background-color:rgba(0,0,0,0.25);
+background-position: center; 
+background-repeat: no-repeat;
+background-image: url("/usr/share/themes/0nyX/images/gtk-2.0/radio-check_insensitive.svg");}
+.QRadioButton::indicator:indeterminate:disabled,
+.QRadioButton::indicator:indeterminate:hover:disabled,
+.QRadioButton::indicator:indeterminate:pressed:disabled {
+background-color:rgba(0,0,0,0.25);
+background-position: center; 
+background-repeat: no-repeat;
+background-image: url("/usr/share/themes/0nyX/images/gtk-2.0/radio-semi_insensitive.svg");}

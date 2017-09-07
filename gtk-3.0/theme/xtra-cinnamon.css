@@ -1,0 +1,95 @@
+window.nemo-desktop-window *,
+window.nemo-desktop-window *:backdrop{
+background:none;}
+window.nemo-desktop-window *:selected,
+window.nemo-desktop-window *:selected:backdrop{
+color:@selected_text_color;
+background:@selected_base_color;}
+.nemo-window-pane *{
+-GtkWidget-window-dragging:false;}
+.nemo-places-sidebar,
+.nemo-places-sidebar>viewport,
+.nemo-places-sidebar>viewport treeview.view,
+.nemo-places-sidebar:backdrop,
+.nemo-places-sidebar>viewport:backdrop,
+.nemo-places-sidebar>viewport treeview.view:backdrop{
+border:none;
+background:@bg_color;
+-GtkWidget-window-dragging:false;}
+.nemo-places-sidebar>viewport treeview.view:hover{
+background:alpha(@selected_bg_color,0.6);
+-GtkWidget-window-dragging:false;}
+.nemo-places-sidebar>viewport treeview:selected{
+background:@selected_bg_color;}
+window.nemo-window toolbar button:not(:active),
+window.nemo-window toolbar button:not(:selected),
+window.nemo-window toolbar button:not(:checked):not(:selected),
+window.nemo-window toolbar button:not(:checked):not(:selected):backdrop{
+background:transparent;
+border:1px solid transparent;}
+window.nemo-window toolbar entry,
+window.nemo-window toolbar entry:backdrop{
+margin:-2px;}
+.nemo-window-pane:not(.nemo-desktop-window),
+.nemo-window-pane:not(.nemo-desktop-window):backdrop {
+margin:2px;}
+.nemo-window>grid>paned>box.sidebar>scrolledwindow.frame:dir(ltr),
+.nemo-window>grid>paned>box.sidebar>scrolledwindow.frame:dir(ltr):backdrop {
+margin-left:-1px;
+margin-bottom:-1px;}
+.nemo-window>grid>paned>box.sidebar>scrolledwindow.frame:dir(rtl),
+.nemo-window>grid>paned>box.sidebar>scrolledwindow.frame:dir(rtl):backdrop {
+margin-right:-1px;
+margin-bottom:-1px;}
+.nemo-properties-dialog frame,
+.nemo-properties-dialog frame:backdrop{
+border:0px;}
+.nemo-desktop .rubberband,
+.nemo-desktop  rubberband,
+.nemo-desktop  .rubberband:backdrop,
+.nemo-desktop  rubberband:backdrop{
+border:1px solid @selected_base_color;
+background:alpha(@selected_base_color,0.2);}
+
+.nemo-window .primary-toolbar>toolitem button.image-button:active,
+.nemo-window .primary-toolbar>toolitem button.image-button:active:backdrop,
+.nemo-window .primary-toolbar>toolitem button.image-button:checked,
+.nemo-window .primary-toolbar>toolitem button.image-button:checked:backdrop{
+border:1px solid @border_color;
+background:@selected_bg_color;}
+.nemo-window .primary-toolbar>toolitem stack button.text-button,
+.nemo-window .primary-toolbar>toolitem stack button.text-button:backdrop{
+border:none;
+margin:0px 2px;
+border-bottom:2px solid transparent;
+background-color:transparent;}
+.nemo-window .primary-toolbar>toolitem stack button.text-button:active,
+.nemo-window .primary-toolbar>toolitem stack button.text-button:active:backdrop,
+.nemo-window .primary-toolbar>toolitem stack button.text-button:checked,
+.nemo-window .primary-toolbar>toolitem stack button.text-button:checked:backdrop{
+border:none;
+border-bottom:2px solid @selected_bg_color;
+background-color:transparent;}
+.nemo-window-pane scrolledwindow .entry,
+.nemo-window-pane scrolledwindow .entry:backdrop{
+background:shade (@base_color,0.9);
+color:@text_color;
+border:1px solid @border_color;}
+.nemo-window-pane scrolledwindow .entry:selected,
+.nemo-window-pane scrolledwindow .entry:selected {
+background:@selected_base_color;
+color:@selected_text_color;}
+.nemo-places-sidebar treeview.view,
+.nemo-places-sidebar treeview.view:backdrop{
+-GtkTreeView-expander-size:18;}
+
+.cs-header,
+.cs-header:backdrop {
+margin:-1px;
+font-size:150%;
+padding:5px;
+background:transparent;}
+stack scrolledwindow.view.cs-category-view,
+stack scrolledwindow.view.cs-category-view:backdrop {
+border:1px solid @border_color;
+margin:4px;}

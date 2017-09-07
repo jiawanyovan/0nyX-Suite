@@ -1,0 +1,52 @@
+.QGroupBox {
+background-color: transparent;
+border: 1px solid rgba(0,0,0,0.8);
+border-radius: 0px;
+margin-top:5px;}
+.QGroupBox::title {
+border-top: 1px solid rgba(0,0,0,0.8);
+padding:1px;
+font-weight:bold;
+subcontrol-origin: margin;
+subcontrol-position: top center;
+margin-top: 5px;}
+.QGroupBox::indicator {
+margin:1px;
+ border: 1px solid rgba(0,0,0,0.8);
+ width: 15px;
+ height: 15px;}
+.QGroupBox > *{
+margin-top:20px;}
+.QGroupBox::indicator:unchecked,
+.QGroupBox::indicator:unchecked:hover,
+.QGroupBox::indicator:unchecked:pressed {
+background-color:rgba(0,0,0,0.25);}
+.QGroupBox::indicator:checked,
+.QGroupBox::indicator:checked:hover,
+.QGroupBox::indicator:checked:pressed {
+background-color:palette(highlight);
+background-position: center; 
+background-repeat: no-repeat;
+background-image: url("/usr/share/themes/0nyX/images/gtk-2.0/check-check.svg");}
+.QGroupBox::indicator:indeterminate,
+.QGroupBox::indicator:indeterminate:hover,
+.QGroupBox::indicator:indeterminate:pressed {
+background-color:palette(highlight);
+background-position: center; 
+background-repeat: no-repeat;
+background-image: url("/usr/share/themes/0nyX/images/gtk-2.0/check-semi.svg");}
+
+.QGroupBox::indicator:checked:disabled,
+.QGroupBox::indicator:checked:hover:disabled,
+.QGroupBox::indicator:checked:pressed:disabled {
+background-color:rgba(0,0,0,0.25);
+background-position: center; 
+background-repeat: no-repeat;
+background-image: url("/usr/share/themes/0nyX/images/gtk-2.0/check-check_insensitive.svg");}
+.QGroupBox::indicator:indeterminate:disabled,
+.QGroupBox::indicator:indeterminate:hover:disabled,
+.QGroupBox::indicator:indeterminate:pressed:disabled {
+background-color:rgba(0,0,0,0.25);
+background-position: center; 
+background-repeat: no-repeat;
+background-image: url("/usr/share/themes/0nyX/images/gtk-2.0/check-semi_insensitive.svg");}

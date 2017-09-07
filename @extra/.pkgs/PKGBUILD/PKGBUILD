@@ -1,0 +1,100 @@
+## PKGBUILD
+# https://github.com/sixsixfive/0nyX/tree/master/%40extra/PKGS/PKGBUILD
+pkgname=0nyx-theme
+pkgver=2017.05.06.174703
+pkgrel=1
+pkgdesc='Plain and simple dark theme without any specials..'
+arch=('any')
+url='https://github.com/sixsixfive/0nyX'
+depends=('sed')
+makedepends=(git coreutils)
+optdepends=('qt5ct'
+	'qt5-styleplugins'
+	'xcursor-vanilla-dmz'
+	'gtk3-nocsd'
+	'xfwm4'
+	'marco'
+	'icewm'
+	'openbox'
+	'xfce4-notifyd'
+	'xfdashboard'
+	'parole'
+	'plank'
+	'onboard'
+	'audacious'
+	'qmmp'
+	'albert'
+	'lightdm-gtk-greeter-settings'
+	'gtk'
+	'gtk2'
+	'gtk3>=3.20'
+	'gtk-engines')
+install="install"
+provides=("${pkgname}=$pkgver")
+#kde gtk config breaks gtks font settings!
+conflicts=("${pkgname}" "kde-gtk-config")
+license=(CCPL:cc-by-sa-4.0)
+source=("${pkgname}.zip::https://github.com/sixsixfive/0nyX/archive/master.zip")
+sha256sums=('SKIP')
+ 
+pkgver() {
+	printf "$(date -u +%Y.%m.%d.%H%M%S)"
+}
+ 
+package() {
+	install -d $pkgdir/usr/share/themes/0nyX
+	mv 0nyX-master/* $pkgdir/usr/share/themes/0nyX
+	#if [ -f "/etc/manjaro-release" ]; then
+		#sh $pkgdir/usr/share/themes/0nyX/@extra/scripts/changecolor.sh -c "#16A085"
+	#else
+		#sh $pkgdir/usr/share/themes/0nyX/@extra/scripts/changecolor.sh -c "#0088CC"
+	#fi
+##other_stuff
+	_tmpdir=$pkgdir
+###link all themes
+###link all themes
+if [ -d ${_tmpdir}/usr/share/themes/0nyX ]; then
+#icewm theme
+	mkdir -p ${_tmpdir}/usr/share/icewm/themes
+	#ln -sf ../../themes/0nyX/@extra/appthemes/icewm/0nyX ${_tmpdir}/usr/share/icewm/themes/0nyX
+	for _f in $(find ${_tmpdir}/usr/share/themes/0nyX/@extra/appthemes/icewm/ -mindepth 1 -type d|sed 's\^.*/\\g'); do
+		ln -sf ../../themes/0nyX/@extra/appthemes/icewm/$_f ${_tmpdir}/usr/share/icewm/themes/$_f
+	done
+#plank theme
+	#mkdir -p ${_tmpdir}/usr/share/plank/themes
+	#ln -sf ../../themes/0nyX/@extra/plank/0nyX ${_tmpdir}/usr/share/plank/themes/0nyX
+	mkdir -p ${_tmpdir}/usr/share/plank/themes
+	for _f in $(find ${_tmpdir}/usr/share/themes/0nyX/@extra/appthemes/plank/ -mindepth 1 -type d|sed 's\^.*/\\g'); do
+		ln -sf ../../themes/0nyX/@extra/appthemes/plank/$_f ${_tmpdir}/usr/share/plank/themes/$_f
+	done
+#onboard
+	#mkdir -p ${_tmpdir}/usr/share/onboard/themes
+	#ln -sf ../../themes/0nyX/@extra/onboard/0nyX/0nyX.colors ${_tmpdir}/usr/share/onboard/themes
+	#ln -sf ../../themes/0nyX/@extra/onboard/0nyX/0nyX.theme ${_tmpdir}/usr/share/onboard/themes
+	mkdir -p ${_tmpdir}/usr/share/onboard/themes
+	for _f in $(find ${_tmpdir}/usr/share/themes/0nyX/@extra/appthemes/onboard -type f|sed 's\^.*/\\g'); do
+		ln -sf ../../themes/0nyX/@extra/appthemes/onboard/$_f ${_tmpdir}/usr/share/onboard/themes/$_f
+	done
+#qt5ct
+	mkdir -p ${_tmpdir}/usr/share/qt5ct/colors ${_tmpdir}/usr/share/qt5ct/qss
+	ln -sf ../../themes/0nyX/@extra/appthemes/qt5ct/0nyX/colors/0nyX.conf ${_tmpdir}/usr/share/qt5ct/colors
+	ln -sf ../../themes/0nyX/@extra/appthemes/qt5ct/0nyX/qss/0nyX_QGtkStyle.qss ${_tmpdir}/usr/share/qt5ct/qss
+	ln -sf ../../themes/0nyX/@extra/appthemes/qt5ct/0nyX/qss/0nyX_QFusionStyle.qss ${_tmpdir}/usr/share/qt5ct/qss
+#albert(app does not support symlinks!)
+	mkdir -p ${_tmpdir}/usr/share/albert/themes
+	cp ${_tmpdir}/usr/share/themes/0nyX/@extra/appthemes/albert/0nyX/0nyX.qss ${_tmpdir}/usr/share/albert/themes/0nyX.qss
+#subthemes theme
+	#ln -sf 0nyX/@extra/subthemes/0nyX-hidpi ${_tmpdir}/usr/share/themes/0nyX-HiDPI
+	#ln -sf 0nyX/@extra/subthemes/0nyX-highcontrast ${_tmpdir}/usr/share/themes/0nyX-highcontrast
+	#ln -sf 0nyX/@extra/subthemes/0nyX-lighter ${_tmpdir}/usr/share/themes/0nyX-lighter
+#icon theme
+	mkdir -p ${_tmpdir}/usr/share/icons
+	ln -sf ../themes/0nyX/@extra/icons/0nyX ${_tmpdir}/usr/share/icons/0nyX
+#WinAMP theme
+	mkdir -p ${_tmpdir}/usr/share/audacious/Skins
+	ln -sf ../../themes/0nyX/@extra/appthemes/WinAMP/0nyX ${_tmpdir}/usr/share/audacious/Skins/0nyX
+	mkdir -p  ${_tmpdir}/usr/share/qmmp/skins
+	ln -sf ../../themes/0nyX/@extra/appthemes/WinAMP/0nyX ${_tmpdir}/usr/share/qmmp/skins/0nyX
+fi
+	chmod -R 755 ${_tmpdir}
+}

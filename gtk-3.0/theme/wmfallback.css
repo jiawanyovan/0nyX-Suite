@@ -1,0 +1,129 @@
+.default-decoration .titlebutton image,
+button.minimize.titlebutton image,
+button.maximize.titlebutton image,
+button.close.titlebutton image{
+opacity:0}
+
+.default-decoration .titlebutton,
+.default-decoration .titlebutton:backdrop,
+button.close.titlebutton,
+button.close.titlebutton:backdrop,
+button.minimize.titlebutton,
+button.minimize.titlebutton:backdrop,
+button.maximize.titlebutton,
+button.maximize.titlebutton:backdrop{
+border-color:transparent;
+background-color:transparent;
+min-width:22px;
+min-height:22px;
+color:transparent;
+background-position:center;
+background-repeat:no-repeat;
+background-size: 22px 22px;}
+button.close.titlebutton:active{
+background:@error_color;}
+button.minimize.titlebutton:active,
+button.maximize.titlebutton:active{
+background:@selected_bg_color;}
+.default-decoration button.minimize.titlebutton,
+.titlebar .right button.minimize.titlebutton,
+.titlebar .right:dir(rtl) button.minimize.titlebutton,
+.titlebar .left button.minimize.titlebutton,
+.titlebar .left:dir(rtl) button.minimize.titlebutton {
+background-image:-gtk-scaled(url("../../images/gtk-3.0/min.svg"),url("../../images/gtk-3.0/min2.svg"));}
+.default-decoration button.maximize.titlebutton,
+.titlebar .right button.maximize.titlebutton,
+.titlebar .right:dir(rtl) button.maximize.titlebutton,
+.titlebar .left button.maximize.titlebutton,
+.titlebar .left:dir(rtl) button.maximize.titlebutton {
+background-image:-gtk-scaled(url("../../images/gtk-3.0/max.svg"),url("../../images/gtk-3.0/max2.svg"));}
+.maximized .default-decoration button.maximize.titlebutton,
+.maximized .titlebar .right button.maximize.titlebutton,
+.maximized .titlebar .right:dir(rtl) button.maximize.titlebutton,
+.maximized .titlebar .left button.maximize.titlebutton,
+.maximized .titlebar .left:dir(rtl) button.maximize.titlebutton {
+background-image:-gtk-scaled(url("../../images/gtk-3.0/restore.svg"),url("../../images/gtk-3.0/restore2.svg"));}
+.default-decoration button.close.titlebutton,
+.titlebar .right button.close.titlebutton,
+.titlebar .right:dir(rtl) button.close.titlebutton,
+.titlebar .left button.close.titlebutton,
+.titlebar .left:dir(rtl) button.close.titlebutton {
+background-image:-gtk-scaled(url("../../images/gtk-3.0/close.svg"),url("../../images/gtk-3.0/close2.svg"));}
+.default-decoration .titlebutton:backdrop,
+button.close.titlebutton:backdrop,
+button.minimize.titlebutton:backdrop,
+button.maximize.titlebutton:backdrop{
+opacity:0.5;}
+
+
+/*CSD enabled*/
+*.csd decoration,
+*.csd decoration:backdrop {
+padding:0px;
+margin:0px;
+box-shadow: 0px 4px 6px 0px rgba(0,0,0,0.6);
+border:1px solid shade(@titlebar_color,0.0);}
+*.csd.popup decoration,
+*.csd.popup decoration:backdrop{
+box-shadow:none;
+border:none;}
+*.csd .titlebar,
+*.csd .titlebar:backdrop{
+min-height:22px;
+background:@titlebar_color;
+border-bottom:1px solid shade(@titlebar_color,0.0)}
+*.csd .titlebar>*,
+*.csd .titlebar>*:backdrop{
+margin: 2px 5px;}
+*.csd .titlebar .image-button:not(:checked):not(active),
+*.csd .titlebar .image-button:not(:checked):not(active):backdrop{
+background:none;
+border:1px solid transparent;}
+*.csd .titlebar .title,
+*.csd .titlebar .title:backdrop{
+color:@titlebar_text;
+font-weight:bold;}
+*.csd .titlebar .subtitle,
+*.csd .titlebar .subtitle:backdrop{
+opacity:0.8;
+color:@titlebar_text;
+font-weight:bold;
+font-size:80%;}
+*.csd .titlebar .title:backdrop,
+*.csd .titlebar .subtitle:backdrop{
+color:@inactive_fg_color;}
+*.csd headerbar.titlebar button image,
+*.csd headerbar.titlebar button image:backdrop{
+-gtk-icon-style:symbolic;}
+*.csd headerbar.titlebar button:not(:checked):not(.titlebutton),
+*.csd headerbar.titlebar button:not(:checked):not(.titlebutton):backdrop{
+background:shade(@titlebar_color,1.6);
+color:@titlebar_text;
+border:1px solid @border_color;}
+*.csd headerbar.titlebar button:checked:not(.titlebutton),
+*.csd headerbar.titlebar button:checked:not(.titlebutton):backdrop{
+border:1px solid shade(@titlebar_color,0.0);}
+*.csd headerbar.titlebar image,
+*.csd headerbar.titlebar image:backdrop{
+color:@titlebar_text;
+-gtk-icon-style:symbolic;}
+*.csd headerbar.titlebar switch:not(:checked),
+*.csd headerbar.titlebar switch:not(:checked):backdrop{
+background:shade(@titlebar_color,1.3);
+color:@titlebar_text;
+border:1px solid shade(@titlebar_color,0.0);}
+*.csd headerbar.titlebar switch slider,
+*.csd headerbar.titlebar switch slider:backdrop{
+min-height:16px;
+min-width:16px;
+margin:2px;
+padding:2px;
+background-color:shade(@titlebar_color,0.7);
+border:1px solid shade(@titlebar_color,0.0);}
+
+*:not(.csd) .titlebar .title,
+*:not(.csd) .titlebar .title:backdrop{
+opacity:0;}
+*:not(.csd) .titlebar>*,
+*:not(.csd) .titlebar>*:backdrop{
+margin:2px 5px;}

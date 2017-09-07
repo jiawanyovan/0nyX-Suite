@@ -1,0 +1,32 @@
+tooltip *{
+padding:0px;
+margin:0px;
+background:@base_color;
+color:@fg_color;
+box-shadow:none;}
+
+tooltip>*{
+background:@base_color;
+color:inherit;
+box-shadow:none;}
+
+tooltip.background{
+color:@window_text;
+border:1px solid @border_color;
+background:@base_color;
+padding:0px;
+outline:0px;
+box-shadow:none;}
+
+.app-notification,
+.floating-bar,
+.osd,
+.app-notification:backdrop,
+.floating-bar:backdrop,
+.osd:backdrop{
+color:@fg_color;
+border:1px solid @border_color;
+background:@base_color;
+padding:2px;
+outline:0px;
+box-shadow:none;}
