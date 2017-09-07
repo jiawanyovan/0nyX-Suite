@@ -88,7 +88,9 @@ for f in $(find . -type f -name "*.svg");do
 	sed -i 's/viewBox="0 0 16 16"/viewBox="0 0 16 16" width="32" height="32"/' $f
 done
 cd $basedir
-gtk-update-icon-cache -f --include-image-data $basedir/@extra/icons/0nyX/
+#gtk-update-icon-cache -f --include-image-data $basedir/@extra/icons/0nyX/
+gtk-update-icon-cache -f $basedir/@extra/icons/0nyX
+
 ###Inverted
 #if [ -d $basedir/@extra/icons/0nyX-lighter ];then
 	#rm -rf $basedir/@extra/icons/0nyX-lighter

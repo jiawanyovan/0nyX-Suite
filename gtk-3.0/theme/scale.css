@@ -5,7 +5,7 @@ margin:3px;}
 scale trough,
 scale trough:backdrop{
 border:1px solid @border_color;
-background:@base_color;}
+background:@object_color;}
 list scale trough,
 list scale trough:backdrop{
 border:1px solid @border_color;

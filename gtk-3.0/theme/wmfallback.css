@@ -101,7 +101,10 @@ background:shade(@titlebar_color,1.6);
 color:@titlebar_text;
 border:1px solid @border_color;}
 *.csd headerbar.titlebar button:checked:not(.titlebutton),
-*.csd headerbar.titlebar button:checked:not(.titlebutton):backdrop{
+*.csd headerbar.titlebar button:checked:not(.titlebutton):backdrop,
+*.csd headerbar.titlebar button:active:not(.titlebutton),
+*.csd headerbar.titlebar button:active:not(.titlebutton):backdrop{
+background:@selected_base_color;
 border:1px solid shade(@titlebar_color,0.0);}
 *.csd headerbar.titlebar image,
 *.csd headerbar.titlebar image:backdrop{
