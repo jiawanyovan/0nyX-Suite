@@ -24,11 +24,11 @@ if [ -f "xfce_badge.svg" ]; then
 			ln -s $f $(echo $f|sed 's/.svg$/-symbolic.svg/g')
 		fi
 	done
-	for f2 in $(ls -L|grep '\-symbolic-symbolic.svg'); do
-		if [ ! -f "$(echo $f2|sed 's/-symbolic.svg$/.svg$/g')" ];then
-			rm $f2
-		fi
-	done
+	#for f2 in $(ls -L|grep '\-symbolic-symbolic.svg'); do
+		#if [ ! -f "$(echo $f2|sed 's/-symbolic.svg$/.svg$/g')" ];then
+			#rm $f2
+		#fi
+	#done
 fi
 ##22px fake
 cd $basedir
@@ -108,6 +108,8 @@ MESSAGE="$(date)"
 git commit -m "$MESSAGE"
 #git remote add origin https://github.com/sixsixfive/0nyX.git
 #git push -u --force origin master
+cd $basedir/@extra/.pkgs
+fakeroot debian/rules binary
 git push origin master
 printf "\n...done\n"
 exit

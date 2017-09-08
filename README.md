@@ -17,7 +17,9 @@
 ### Recommends: 
 
 * [GTK3-NOCSD](https://github.com/PCMan/gtk3-nocsd)
+* [Qt5ct](https://sourceforge.net/projects/qt5ct/) + Qt SVG module
 * [YAD](https://sourceforge.net/projects/yad-dialog)
+* DMZ-White cursor theme
 * Xfce, IceWM or Openbox
 * Chrome/Chromium(@GTK3)(any blink based browser will work due the internal styling of html forms)
 
@@ -29,12 +31,18 @@
 * Chrome/Chromium Scrollbars
 * Onboard theme
 * A simple high contrast icon theme
-* Qt5ct qgtkstyle qss fixes
+* Qt5ct qss style
 * WinAMP 2.9x theme
 * Albert theme
 * and more
 
 ## Installation
+
+### Packages
+
+Packages for Debian and Manjaro can be found on the [Opendesktop-page](https://www.opendesktop.org/p/1175851).
+
+Note: Qt5ct for Debian can be found [here](https://github.com/mati75/qt5ct).
 
 ### Manual
 For example to install it for all users:
@@ -84,7 +92,7 @@ mkdir -p  $prefix/share/qmmp/skins
 ln -sf $prefix/share/themes/0nyX/@extra/appthemes/WinAMP/0nyX $prefix/share/qmmp/skins/0nyX
 
 #### Qt5
-## Qt5ct (if you use a different prefix than /usr you need to edit the image paths in 0nyX_QGtkStyle.qss)
+## Qt5ct (if you use a different prefix than /usr you need to edit the image paths in the *.qss file)
 mkdir -p $prefix/share/qt5ct/qss
 mkdir -p $prefix/share/qt5ct/colors
 ln -s $prefix/share/themes/0nyX/@extra/appthemes/qt5ct/colors/0nyX.conf $prefix/share/qt5ct/colors/0nyX.conf
@@ -99,12 +107,6 @@ $prefix/share/themes/0nyX/@extra/appthemes/Chromium_unpackedextension
 ```
 
 Note: You have to symlink the subthemes instead of copying otherwise they might break!
-
-### Packages
-
-Packages for Debian and Manjaro can be found on the [Opendesktop-page](https://www.opendesktop.org/p/1175851).
-
-Note: Qt5ct for Debian can be found [here](https://github.com/mati75/qt5ct).
 
 ## Optional
 
