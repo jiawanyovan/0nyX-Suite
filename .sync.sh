@@ -24,7 +24,7 @@ if [ -f "xfce_badge.svg" ]; then
 			ln -s $f $(echo $f|sed 's/.svg$/-symbolic.svg/g')
 		fi
 	done
-	for f2 in $(ls -L|grep -symbolic.svg); do
+	for f2 in $(ls -L|grep '\-symbolic.svg'); do
 		if [ ! -f "$(echo $f2|sed 's/-symbolic.svg$/.svg$/g')" ];then
 			rm $f2
 		fi
