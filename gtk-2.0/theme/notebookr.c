@@ -1,6 +1,6 @@
 style"gtknotebook"{
-xthickness=0
-ythickness=0
+xthickness=1
+ythickness=1
 GtkNotebook::tab-curvature=40
 GtkNotebook::tab-overlap=1
 GtkNotebook::has-backward-stepper=0

@@ -87,7 +87,7 @@ ln -sf $prefix/share/themes/0nyX/@extra/appthemes/WinAMP/0nyX $prefix/share/qmmp
 ## Qt5ct (if you use a different prefix than /usr you need to edit the image paths in 0nyX_QGtkStyle.qss)
 mkdir -p $prefix/share/qt5ct/qss
 mkdir -p $prefix/share/qt5ct/colors
-ln -s $prefix/share/themes/0nyX/@extra/appthemes/qt5ct/colors/0nyX_QGtkStyle.conf $prefix/share/qt5ct/colors/0nyX_QGtkStyle.conf
+ln -s $prefix/share/themes/0nyX/@extra/appthemes/qt5ct/colors/0nyX.conf $prefix/share/qt5ct/colors/0nyX.conf
 ln -s $prefix/share/themes/0nyX/@extra/appthemes/qt5ct/qss/0nyX_QGtkStyle.qss $prefix/share/qt5ct/qss/0nyX_QGtkStyle.qss
 ```
 Chrome/Chromium theme:
@@ -102,7 +102,9 @@ Note: You have to symlink the subthemes instead of copying otherwise they might 
 
 ### Packages
 
-Packages for Debian, and Manjaro can be found on the [Opendesktop-page](https://www.opendesktop.org/p/1175851).
+Packages for Debian and Manjaro can be found on the [Opendesktop-page](https://www.opendesktop.org/p/1175851).
+
+Note: Qt5ct for Debian can be found [here](https://github.com/mati75/qt5ct).
 
 ## Optional
 
@@ -120,7 +122,7 @@ or
 sh $prefix/share/themes/0nyX/@extra/scripts/changecolor.sh -c "#16A085"
 ```
 
-Remember that there is text to display above that color(eg: on selections) !!!
+Note: Remember that there is text to display above that color(eg: on selections) !!!
 
 ### Set all themes
 
@@ -129,10 +131,4 @@ to set the whole theme you can run the following script eg:
 
 ```
 sh $prefix/share/themes/0nyX/@extra/scripts/setxfcetheme.sh
-```
-
-or:
-
-```
-sh $prefix/share/themes/0nyX/@extra/scripts/setxfce>theme-hidpi.sh
 ```
