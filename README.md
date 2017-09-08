@@ -10,7 +10,7 @@
 
 ### Depends on: 
 
-* GTK2 (mist, murrine and pixbuf engine with SVG support!)
+* GTK2 (mist and pixbuf engine with SVG support!)
 * GTK3>=3.20
 * Disabled GTK3 overlay scrollbars (export GTK_OVERLAY_SCROLLING=0)
 
@@ -80,7 +80,6 @@ cp $prefix/share/themes/0nyX/@extra/appthemes/albert/0nyX.qss $prefix/share/albe
 mkdir -p $prefix/share/plank/themes
 ln -s $prefix/share/themes/0nyX/@extra/appthemes/plank/0nyX $prefix/share/plank/themes/0nyX
 ln -s $prefix/share/themes/0nyX/@extra/appthemes/plank/0nyX-full $prefix/share/plank/themes/0nyX-full
-ln -s $prefix/share/themes/0nyX/@extra/appthemes/plank/0nyX-lighter $prefix/share/plank/themes/0nyX-lighter
 
 ## WinAMP theme
 ## If your player needs PNG or BMP graphics use the included script!
