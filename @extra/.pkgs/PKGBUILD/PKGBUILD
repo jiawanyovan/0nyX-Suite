@@ -61,16 +61,11 @@ if [ -d ${_tmpdir}/usr/share/themes/0nyX ]; then
 		ln -sf ../../themes/0nyX/@extra/appthemes/icewm/$_f ${_tmpdir}/usr/share/icewm/themes/$_f
 	done
 #plank theme
-	#mkdir -p ${_tmpdir}/usr/share/plank/themes
-	#ln -sf ../../themes/0nyX/@extra/plank/0nyX ${_tmpdir}/usr/share/plank/themes/0nyX
 	mkdir -p ${_tmpdir}/usr/share/plank/themes
 	for _f in $(find ${_tmpdir}/usr/share/themes/0nyX/@extra/appthemes/plank/ -mindepth 1 -type d|sed 's\^.*/\\g'); do
 		ln -sf ../../themes/0nyX/@extra/appthemes/plank/$_f ${_tmpdir}/usr/share/plank/themes/$_f
 	done
 #onboard
-	#mkdir -p ${_tmpdir}/usr/share/onboard/themes
-	#ln -sf ../../themes/0nyX/@extra/onboard/0nyX/0nyX.colors ${_tmpdir}/usr/share/onboard/themes
-	#ln -sf ../../themes/0nyX/@extra/onboard/0nyX/0nyX.theme ${_tmpdir}/usr/share/onboard/themes
 	mkdir -p ${_tmpdir}/usr/share/onboard/themes
 	for _f in $(find ${_tmpdir}/usr/share/themes/0nyX/@extra/appthemes/onboard -type f|sed 's\^.*/\\g'); do
 		ln -sf ../../themes/0nyX/@extra/appthemes/onboard/$_f ${_tmpdir}/usr/share/onboard/themes/$_f
@@ -78,7 +73,6 @@ if [ -d ${_tmpdir}/usr/share/themes/0nyX ]; then
 #qt5ct
 	mkdir -p ${_tmpdir}/usr/share/qt5ct/colors ${_tmpdir}/usr/share/qt5ct/qss
 	ln -sf ../../themes/0nyX/@extra/appthemes/qt5ct/0nyX/colors/0nyX.conf ${_tmpdir}/usr/share/qt5ct/colors
-	ln -sf ../../themes/0nyX/@extra/appthemes/qt5ct/0nyX/qss/0nyX_QGtkStyle.qss ${_tmpdir}/usr/share/qt5ct/qss
 	ln -sf ../../themes/0nyX/@extra/appthemes/qt5ct/0nyX/qss/0nyX_QFusionStyle.qss ${_tmpdir}/usr/share/qt5ct/qss
 #albert(app does not support symlinks!)
 	mkdir -p ${_tmpdir}/usr/share/albert/themes
