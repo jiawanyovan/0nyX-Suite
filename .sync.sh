@@ -102,6 +102,8 @@ gtk-update-icon-cache -f --include-image-data $basedir/@extra/icons/0nyX/
 #gtk-update-icon-cache -f --include-image-data $basedir/@extra/icons/0nyX-lighter/
 cd $basedir/@extra/.pkgs
 fakeroot debian/rules binary
+cd $basedir/@extra/.pkgs/suse
+fakeroot /bin/bash -c ./buildrpm.sh
 cd ${basedir}
 #rm -rf .git
 #git init

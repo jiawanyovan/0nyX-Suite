@@ -3,13 +3,13 @@
 pkgname=0nyx-theme
 pkgver=2017.05.06.174703
 pkgrel=1
-pkgdesc='Plain and simple dark theme without any specials..'
+pkgdesc='Everyday usable dark theme mainly made for Xfce, IceWM or Openbox.'
 arch=('any')
 url='https://github.com/sixsixfive/0nyX'
 depends=('sed')
 makedepends=(git coreutils)
 optdepends=('qt5ct'
-	'qt5-styleplugins'
+	'qt5-svg'
 	'xcursor-vanilla-dmz'
 	'gtk3-nocsd'
 	'xfwm4'
@@ -18,13 +18,11 @@ optdepends=('qt5ct'
 	'openbox'
 	'xfce4-notifyd'
 	'xfdashboard'
-	'parole'
 	'plank'
 	'onboard'
 	'audacious'
 	'qmmp'
 	'albert'
-	'lightdm-gtk-greeter-settings'
 	'gtk'
 	'gtk2'
 	'gtk3>=3.20'
@@ -51,7 +49,6 @@ package() {
 	#fi
 ##other_stuff
 	_tmpdir=$pkgdir
-###link all themes
 ###link all themes
 if [ -d ${_tmpdir}/usr/share/themes/0nyX ]; then
 #icewm theme
