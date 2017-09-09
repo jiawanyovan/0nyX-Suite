@@ -27,3 +27,6 @@ padding:2px;
 min-height:0px;
 border: 1px solid transparent;
 background-color: transparent;}
+QToolBar QToolButton::menu-button {
+border: 1px solid transparent;
+background-color: transparent;}

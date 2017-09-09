@@ -1,0 +1,52 @@
+.QMenu {
+font-weight:bold;
+background:palette(base);
+border: 1px solid rgba(0,0,0,0.8);}
+.QMenu::item{
+border-image:none;
+background-color: transparent;}
+.QMenu::item:selected {
+border-image:none;
+background:palette(highlight);}
+.QMenu::separator {
+max-height:1px;
+background: palette(window);
+border-top:1px solid rgba(0,0,0,0.8);}
+QMenu::indicator {
+border:1px solid rgba(0,0,0,0.8);
+width: 16px;
+height: 16px;}
+QMenu::indicator:non-exclusive:unchecked {
+background-color:rgba(0,0,0,0.25);}
+QMenu::indicator:non-exclusive:unchecked:selected {
+background-color:rgba(0,0,0,0.25);}
+QMenu::indicator:non-exclusive:checked {
+background-color:palette(highlight);
+background-position: center; 
+background-repeat: no-repeat;
+background-image: url("/usr/share/themes/0nyX/images/gtk-2.0/check-check.svg");}
+QMenu::indicator:non-exclusive:checked:selected {
+background-color:palette(highlight);
+background-position: center; 
+background-repeat: no-repeat;
+background-image: url("/usr/share/themes/0nyX/images/gtk-2.0/check-check.svg");}
+
+/* exclusive indicator = radio button style indicator (see QActionGroup::setExclusive) */
+QMenu::indicator:exclusive:unchecked {
+border-radius:9px;
+background-color:rgba(0,0,0,0.25);}
+QMenu::indicator:exclusive:unchecked:selected {
+border-radius:9px;
+background-color:rgba(0,0,0,0.25);}
+QMenu::indicator:exclusive:checked {
+border-radius:9px;
+background-color:palette(highlight);
+background-position: center; 
+background-repeat: no-repeat;
+background-image: url("/usr/share/themes/0nyX/images/gtk-2.0/radio-check.svg");}
+QMenu::indicator:exclusive:checked:selected {
+border-radius:9px;
+background-color:palette(highlight);
+background-position: center; 
+background-repeat: no-repeat;
+background-image: url("/usr/share/themes/0nyX/images/gtk-2.0/radio-check.svg");}

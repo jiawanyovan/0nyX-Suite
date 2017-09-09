@@ -113,6 +113,61 @@ border:1px solid rgba(0,0,0,0.8);
 background:palette(base);}
 QToolBox::tab:selected {
 background:palette(highlight);}
+/*0nyX_QMenu.qss*/
+
+.QMenu {
+font-weight:bold;
+background:palette(base);
+border: 1px solid rgba(0,0,0,0.8);}
+.QMenu::item{
+border-image:none;
+background-color: transparent;}
+.QMenu::item:selected {
+border-image:none;
+background:palette(highlight);}
+.QMenu::separator {
+max-height:1px;
+background: palette(window);
+border-top:1px solid rgba(0,0,0,0.8);}
+QMenu::indicator {
+border:1px solid rgba(0,0,0,0.8);
+width: 16px;
+height: 16px;}
+QMenu::indicator:non-exclusive:unchecked {
+background-color:rgba(0,0,0,0.25);}
+QMenu::indicator:non-exclusive:unchecked:selected {
+background-color:rgba(0,0,0,0.25);}
+QMenu::indicator:non-exclusive:checked {
+background-color:palette(highlight);
+background-position: center; 
+background-repeat: no-repeat;
+background-image: url("/usr/share/themes/0nyX/images/gtk-2.0/check-check.svg");}
+QMenu::indicator:non-exclusive:checked:selected {
+background-color:palette(highlight);
+background-position: center; 
+background-repeat: no-repeat;
+background-image: url("/usr/share/themes/0nyX/images/gtk-2.0/check-check.svg");}
+
+/* exclusive indicator = radio button style indicator (see QActionGroup::setExclusive) */
+QMenu::indicator:exclusive:unchecked {
+border-radius:9px;
+background-color:rgba(0,0,0,0.25);}
+QMenu::indicator:exclusive:unchecked:selected {
+border-radius:9px;
+background-color:rgba(0,0,0,0.25);}
+QMenu::indicator:exclusive:checked {
+border-radius:9px;
+background-color:palette(highlight);
+background-position: center; 
+background-repeat: no-repeat;
+background-image: url("/usr/share/themes/0nyX/images/gtk-2.0/radio-check.svg");}
+QMenu::indicator:exclusive:checked:selected {
+border-radius:9px;
+background-color:palette(highlight);
+background-position: center; 
+background-repeat: no-repeat;
+background-image: url("/usr/share/themes/0nyX/images/gtk-2.0/radio-check.svg");}
+
 /*0nyX_QTabWidget.qss*/
 
 .QTabWidget::tab-bar {
@@ -223,22 +278,6 @@ image: url("/usr/share/themes/0nyX/images/gtk-2.0/arrow-left_insensitive.svg");}
 QWidget::right-arrow:selected,
 QWidget::right-arrow:pressed	 {
 image: url("/usr/share/themes/0nyX/images/gtk-2.0/arrow-right_insensitive.svg");}
-
-/*FIXME_0nyX_QMenu.qss*/
-
-.QMenu {
-font-weight:bold;
-background:palette(base);
-border: 1px solid rgba(0,0,0,0.8);}
-.QMenu::item{
-font-style:bold;
-background-color: transparent;}
-.QMenu::item:selected {
-background:palette(highlight);}
-.QMenu::separator {
-height:1px;
-background: palette(window);
-border-top:1px solid rgba(0,0,0,0.8);}
 
 /*0nyX_QRadioButton.qss*/
 
@@ -745,10 +784,15 @@ padding:2px;
 min-height:0px;
 border: 1px solid transparent;
 background-color: transparent;}
+QToolBar QToolButton::menu-button {
+border: 1px solid transparent;
+background-color: transparent;}
 
 /*0nyX_QToolTip.qss*/
 
 QToolTip { 
+margin:0px;
+padding:2px;
 color: palette(text);
 background: palette(base);
 border: 1px solid rgba(0,0,0,0.8); }

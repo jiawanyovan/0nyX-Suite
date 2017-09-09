@@ -1,4 +1,6 @@
 QToolTip { 
+margin:0px;
+padding:2px;
 color: palette(text);
 background: palette(base);
 border: 1px solid rgba(0,0,0,0.8); }
