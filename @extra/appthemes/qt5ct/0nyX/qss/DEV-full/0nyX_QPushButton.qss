@@ -1,0 +1,15 @@
+.QPushButton {
+min-height:20px;
+border:1px solid rgba(0,0,0,0.8);
+background:palette(base);
+padding: 2px 6px;}
+.QPushButton:pressed,
+.QPushButton:on {
+background-color: palette(highlight);}
+QPushButton::menu-indicator {
+image: url("/usr/share/themes/0nyX/images/gtk-2.0/arrow-down_normal.svg");
+height:16px;
+width:16px;
+subcontrol-position: right center;
+subcontrol-origin: padding;
+left: -2px;}

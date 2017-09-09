@@ -1,7 +1,9 @@
 .QMenu {
-background:palette(window);
+font-weight:bold;
+background:palette(base);
 border: 1px solid rgba(0,0,0,0.8);}
 .QMenu::item{
+font-style:bold;
 background-color: transparent;}
 .QMenu::item:selected {
 background:palette(highlight);}

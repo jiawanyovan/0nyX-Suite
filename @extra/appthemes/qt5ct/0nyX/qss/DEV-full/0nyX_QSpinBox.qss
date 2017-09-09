@@ -1,0 +1,31 @@
+.QSpinBox,
+.QDateTimeEdit {
+min-height:20px;
+border:1px solid rgba(0,0,0,0.8);
+background:rgba(0,0,0,0.25);}
+.QSpinBox::up-button,
+.QSpinBox::down-button,
+.QDateTimeEdit::up-button,
+.QDateTimeEdit::down-button {
+border-left:1px solid rgba(0,0,0,0.8);
+margin:-2px;}
+.QSpinBox::up-arrow,
+.QDateTimeEdit::up-arrow {
+image: url("/usr/share/themes/0nyX/images/gtk-2.0/arrow-up_normal.svg");
+width: 7px;
+height: 7px;}
+.QSpinBox::up-arrow:disabled, 
+.QSpinBox::up-arrow:off,
+.QDateTimeEdit::up-arrow:disabled, 
+.QDateTimeEdit::up-arrow:off {
+image: url("/usr/share/themes/0nyX/images/gtk-2.0/arrow-up_normal.svg");}
+.QSpinBox::down-arrow,
+.QDateTimeEdit::down-arrow {
+image: url("/usr/share/themes/0nyX/images/gtk-2.0/arrow-down_normal.svg");
+width: 7px;
+height: 7px;}
+.QSpinBox::down-arrow:disabled,
+.QSpinBox::down-arrow:off,
+.QDateTimeEdit::down-arrow:disabled,
+.QDateTimeEdit::down-arrow:off {
+image: url("/usr/share/themes/0nyX/images/gtk-2.0/arrow-down_insensitive.svg");}

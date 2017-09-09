@@ -1,0 +1,29 @@
+QToolButton {
+padding:2px;
+min-height:20px;
+border: 1px solid rgba(0,0,0,0.8);
+background-color: palette(base);}
+QToolButton:pressed {
+border: 1px solid rgba(0,0,0,0.8);
+background-color: palette(highlight);}
+QToolButton[popupMode="1"] { 
+padding-right: 20px;}
+QToolButton:pressed {
+background-color: palette(highlight);}
+QToolButton::menu-button {
+border: 1px solid rgba(0,0,0,0.8);
+width: 19px;}
+QToolButton::menu-arrow {
+image: url("/usr/share/themes/0nyX/images/gtk-2.0/arrow-down_normal.svg");
+width: 7px;
+height: 5px;}
+QToolButton::menu-arrow:open {
+image: url("/usr/share/themes/0nyX/images/gtk-2.0/arrow-down_active.svg");}
+QToolButton::menu-arrow:disabled {
+image: url("/usr/share/themes/0nyX/images/gtk-2.0/arrow-down_insensitive.svg");}
+
+QToolBar QToolButton {
+padding:2px;
+min-height:0px;
+border: 1px solid transparent;
+background-color: transparent;}

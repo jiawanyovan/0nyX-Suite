@@ -1,0 +1,13 @@
+QHeaderView::section {
+font-weight:bold;
+padding:4px 6px;
+background-image:none;
+background: palette(base);
+border:none;
+border-bottom: 1px solid rgba(0,0,0,0.8);
+border-right: 1px solid rgba(0,0,0,0.8);}
+QHeaderView::section:last {
+border-right: 0px;}
+QHeaderView::section:checked,
+QHeaderView::section:pressed{
+background: palette(highlight);}

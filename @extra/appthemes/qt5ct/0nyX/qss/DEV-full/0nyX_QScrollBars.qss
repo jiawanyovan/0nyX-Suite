@@ -48,33 +48,21 @@ height: 17px;
 subcontrol-position: top;
 subcontrol-origin: margin;}
 .QScrollBar::up-arrow:vertical{
-width: 17px;
-height: 17px;
-background: rgba(0,0,0,0.3);
-background-position: center; 
-background-repeat: no-repeat;
-background-image: url("/usr/share/themes/0nyX/images/gtk-2.0/arrow-up_normal.svg");}
+width: 7px;
+height: 7px;
+background: rgba(0,0,0,0.3);}
 .QScrollBar::down-arrow:vertical{
-width: 17px;
-height: 17px;
-background: rgba(0,0,0,0.3);
-background-position: center; 
-background-repeat: no-repeat;
-background-image: url("/usr/share/themes/0nyX/images/gtk-2.0/arrow-down_normal.svg");}
+width: 7px;
+height: 7px;
+background: rgba(0,0,0,0.3);}
 .QScrollBar::left-arrow:horizontal{
-width: 17px;
-height: 17px;
-background: rgba(0,0,0,0.3);
-background-position: center; 
-background-repeat: no-repeat;
-background-image: url("/usr/share/themes/0nyX/images/gtk-2.0/arrow-left_normal.svg");}
+width: 7px;
+height: 7px;
+background: rgba(0,0,0,0.3);}
 .QScrollBar::right-arrow:horizontal{
-width: 17px;
-height: 17px;
-background: rgba(0,0,0,0.3);
-background-position: center; 
-background-repeat: no-repeat;
-background-image: url("/usr/share/themes/0nyX/images/gtk-2.0/arrow-right_normal.svg");}
+width: 7px;
+height: 7px;
+background: rgba(0,0,0,0.3);}
 
 QListView .QScrollBar:horizontal,
 QTreeWidget .QScrollBar:horizontal,

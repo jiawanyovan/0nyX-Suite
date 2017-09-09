@@ -1,0 +1,25 @@
+QTreeView {
+alternate-background-color: palette(base);
+show-decoration-selected: 1;
+border-image: none;}
+QTreeView::branch {
+border:none;
+border-image: none;}
+QTreeView::branch:has-children:!has-siblings:closed,
+QTreeView::branch:closed:has-children:has-siblings {
+border-image: none;
+background-position: center; 
+background-repeat: no-repeat;
+background-image: url("/usr/share/themes/0nyX/images/gtk-2.0/arrow-right_normal.svg");}
+QTreeView::branch:open:has-children:!has-siblings,
+QTreeView::branch:open:has-children:has-siblings {
+border-image: none;
+background-position: center; 
+background-repeat: no-repeat;
+background-image: url("/usr/share/themes/0nyX/images/gtk-2.0/arrow-down_active.svg");}
+QTreeView::branch:open:has-children:!has-siblings:selected,
+QTreeView::branch:open:has-children:has-siblings:selected {
+border-image: none;
+background-position: center; 
+background-repeat: no-repeat;
+background-image: url("/usr/share/themes/0nyX/images/gtk-2.0/arrow-down_normal.svg");}
