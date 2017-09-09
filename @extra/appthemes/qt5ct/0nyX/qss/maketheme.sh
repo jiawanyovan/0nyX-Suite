@@ -6,9 +6,9 @@
 #fi
 basedir="$(dirname "$(readlink -f "${0}")")"
 cd "$basedir"
-rm -vf "$basedir"/0nyX_QGtkStyle.qss
+rm -vf "$basedir"/OLD_0nyX_QGtkStyle.qss
 for _file in $(find $basedir/DEV -mindepth 1); do
-	printf "\n/*$(echo $_file|sed 's\^.*/\\')*/\n\n" >> "$basedir"/0nyX_QGtkStyle.qss
+	printf "\n/*$(echo $_file|sed 's\^.*/\\')*/\n\n" >> "$basedir"/OLD_0nyX_QGtkStyle.qss
 	cat "$_file" >> "$basedir"/0nyX_QGtkStyle.qss
 done
 rm -vf "$basedir"/0nyX_QFusionStyle.qss

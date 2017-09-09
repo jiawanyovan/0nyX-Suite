@@ -95,7 +95,7 @@ ln -sf $prefix/share/themes/0nyX/@extra/appthemes/WinAMP/0nyX $prefix/share/qmmp
 mkdir -p $prefix/share/qt5ct/qss
 mkdir -p $prefix/share/qt5ct/colors
 ln -s $prefix/share/themes/0nyX/@extra/appthemes/qt5ct/colors/0nyX.conf $prefix/share/qt5ct/colors/0nyX.conf
-ln -s $prefix/share/themes/0nyX/@extra/appthemes/qt5ct/qss/0nyX_QGtkStyle.qss $prefix/share/qt5ct/qss/0nyX_QGtkStyle.qss
+ln -s $prefix/share/themes/0nyX/@extra/appthemes/qt5ct/qss/0nyX_QFusionStyle.qss $prefix/share/qt5ct/qss/0nyX_QFusionStyle.qss
 ```
 Chrome/Chromium theme:
 

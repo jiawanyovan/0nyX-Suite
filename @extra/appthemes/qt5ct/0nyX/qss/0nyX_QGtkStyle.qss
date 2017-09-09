@@ -1,18 +1,9 @@
-
-/*0nyX_QMenu.qss*/
-
 .QMenu{
 font-weight:bold;}
 .QMenu::separator {
 height: 1px;
-background: rgba(0,0,0,0.6);}
-/*0nyX_KWidgets.qss*/
-
-KTitleWidget * {
-background:palette(window);}
-/*0nyX_QTabWidget.qss*/
-
-QTabWidget::tab-bar {
+background: rgba(0,0,0,0.6);}KTitleWidget * {
+background:palette(window);}QTabWidget::tab-bar {
 alignment: center;}
 
 QTabBar::tab {
@@ -42,9 +33,6 @@ border:1px solid  rgba(0,0,0,0.6);
 background:palette(base);}
 QTabBar::close-button {
 image: url(/usr/share/themes/0nyX/images/close.svg);}
-
-/*0nyX_QDockWidgets.qss*/
-
 QDockWidget {
 border: 1px solid rgba(0,0,0,0.8);
 titlebar-close-icon: url(/usr/share/themes/0nyX/images/close.svg);
@@ -66,9 +54,6 @@ background:#cc0000}
 QDockWidget::float-button:pressed{
 border:none;
 background:palette(highlight);}
-
-/*0nyX_QSlider.qss*/
-
 QSlider::groove:horizontal {
 border:1px solid rgba(0,0,0,0.6);
 background:palette(base);
@@ -95,9 +80,6 @@ QSlider::sub-page:horizontal:disabled,
 QSlider::add-page:vertical:disabled,
 QSlider::handle:disabled{
 background:#424141;}
-
-/*0nyX_QMisc.qss*/
-
 QDial{
 background:palette(highlight);}
 QStatusBar,
@@ -158,9 +140,6 @@ background-image: url("/usr/share/themes/0nyX/images/gtk-2.0/arrow-down_insensit
 .*::separator:hover {
 color:rgba(0,0,0,0.6);
 background:rgba(0,0,0,0.6);}
-
-/*0nyX_QProgressBar.qss*/
-
 QProgressBar {
 color:transparent;
 border: 1px solid rgba(0,0,0,0.6);
@@ -170,9 +149,6 @@ color:transparent;
 margin:-1px;
 background:palette(highlight);
 border: 1px solid rgba(0,0,0,0.8);}
-
-/*0nyX_QSplitter.qss*/
-
 QSplitter::handle:horizontal {
 margin-left:4px;
 margin-right:2px;
@@ -186,15 +162,9 @@ margin-bottom:2px;
 height:1px;
 background-repeat:repeat-x;
 background-image: url("/usr/share/themes/0nyX/images/gtk-2.0/line.svg");}
-
-/*0nyX_QMenuBar.qss*/
-
 .QMenuBar{
 padding:0px;
-font-weight:bold;}
-/*0nyX_QToolBar.qss*/
-
-QToolBar {
+font-weight:bold;}QToolBar {
 spacing: 0px;}
 
 QToolBar::separator {
@@ -205,9 +175,6 @@ QToolButton::menu-button:hover:!checked {
 background-color: transparent;
 border: 1px solid transparent;
 padding: 1px;}
-
-/*0nyX_QToolButton.qss*/
-
 QToolButton[popupMode="1"]::menu-button::menu-arrow {
 background-position: center; 
 background-repeat: no-repeat;
