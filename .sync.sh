@@ -100,6 +100,9 @@ gtk-update-icon-cache -f --include-image-data $basedir/@extra/icons/0nyX/
 #find "$basedir/@extra/icons/0nyX-lighter" -type f -exec sed -i 's/#333333/#fafafa/g' {} \;
 #find "$basedir/@extra/icons/0nyX-lighter" -type f -exec sed -i 's/#f1f2f2/#313232/g' {} \;
 #gtk-update-icon-cache -f --include-image-data $basedir/@extra/icons/0nyX-lighter/
+cd $basedir/@extra/.pkgs
+fakeroot debian/rules binary
+cd ${basedir}
 #rm -rf .git
 #git init
 git add .
@@ -108,8 +111,6 @@ MESSAGE="$(date)"
 git commit -m "$MESSAGE"
 #git remote add origin https://github.com/sixsixfive/0nyX.git
 #git push -u --force origin master
-cd $basedir/@extra/.pkgs
-fakeroot debian/rules binary
 git push origin master
 printf "\n...done\n"
 exit
