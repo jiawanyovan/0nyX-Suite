@@ -14,7 +14,9 @@ sh @extra/appthemes/qt5ct/0nyX/qss/maketheme.sh
 #	inkscape --export-plain-svg=$f --vacuum-defs --export-text-to-path --no-convert-text-baseline-spacing --without-gui $f
 #done
 #cd $basedir/@extra/0nyX-icons
-#add a padding for bigger icons!
+#remove duplicate icons
+#cd $basedir/@extra/icons/0nyX/symbolic
+#rdfind -makesymlinks true .
 #symbolic icons!
 cd $basedir/@extra/icons/0nyX/symbolic
 if [ -f "xfce_badge.svg" ]; then
