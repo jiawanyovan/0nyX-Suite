@@ -2,10 +2,10 @@
 set -e
 for _file in $(cat /usr/share/themes/0nyX/files) ; do
   if [ -L $_file ]; then
-    rm -fv "$_file"
+    rm -f "$_file"
   fi
   if [ -f $_file ]; then
-    rm -fv "$_file"
+    rm -f "$_file"
   fi
 done
 #dirs!

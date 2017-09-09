@@ -1,3 +1,12 @@
+0nyX (0.80-1) unstable; urgency=low
+
+  * focusing on the dark theme removed the light theme
+  * the qt5 stylye needs no GTK2 anymore
+  * removed all dependencies and add them as recommends
+  * removed the murrine engine(slightly different scale than on GTK3)
+
+-- SSF <https://github.com/sixsixfive> Sat, 09 Sep 2017 03:25:20 +0200
+
 0nyX (0.71-1) unstable; urgency=low
 
   * dark high contrast subtheme

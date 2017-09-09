@@ -9,7 +9,7 @@ Package: 0nyx-theme
 Architecture: all
 Conflicts: libgtk-3-0 (<<3.20), kde-config-gtk-style, kde-config-gtk-style-preview
 Replaces: phlat, xfce-theme-phlat
-Pre-Depends: curl, unzip, findutils, sed, coreutils
+Pre-Depends: curl | wget, unzip, findutils, sed, coreutils
 Depends:
 Recommends: hicolor-icon-theme, gtk2-engines:i386, gtk2-engines-pixbuf:i386, gtk3-nocsd, libgtk3-nocsd0:i386, qt5ct, libqt5svg5, libgtk1.2, libgtk1.2:i386, gtk2-engines, gtk2-engines-pixbuf, libgtk-3-0 (>=3.20), yad, dmz-cursor-theme,
 Suggests: xfwm4 | marco | openbox | icewm | icewm-lite, xfce4-notifyd, xfdashboard, xfce4-windowck-plugin, parole, plank, lightdm-gtk-greeter-settings, onboard, google-chrome-stable | google-chrome-beta | google-chrome-unstable | chromium, unp | engrampa, mate-polkit-bin | lxpolkit, atril | mupdf, ceni | connman-ui, audacious | qmmp, albert
