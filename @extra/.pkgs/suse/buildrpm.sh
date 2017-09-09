@@ -21,10 +21,10 @@ Version: 1.0
 Release: 1
 Summary: Everyday usable dark theme mainly made for Xfce, IceWM or Openbox.
 License: CC-BY-SA_V4
-Requires: unzip, curl, findutils ,libgtk-3-0 >= 3.20, gtk2-engine-mist, gtk2-engine-murrine, hicolor-icon-theme
+Requires: unzip, curl, findutils
 Provides: 0nyx-theme = %version, gnome-icon-theme
 Obsoletes: phlat, 0nyx-theme <= %version
-Recommends: gtk3-nocsd, qt5ct, libqt5-qtsvg, xfwm4, icewm, openbox, xfce4-notifyd, xfdashboard, onboard, audacious, qmmp, albert
+Recommends: gtk3-nocsd, libgtk-3-0 >= 3.20, gtk2-engine-mist, hicolor-icon-theme, qt5ct, libqt5-qtsvg, xfwm4, icewm, openbox, xfce4-notifyd, xfdashboard, onboard, audacious, qmmp, albert
 Group: System/GUI/Xfce
 BuildArch: noarch
 
