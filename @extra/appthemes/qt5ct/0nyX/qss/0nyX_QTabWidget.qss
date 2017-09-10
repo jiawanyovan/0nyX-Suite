@@ -1,4 +1,4 @@
-.QTabWidget::tab-bar {
+QTabWidget::tab-bar {
 alignment:center;}
 
 .QTabWidget::pane {
@@ -7,34 +7,34 @@ border-style: solid;
 border-width: 1px 1px 1px 1px;
 border-color:rgba(0,0,0,0.8);}
 
-.QTabBar::tab {
+QTabBar::tab {
 padding:2px 15px;
 border:1px solid rgba(0,0,0,0.8);
 background-color:palette(base);}
 QTabBar::tab:selected {
 border:1px solid rgba(0,0,0,0.8);
 background-color:palette(highlight);}
-.QTabBar::tab:top{
+QTabBar::tab:top{
 margin-bottom: -1;}
-.QTabBar::tab:bottom{
+QTabBar::tab:bottom{
 margin-top: -1;}
-.QTabBar::tab:left{
+QTabBar::tab:left{
 margin-left: -1;}
-.QTabBar::tab:right{
+QTabBar::tab:right{
 margin-right: -1;}
-.QTabBar::tab:top:!first,
-.QTabBar::tab:bottom:!first {
+QTabBar::tab:top:!first,
+QTabBar::tab:bottom:!first {
 padding:4px 4px;
 margin-left: -1;}
-.QTabBar::tab:left:!first,
-.QTabBar::tab:right:!first {
+QTabBar::tab:left:!first,
+QTabBar::tab:right:!first {
 padding:4px 4px;
 margin-top: -1;}
 
-.QTabBar::tear {
+QTabBar::tear {
 background:palette(highlight);
 border:1px solid rgba(0,0,0,0.8);}
-.QTabBar QToolButton {
+QTabBar QToolButton {
 background:palette(window);}
-.QTabBar::tab::close-button {}
+QTabBar::tab::close-button {}
 

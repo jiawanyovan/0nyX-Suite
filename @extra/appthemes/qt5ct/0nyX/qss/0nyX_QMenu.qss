@@ -1,17 +1,19 @@
-.QMenu {
+QMenu {
+padding:2px;
 font-weight:bold;
 background:palette(base);
-border: 1px solid rgba(0,0,0,0.8);}
-.QMenu::item{
 border-image:none;
+border: 1px solid rgba(0,0,0,0.8);}
+QMenu::item{
+border-image:none;
+border:none;
 background-color: transparent;}
-.QMenu::item:selected {
+QMenu::item:selected {
 border-image:none;
 background:palette(highlight);}
-.QMenu::separator {
-max-height:1px;
-background: palette(window);
-border-top:1px solid rgba(0,0,0,0.8);}
+QMenu::separator {
+height:1px;
+background: rgba(0,0,0,0.8);}
 QMenu::indicator {
 border:1px solid rgba(0,0,0,0.8);
 width: 16px;
