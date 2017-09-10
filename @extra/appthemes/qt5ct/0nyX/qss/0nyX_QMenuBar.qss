@@ -5,6 +5,7 @@ border:0px;
 font-weight:bold;}
 .QMenuBar::item,
 .QMenuBar::item:selected {
+font-weight:bold;
 border:0px;
 padding:2px 3px;
 padding-bottom:6px;

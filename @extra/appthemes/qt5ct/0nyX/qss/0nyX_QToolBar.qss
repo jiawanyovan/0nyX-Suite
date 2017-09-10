@@ -1,4 +1,6 @@
 QToolBar {
+border-image:none;
+border:none;
 background-color: palette(window);
 color: palette(window-text);
 border: 1px solid transparent;}
