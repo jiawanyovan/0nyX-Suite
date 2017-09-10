@@ -31,7 +31,6 @@ background-position: center;
 background-repeat: no-repeat;
 background-image: url("/usr/share/themes/0nyX/images/gtk-2.0/check-check.svg");}
 
-/* exclusive indicator = radio button style indicator (see QActionGroup::setExclusive) */
 QMenu::indicator:exclusive:unchecked {
 border-radius:9px;
 background-color:rgba(0,0,0,0.25);}

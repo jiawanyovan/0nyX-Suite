@@ -1,3 +1,10 @@
+QWidget {
+margin:0px;
+padding:0px;
+border-image:none;
+background-image:none;
+border-radius:0px;}
+
 QListView,
 QTreeWidget,
 QTableWidget,
@@ -19,13 +26,12 @@ width: 5px;}
 .QSplitter::handle:vertical {
 height: 5px;}
 
+
 QWidget::up-arrow {
-padding:5px;
 image: url("/usr/share/themes/0nyX/images/gtk-2.0/arrow-up_normal.svg");
 width: 7px;
 height: 5px;}
 QWidget::down-arrow {
-padding:5px;
 image: url("/usr/share/themes/0nyX/images/gtk-2.0/arrow-down_normal.svg");
 width: 7px;
 height: 5px;}
