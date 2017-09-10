@@ -1,4 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="-3 -3 22 22">
-    <path style="line-height:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000;text-transform:none;isolation:auto;mix-blend-mode:normal" d="M1.531 1A1.53 1.53 0 0 0 0 2.531V13.47C0 14.287.713 15 1.531 15H8a1 1 0 1 0 0-2H2V3h4v1a1 1 0 0 0 1 1h7v2a1 1 0 1 0 2 0V4.594C16 3.724 15.277 3 14.406 3H8v-.469A1.53 1.53 0 0 0 6.469 1z" color="#000" font-weight="400" font-family="sans-serif" white-space="normal" overflow="visible" fill="#f1f2f2"/>
-    <path d="M12 9.01v1.997h-2v1.996h2V15h2v-1.997h2v-1.996h-2V9.01z" fill="#690"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="-3 -3 22 22">
+ <path fill="#f1f2f2" d="m2 2c-0.554 0-1 0.446-1 1v11c0 0.554 0.446 1 1 1h7v-1h-6c-0.554 0-1-0.446-1-1v-7c0-0.554 0.446-1 1-1h10c0.554 0 1 0.446 1 1v3h1v-4c0-0.554-0.446-1.0039-1-1h-3.77l-2.23-2h-6z"/>
+ <path fill="#690" d="m12 10.01v1.997h-2v1.996h2v1.997h2v-1.997h2v-1.996h-2v-1.997z"/>
 </svg>
