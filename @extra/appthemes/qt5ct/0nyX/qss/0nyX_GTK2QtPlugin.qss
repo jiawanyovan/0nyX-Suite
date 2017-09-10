@@ -1,0 +1,160 @@
+.QSlider::groove:horizontal {
+border:1px solid;
+background:palette(base);
+height:3px;}
+.QSlider::handle:horizontal {
+margin:-3px -1px;
+width:14px;
+background:palette(highlight);
+border:1px solid;}
+.QSlider::groove:vertical {
+border:1px solid;
+background:palette(base);
+width:3px;}
+.QSlider::handle:vertical {
+margin:-1px -3px;
+height:14px;
+background:palette(highlight);
+border:1px solid}
+.QSlider::sub-page:horizontal,
+.QSlider::add-page:vertical {
+background:palette(highlight);
+border:1px solid}
+.QSlider::sub-page:horizontal:disabled,
+.QSlider::add-page:vertical:disabled,
+.QSlider::handle:disabled{
+background:palette(window);}
+
+QDial{
+border-image:none;
+background-image:none;
+background:palette(highlight);}
+
+QProgressBar {
+color:transparent;
+border:1px solid;
+background:palette(base);}
+QProgressBar::chunk {
+color:transparent;
+margin:-1px;
+background:palette(highlight);
+border:1px solid;}
+
+QToolBox::tab {
+border:1px solid rgba(0,0,0,0.8);
+background:palette(base);}
+QToolBox::tab:selected {
+background:palette(highlight);}
+
+QToolBar {
+border-image:none;
+border:none;
+background-color: palette(window);
+color: palette(window-text);
+border: 1px solid transparent;}
+.QToolBar::separator:horizontal{
+margin:2px;
+background:transparent}
+
+QToolButton {
+padding:2px;
+min-height:20px;
+border: 1px solid rgba(0,0,0,0.8);
+background-color: palette(base);}
+QToolButton:pressed {
+border: 1px solid rgba(0,0,0,0.8);
+background-color: palette(highlight);}
+QToolButton[popupMode="1"] { 
+padding-right: 20px;}
+QToolButton:pressed {
+background-color: palette(highlight);}
+QToolButton::menu-button {
+border: 1px solid rgba(0,0,0,0.8);
+width: 19px;}
+QToolButton::menu-arrow {
+image: url("/usr/share/themes/0nyX/images/gtk-2.0/arrow-down_normal.svg");
+width: 7px;
+height: 5px;}
+QToolButton::menu-arrow:open {
+image: url("/usr/share/themes/0nyX/images/gtk-2.0/arrow-down_active.svg");}
+QToolButton::menu-arrow:disabled {
+image: url("/usr/share/themes/0nyX/images/gtk-2.0/arrow-down_insensitive.svg");}
+
+QToolBar QToolButton {
+padding:2px;
+min-height:0px;
+border: 1px solid transparent;
+background-color: transparent;}
+QToolBar QToolButton::menu-button {
+border: 1px solid transparent;
+background-color: transparent;}
+
+QListView::item{
+min-height:22px;}
+
+.QListWidget::indicator {
+margin:1px;
+ border: 1px solid rgba(0,0,0,0.8);
+ width: 15px;
+ height: 15px;}
+.QListWidget > *{
+margin-top:20px;}
+.QListWidget::indicator:unchecked,
+.QListWidget::indicator:unchecked:hover,
+.QListWidget::indicator:unchecked:pressed {
+background-color:rgba(0,0,0,0.25);}
+.QListWidget::indicator:checked,
+.QListWidget::indicator:checked:hover,
+.QListWidget::indicator:checked:pressed {
+background-color:palette(highlight);
+background-position: center; 
+background-repeat: no-repeat;
+background-image: url("/usr/share/themes/0nyX/images/gtk-2.0/check-check.svg");}
+.QListWidget::indicator:indeterminate,
+.QListWidget::indicator:indeterminate:hover,
+.QListWidget::indicator:indeterminate:pressed {
+background-color:palette(highlight);
+background-position: center; 
+background-repeat: no-repeat;
+background-image: url("/usr/share/themes/0nyX/images/gtk-2.0/check-semi.svg");}
+
+.QListWidget::indicator:checked:disabled,
+.QListWidget::indicator:checked:hover:disabled,
+.QListWidget::indicator:checked:pressed:disabled {
+background-color:rgba(0,0,0,0.25);
+background-position: center; 
+background-repeat: no-repeat;
+background-image: url("/usr/share/themes/0nyX/images/gtk-2.0/check-check_insensitive.svg");}
+.QListWidget::indicator:indeterminate:disabled,
+.QListWidget::indicator:indeterminate:hover:disabled,
+.QListWidget::indicator:indeterminate:pressed:disabled {
+background-color:rgba(0,0,0,0.25);
+background-position: center; 
+background-repeat: no-repeat;
+background-image: url("/usr/share/themes/0nyX/images/gtk-2.0/check-semi_insensitive.svg");}
+
+.QMenuBar{
+padding:0px;
+margin:0px;
+border:0px;
+font-weight:bold;}
+.QMenuBar::item,
+.QMenuBar::item:selected {
+font-weight:bold;
+border:0px;
+padding:2px 3px;
+padding-bottom:6px;
+color:palette(highlight-text);}
+.QMenuBar::item:disabled {
+color:#656666;}
+.QMenuBar::item:pressed {
+margin-bottom:2px;
+color:palette(highlight);
+background:rgba(0,0,0,0.4);}
+
+QMenu::separator {
+height:1px;
+background: rgba(0,0,0,0.8);}
+
+QMenu{
+font-weight:bold;}
