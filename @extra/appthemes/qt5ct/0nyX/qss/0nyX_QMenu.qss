@@ -15,9 +15,9 @@ border:1px solid rgba(0,0,0,0.8);
 width: 16px;
 height: 16px;}
 QMenu::indicator:non-exclusive:unchecked {
-background-color:rgba(0,0,0,0.25);}
+background-color:palette(base);}
 QMenu::indicator:non-exclusive:unchecked:selected {
-background-color:rgba(0,0,0,0.25);}
+background-color:palette(base);}
 QMenu::indicator:non-exclusive:checked {
 background-color:palette(highlight);
 background-position: center; 
@@ -30,10 +30,10 @@ background-repeat: no-repeat;
 background-image: url("/usr/share/themes/0nyX/images/gtk-2.0/check-check.svg");}
 QMenu::indicator:exclusive:unchecked {
 border-radius:9px;
-background-color:rgba(0,0,0,0.25);}
+background-color:palette(base);}
 QMenu::indicator:exclusive:unchecked:selected {
 border-radius:9px;
-background-color:rgba(0,0,0,0.25);}
+background-color:palette(base);}
 QMenu::indicator:exclusive:checked {
 border-radius:9px;
 background-color:palette(highlight);

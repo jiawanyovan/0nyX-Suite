@@ -5,28 +5,6 @@ border-image:none;
 background-image:none;
 border-radius:0px;}
 
-QListView,
-QTreeWidget,
-QTableWidget,
-QMdiArea,
-QGraphicsView,
-QTextEdit,
-QPlainTextEdit,
-QIconView {
-margin:2px;
-border:1px solid rgba(0,0,0,0.8);
-color:palette(text);
-alternate-background-color:palette(base);
-background-color:palette(base);}
-
-.QSplitter::handle {
-border:none;}
-.QSplitter::handle:horizontal{
-width: 5px;}
-.QSplitter::handle:vertical {
-height: 5px;}
-
-
 QWidget::up-arrow {
 image: url("/usr/share/themes/0nyX/images/gtk-2.0/arrow-up_normal.svg");
 width: 7px;
@@ -36,12 +14,10 @@ image: url("/usr/share/themes/0nyX/images/gtk-2.0/arrow-down_normal.svg");
 width: 7px;
 height: 5px;}
 QWidget::left-arrow {
-padding:5px;
 image: url("/usr/share/themes/0nyX/images/gtk-2.0/arrow-left_normal.svg");
 width: 7px;
 height: 7px;}
 QWidget::right-arrow {
-padding:5px;
 image: url("/usr/share/themes/0nyX/images/gtk-2.0/arrow-right_normal.svg");
 width: 7px;
 height: 7px;}

@@ -1,2 +1,17 @@
 .QFrame {
 border:1px solid transparent;}
+
+QListView,
+QScrollArea,
+QTreeWidget,
+QTableWidget,
+QMdiArea,
+QGraphicsView,
+QTextEdit,
+QPlainTextEdit,
+QIconView {
+margin:2px;
+color:palette(text);
+alternate-background-color:palette(base);
+background-color:palette(base);
+border:1px solid rgba(0,0,0,0.8);}
