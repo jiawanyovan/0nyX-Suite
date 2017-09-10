@@ -1,5 +1,6 @@
 style"menu"{
 bg[NORMAL]=@base_color}
+widget"*GtkWindow.gtk-combobox-popup-menu*"style"menu"
 widget"*GtkMenu"style"menu"
 style"menuitem"{
 ythickness=3
