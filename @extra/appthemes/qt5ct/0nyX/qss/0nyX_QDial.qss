@@ -1,0 +1,4 @@
+QDial{
+border-image:none;
+background-image:none;
+background:palette(highlight);}
