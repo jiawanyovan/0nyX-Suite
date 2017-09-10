@@ -5,8 +5,6 @@ if [ ! -t 0 ]; then
 fi
 basedir=`dirname "$(readlink -f "${0}")"`
 cd ${basedir}
-#qss
-sh @extra/appthemes/qt5ct/0nyX/qss/maketheme.sh
 #icons
 #create plain svgs
 #cd $basedir/@extra/icons/0nyX/symbolic

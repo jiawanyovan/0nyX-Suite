@@ -70,7 +70,9 @@ if [ -d ${_tmpdir}/usr/share/themes/0nyX ]; then
 #qt5ct
 	mkdir -p ${_tmpdir}/usr/share/qt5ct/colors ${_tmpdir}/usr/share/qt5ct/qss
 	ln -sf ../../themes/0nyX/@extra/appthemes/qt5ct/0nyX/colors/0nyX.conf ${_tmpdir}/usr/share/qt5ct/colors
-	ln -sf ../../themes/0nyX/@extra/appthemes/qt5ct/0nyX/qss/0nyX_QFusionStyle.qss ${_tmpdir}/usr/share/qt5ct/qss
+	for _f in $(find ${_tmpdir}/usr/share/themes/0nyX/@extra/appthemes/qt5ct/0nyX/qss -type f|sed 's\^.*/\\g'); do
+		ln -sf ../../themes/0nyX/@extra/appthemes/qt5ct/0nyX/qss/$_f ${_tmpdir}/usr/share/qt5ct/qss/$_f
+	done
 #albert(app does not support symlinks!)
 	mkdir -p ${_tmpdir}/usr/share/albert/themes
 	cp ${_tmpdir}/usr/share/themes/0nyX/@extra/appthemes/albert/0nyX/0nyX.qss ${_tmpdir}/usr/share/albert/themes/0nyX.qss
