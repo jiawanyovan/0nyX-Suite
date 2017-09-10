@@ -1,7 +1,6 @@
 0nyX (0.80-1) unstable; urgency=low
 
   * focusing on the dark theme removed the light theme
-  * the qt5 stylye needs no GTK2 anymore
   * removed all dependencies and add them as recommends
   * removed the murrine engine(slightly different scale than on GTK3)
 
