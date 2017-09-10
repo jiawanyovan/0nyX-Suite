@@ -35,6 +35,7 @@ widget_class"*.<GtkNotebook>.<GtkLabel>"style"gtklabelbold"
 widget_class"*<GtkNotebook>.<GtkEventBox>.<GtkHBox>.<GtkLabel>"style"gtklabelbold"
 widget_class"*<XfburnNotebookTab>.<GtkLabel>"style"gtklabelbold"
 widget_class"*.<GtkTreeView>.<GtkButton>.<GtkHBox>.<GtkAlignment>.<GtkLabel>"style"gtklabelbold"
+widget"*GtkWindow.gtk-combobox-popup-menu*"style"gtklabelbold"
 widget_class"*.<GtkMenu>.<GtkMenuItem>.<GtkLabel>"style"gtklabelbold"
 widget_class"*GtkFrame.GtkLabel"style"gtklabelbold"
 
