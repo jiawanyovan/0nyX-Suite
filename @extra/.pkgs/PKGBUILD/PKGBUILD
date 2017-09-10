@@ -10,6 +10,7 @@ depends=('sed')
 makedepends=(git coreutils)
 optdepends=('qt5ct'
 	'qt5-svg'
+	'qt5-styleplugins'
 	'xcursor-vanilla-dmz'
 	'gtk3-nocsd'
 	'xfwm4'

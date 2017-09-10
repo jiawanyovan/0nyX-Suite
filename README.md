@@ -18,6 +18,7 @@
 
 * [GTK3-NOCSD](https://github.com/PCMan/gtk3-nocsd)
 * [Qt5ct](https://sourceforge.net/projects/qt5ct/) + Qt SVG module
+* QGtkStyle
 * [YAD](https://sourceforge.net/projects/yad-dialog)
 * DMZ-White cursor theme
 * Xfce, IceWM or Openbox
@@ -89,13 +90,6 @@ ln -sf $prefix/share/themes/0nyX/@extra/appthemes/WinAMP/0nyX $prefix/share/auda
 ## (QMMP example)
 mkdir -p  $prefix/share/qmmp/skins
 ln -sf $prefix/share/themes/0nyX/@extra/appthemes/WinAMP/0nyX $prefix/share/qmmp/skins/0nyX
-
-#### Qt5
-## Qt5ct (if you use a different prefix than /usr you need to edit the image paths in the *.qss file)
-mkdir -p $prefix/share/qt5ct/qss
-mkdir -p $prefix/share/qt5ct/colors
-ln -s $prefix/share/themes/0nyX/@extra/appthemes/qt5ct/colors/0nyX.conf $prefix/share/qt5ct/colors/0nyX.conf
-ln -s $prefix/share/themes/0nyX/@extra/appthemes/qt5ct/qss/0nyX_QFusionStyle.qss $prefix/share/qt5ct/qss/0nyX_QFusionStyle.qss
 ```
 Chrome/Chromium theme:
 
