@@ -10,6 +10,7 @@ background:@base_color;
 color:inherit;
 box-shadow:none;}
 
+tooltip,
 tooltip.background{
 color:@window_text;
 border:1px solid @border_color;
