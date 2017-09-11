@@ -323,4 +323,4 @@ stretch=TRUE
 border={1,1,1,1}
 overlay_file="../images/gtk-2.0/radio-check.svg"
 overlay_stretch=FALSE}}}
-class"GtkMenu"style"gtkmenucheckbutton"
+class"GtkMenu*"style"gtkmenucheckbutton"
