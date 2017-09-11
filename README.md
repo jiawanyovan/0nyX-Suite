@@ -90,7 +90,15 @@ ln -sf $prefix/share/themes/0nyX/@extra/appthemes/WinAMP/0nyX $prefix/share/auda
 ## (QMMP example)
 mkdir -p  $prefix/share/qmmp/skins
 ln -sf $prefix/share/themes/0nyX/@extra/appthemes/WinAMP/0nyX $prefix/share/qmmp/skins/0nyX
+
+#### Qt5
+## Qt5ct (if you use a different prefix than /usr you need to change the prefix(see yadscript: $prefix/share/themes/phlat/@extra/appthemes/qt5ct/0nyX/qss/0nyX_changeprefix.sh))
+mkdir -p $prefix/share/0nyX/qss
+mkdir -p $prefix/share/0nyX/colors
+ln -s $prefix/share/themes/phlat/@extra/appthemes/0nyX/colors/0nyX.conf $prefix/share/qt5ct/colors/0nyX.conf
+ln -s $prefix/share/themes/phlat/@extra/appthemes/qt5ct/0nyX/qss/0nyX_GTK2QtPluginFixes_use_no_other_qss.qss $prefix/share/qt5ct/qss/0nyX_GTK2QtPluginFixes_use_no_other_qss.qss
 ```
+
 Chrome/Chromium theme:
 
 just open chrome/chromium go to chrome://extensions/ enable developer mode and load the unpacked extension from:
