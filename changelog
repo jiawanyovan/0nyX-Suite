@@ -1,3 +1,11 @@
+0nyX (0.90-1) unstable; urgency=low
+
+  * tiny GTK2 improvements
+  * better QSS override
+  * some changed and new icons
+
+-- SSF <https://github.com/sixsixfive> Mon, 11 Sep 2017 16:12:19 +0200
+
 0nyX (0.80-1) unstable; urgency=low
 
   * focusing on the dark theme removed the light theme

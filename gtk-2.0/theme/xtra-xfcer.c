@@ -390,14 +390,14 @@ bg[ACTIVE]=@bg_color
 bg[INSENSITIVE]=@bg_color}
 widget_class"*XfsmLogoutDialog"style"xfcelogout"
 
-style"xfcelogout2"{
-engine"pixmap"{
-image{
-function=FLAT_BOX
-file="../images/gtk-2.0/xfsm.svg"
-stretch=TRUE
-border={33,1,33,1}}}}
-widget"*XfsmLogoutDialog*Gtk*Box*Box*"style"xfcelogout2"
+#style"xfcelogout2"{
+#engine"pixmap"{
+#image{
+#function=FLAT_BOX
+#file="../images/gtk-2.0/xfsm.svg"
+#stretch=TRUE
+#border={33,1,33,1}}}}
+#widget"*XfsmLogoutDialog*Gtk*Box*Box*"style"xfcelogout2"
 
 style"xfcelogout3"{
 engine"pixmap"{

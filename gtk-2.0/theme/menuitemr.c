@@ -2,6 +2,7 @@ style"menu"{
 bg[NORMAL]=@base_color}
 widget"*GtkWindow.gtk-combobox-popup-menu*"style"menu"
 widget"*GtkMenu"style"menu"
+widget_class"*<GtkMenu>*"style"menu"
 style"menuitem"{
 ythickness=3
 bg[PRELIGHT]=@selected_bg_color}
@@ -33,8 +34,6 @@ GtkCheckButton::indicator-size=18
 GtkRadioButton::indicator-size=18
 GtkCheckMenuItem::indicator-size=18
 GtkRadioMenuItem::indicator-size=18
-GtkTreeView::indicator-size=18
-GtkTreeView::indicator-size=18
 engine"pixmap"{
 image{
 function=CHECK
@@ -325,4 +324,3 @@ border={1,1,1,1}
 overlay_file="../images/gtk-2.0/radio-check.svg"
 overlay_stretch=FALSE}}}
 class"GtkMenu"style"gtkmenucheckbutton"
-class"GtkTreeView"style"gtkmenucheckbutton"
