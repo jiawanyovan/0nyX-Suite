@@ -11,15 +11,13 @@
 ### Depends on: 
 
 * GTK2 (mist and pixbuf engine with SVG support!)
-* GTK3>=3.20
-* Disabled GTK3 overlay scrollbars (export GTK_OVERLAY_SCROLLING=0)
+* GTK3>=3.20 + disabled GTK3 overlay scrollbars (export GTK_OVERLAY_SCROLLING=0)
+* [Qt5ct](https://sourceforge.net/projects/qt5ct/) + Qt SVG module + QGtkStyle
+* [YAD](https://sourceforge.net/projects/yad-dialog)
 
 ### Recommends: 
 
 * [GTK3-NOCSD](https://github.com/PCMan/gtk3-nocsd)
-* [Qt5ct](https://sourceforge.net/projects/qt5ct/) + Qt SVG module
-* QGtkStyle
-* [YAD](https://sourceforge.net/projects/yad-dialog)
 * DMZ-White cursor theme
 * Xfce, IceWM or Openbox
 * Chrome/Chromium(@GTK3)(any blink based browser will work due the internal styling of html forms)
@@ -96,7 +94,7 @@ ln -sf $prefix/share/themes/0nyX/@extra/appthemes/WinAMP/0nyX $prefix/share/qmmp
 mkdir -p $prefix/share/0nyX/qss
 mkdir -p $prefix/share/0nyX/colors
 ln -s $prefix/share/themes/phlat/@extra/appthemes/0nyX/colors/0nyX.conf $prefix/share/qt5ct/colors/0nyX.conf
-ln -s $prefix/share/themes/phlat/@extra/appthemes/qt5ct/0nyX/qss/0nyX_GTK2QtPluginFixes_use_no_other_qss.qss $prefix/share/qt5ct/qss/0nyX_GTK2QtPluginFixes_use_no_other_qss.qss
+ln -s $prefix/share/themes/phlat/@extra/appthemes/qt5ct/0nyX/qss/0nyX_QGtkStylePluginFixes.qss $prefix/share/qt5ct/qss/0nyX_QGtkStylePluginFixes.qss
 ```
 
 Chrome/Chromium theme:
