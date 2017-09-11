@@ -1,6 +1,6 @@
 dialog>box.vertical>widget>widget:first-child,
 dialog>box.vertical>widget>widget:first-child:backdrop {
-background:@base_color;}
+background:shade(@bg_color,0.9);}
 
 #ParoleScale trough,
 #ParoleScale trough:backdrop{
