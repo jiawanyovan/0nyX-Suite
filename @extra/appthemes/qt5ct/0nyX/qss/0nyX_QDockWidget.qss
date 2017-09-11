@@ -8,6 +8,12 @@ font-weight:bold;
 margin:-1px;
 border:1px solid rgba(0,0,0,0.8);
 background-color: palette(window);}
+QDockWidget::title:off {
+text-align: center;
+font-weight:bold;
+margin:-1px;
+border:1px solid rgba(0,0,0,0.8);
+background-color: palette(highlight);}
 QDockWidget::close-button, 
 QDockWidget::float-button {
 border:0px;
