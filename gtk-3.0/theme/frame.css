@@ -135,4 +135,7 @@ notebook.frame>stack>scrolledwindow.frame:backdrop,
 notebook.frame>stack>scrolledwindow>viewport.frame,
 notebook.frame>stack>scrolledwindow>viewport.frame:backdrop{
 border:none;}
-
+frame>label,
+frame>label:backdrop{
+margin:5px;
+font-weight:bold;}

@@ -87,6 +87,10 @@ notebook:only-child:backdrop,
 margin:1px;}
 
 /*kill dragging*/
+paned,
+paned:backdrop,
+separator,
+separator:backdrop,
 scrolledwindow,
 scrolledwindow:backdrop,
 viewport,
