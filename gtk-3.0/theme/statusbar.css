@@ -2,7 +2,7 @@ statusbar,
 statusbar:backdrop{
 margin:0px;
 padding:0px;
-border:0px;}
+border:none;}
 
 statusbar label,
 statusbar label:backdrop{
@@ -16,4 +16,4 @@ statusbar border,
 statusbar border:backdrop{
 margin:-1px 0px;
 padding:0px;
-border:0px;}
+border:none;}
