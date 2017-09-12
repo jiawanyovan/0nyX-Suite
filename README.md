@@ -1,4 +1,4 @@
-0nyX is a simple, fast and daily usable theme suite that doesn't get in your way. Its mainly made for [Xfce](https://xfce.org), [IceWM](http://www.icewm.org) or Openbox however there is some limited support for MATE/GNOME/Cinnamon-Apps
+0nyX is a simple and daily usable dark theme suite that doesn't get in your way. Its mainly made for [Xfce](https://xfce.org), [IceWM](http://www.icewm.org) or Openbox however there is some limited support for MATE/GNOME/Cinnamon-Apps
 
 # Contents
 

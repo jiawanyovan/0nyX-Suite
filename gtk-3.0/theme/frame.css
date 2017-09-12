@@ -121,5 +121,9 @@ margin:1px;}
 overlay>frame,
 overlay>frame:backdrop{
 border-color:transparent;}
-frame frame {
+frame frame,
+frame frame:backdrop{
 margin:5px;}
+frame>border,
+frame>border:backdrop{
+margin:-1px;}
