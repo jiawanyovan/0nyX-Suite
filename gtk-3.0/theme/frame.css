@@ -120,9 +120,6 @@ margin:-1px;}
 frame scrolledwindow.frame,
 frame scrolledwindow.frame:backdrop{
 margin:1px;}
-overlay>frame,
-overlay>frame:backdrop{
-border-color:transparent;}
 frame frame,
 frame frame:backdrop{
 margin:5px;}
@@ -134,3 +131,4 @@ notebook.frame>stack>scrolledwindow.frame:backdrop,
 notebook.frame>stack>scrolledwindow>viewport.frame,
 notebook.frame>stack>scrolledwindow>viewport.frame:backdrop{
 border:none;}
+

@@ -1,11 +1,9 @@
 messagedialog .dialog-action-area > button,
 messagedialog .dialog-action-area > button:backdrop {
 margin:0px 8px;}
-
 printdialog.background>*,
 printdialog.background>*:backdrop{
 background:@bg_color;}
-
 filechooser>actionbar *,
 filechooser>actionbar *:backdrop{
 margin:1px;}

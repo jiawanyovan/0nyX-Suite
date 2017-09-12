@@ -11,7 +11,9 @@ padding:0px;
 border:0px;}
 
 statusbar frame,
-statusbar frame:backdrop{
+statusbar frame:backdrop,
+statusbar border,
+statusbar border:backdrop{
 margin:-1px 0px;
 padding:0px;
 border:0px;}
