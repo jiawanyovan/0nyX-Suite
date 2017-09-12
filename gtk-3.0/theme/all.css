@@ -253,3 +253,7 @@ min-height:24px;}
 actionbar,
 actionbar:backdrop{
 margin:3px;}
+
+flowboxchild,
+flowboxchild:backdrop{
+background:transparent;}
