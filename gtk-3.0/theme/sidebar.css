@@ -26,14 +26,29 @@ margin:1px;}
 
 stacksidebar.sidebar:not(.frame)>scrolledwindow:not(.frame)>viewport.frame,
 stacksidebar.sidebar:not(.frame)>scrolledwindow:not(.frame)>viewport.frame:backdrop {
-border:1px solid @border_color;
 font-weight:bold}
 stacksidebar.sidebar:not(.frame)>scrolledwindow:not(.frame)>viewport>list separator,
 stacksidebar.sidebar:not(.frame)>scrolledwindow:not(.frame)>viewport>list separator:backdrop {
 background:@base_color;
 color:transparent;
 border-bottom:1px solid transparent;}
+stacksidebar.sidebar:not(.frame)>scrolledwindow:not(.frame)>viewport>list row,
+stacksidebar.sidebar:not(.frame)>scrolledwindow:not(.frame)>viewport>list row:backdrop {
+background:inherit;
+border-bottom:1px solid transparent;}
 stacksidebar.sidebar:not(.frame)>scrolledwindow:not(.frame)>viewport>list row:selected,
 stacksidebar.sidebar:not(.frame)>scrolledwindow:not(.frame)>viewport>list row:selected:backdrop {
 background:inherit;
 border-bottom:1px solid @selected_bg_color;}
+stack stacksidebar.sidebar>scrolledwindow>viewport.frame,
+stack stacksidebar.sidebar>scrolledwindow,
+stack stacksidebar.sidebar>scrolledwindow.frame>viewport.frame,
+stack stacksidebar.sidebar>scrolledwindow.frame{
+background:@base_color;
+border:none;}
+stack stacksidebar.sidebar>scrolledwindow:dir(ltr),
+stack stacksidebar.sidebar>scrolledwindow.frame:dir(ltr){
+border-right:1px solid @border_color;}
+stack stacksidebar.sidebar>scrolledwindow:dir(rtl),
+stack stacksidebar.sidebar>scrolledwindow.frame:dir(rtl){
+border-left:1px solid @border_color;}

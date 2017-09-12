@@ -1,0 +1,6 @@
+toolbar,
+toolbar:backdrop{
+margin:0px 1px;}
+toolbar.horizontal.primary-toolbar,
+toolbar.horizontal.primary-toolbar:backdrop{
+margin:2px 1px;}

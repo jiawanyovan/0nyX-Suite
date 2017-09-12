@@ -70,8 +70,23 @@ headerbar separator,
 headerbar separator:backdrop{
 opacity:0;}
 
-/*this fixes some white widgets eg brasero*/
-
+frame:only-child,
+entry:only-child,
+button:only-child,
+scale:only-child,
+switch:only-child,
+progressbar:only-child,
+notebook:only-child,
+*.frame:only-child,
+frame:only-child:backdrop,
+entry:only-child:backdrop,
+button:only-child:backdrop,
+scale:only-child:backdrop,
+switch:only-child:backdrop,
+progressbar:only-child:backdrop,
+notebook:only-child:backdrop,
+*.frame:only-child:backdrop {
+margin:1px;}
 
 /*kill dragging*/
 scrolledwindow,
@@ -150,7 +165,9 @@ color:@selected_fg_color;
 background:shade(@bg_color,1.3);}
 
 .view,
-.view:backdrop{
+.view:backdrop,
+list,
+list:backdrop{
 border-color:@base_color;
 color:@text_color;
 background:@base_color;}
@@ -158,100 +175,22 @@ background:@base_color;}
 .view:disabled:backdrop{
 border-color:@base_color;
 color:@inactive_text_color;}
+
+scrolledwindow.frame,
+scrolledwindow.frame:backdrop{
+color:@text_color;
+background:@base_color;}
+
 .view:selected,
-.view:selected:backdrop{
+.view:selected:backdrop,
+list row:checked,
+list row:checked:backdrop{
 border-color:@selected_base_color;
 color:@selected_text_color;
 background:@selected_base_color;}
 .view:selected:backdrop{
 border-color:shade(@base_color,1.3);;
 background:shade(@base_color,1.3);}
-
-/*www.i-hate-frames.com*/
-frame,
-frame:backdrop{
-margin:3px;
-border:1px solid @border_color;}
-frame>label,
-frame>label:backdrop{
-font-weight:bold;;}
-window>frame,
-window>frame:backdrop{
-margin:3px;
-border:1px solid transparent;}
-frame>*
-frame>*:backdrop{
-margin:3px;}
-frame>notebook,
-frame>notebook:backdrop,
-frame>paned>notebook,
-frame>paned>notebook:backdrop{
-margin:-1px;}
-frame stacksidebar viewport.frame,
-frame stacksidebar viewport.frame:backdrop{
-margin-left:-1px;
-margin-top:-1px;
-margin-bottom:-1px;}
-frame stacksidebar viewport.frame:dir(rtl),
-frame stacksidebar viewport.frame:backdrop:dir(rtl){
-margin-left:0px;
-margin-right:-1px;
-margin-top:-1px;
-margin-bottom:-1px;}
-frame>border,
-frame>border:backdrop,
-frame>paned,
-frame>paned:backdrop,
-frame>box,
-frame>box:backdrop{
-margin:0px;}
-.frame,
-.frame:backdrop{
-border:1px solid @border_color;}
-.frame>.frame,
-.frame>.frame:backdrop{
-margin:-1px;}
-viewport.frame,
-viewport.frame:backdrop,
-scrolledwindow.frame,
-scrolledwindow.frame:backdrop {
-color:@text_color;
-background:@base_color;}
-frame scrolledwindow.frame,
-frame scrolledwindow.frame:backdrop {
-margin:-1px;}
-scrolledwindow:not(.frame)>viewport.frame,
-scrolledwindow:not(.frame)>viewport.frame:backdrop {
-border:1px solid @border_color;}
-stacksidebar>scrolledwindow>viewport.frame,
-stacksidebar>scrolledwindow>viewport.frame:backdrop {
-margin:-1px;}
-frame.view,
-frame.view:backdrop{
-border:1px solid @border_color;}
-notebook.frame>stack>scrolledwindow>viewport.frame,
-notebook.frame>stack>scrolledwindow>viewport.frame:backdrop {
-margin:10px;}
-frame>*,
-frame>*:backdrop{
-margin:3px;}
-statusbar>frame>*,
-statusbar>frame>*:backdrop,
-window>frame>*,
-window>frame>*:backdrop{
-padding:0px;
-margin:0px;}
-frame>scrolledwindow,
-frame>scrolledwindow:backdrop{
-margin:0px;}
-frame>scrolledwindow>scrollbar:dir(ltr),
-frame>scrolledwindow>scrollbar:backdrop:dir(ltr){
-margin:-1px;
-margin-left:0px;}
-frame>scrolledwindow>scrollbar:dir(rtl),
-frame>scrolledwindow>scrollbar:backdrop:dir(rtl){
-margin:-1px;
-margin-right:0px;}
 
 .link label,
 link{
@@ -299,10 +238,6 @@ rubberband:backdrop{
 border:1px solid @selected_base_color;
 background:alpha(@selected_base_color,0.2);}
 
-toolbar,
-toolbar:backdrop{
-margin:0px 1px;}
-
 cellview,
 cellview:backdrop{
 margin:0px 5px;}
@@ -315,28 +250,6 @@ row,
 row:backdrop {
 min-height:24px;}
 
-statusbar,
-statusbar:backdrop{
-margin:0px;
-padding:0px;
-border:0px;}
-
-statusbar label,
-statusbar label:backdrop{
-margin:2px 0px;
-padding:0px;
-border:0px;}
-
-statusbar frame,
-statusbar frame:backdrop{
-margin:-1px 0px;
-padding:0px;
-border:0px;}
-
 actionbar,
 actionbar:backdrop{
 margin:3px;}
-
-toolbar.horizontal.primary-toolbar,
-toolbar.horizontal.primary-toolbar:backdrop{
-margin:2px 1px;}

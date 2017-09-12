@@ -13,6 +13,12 @@ min-height:17px;
 border:1px solid @border_color;
 background:@object_color;}
 
+scrolledwindow>scrollbar.vertical,
+scrolledwindow>scrollbar.vertical:backdrop,
+scrolledwindow>scrollbar.horizontal,
+scrolledwindow>scrollbar.horizontal:backdrop {
+background:shade(@base_color,0.8);}
+
 scrollbar>contents>button,
 scrollbar>contents>button:checked,
 scrollbar>contents>button:backdrop{
@@ -43,6 +49,10 @@ scrollbar.horizontal>contents>button.up:backdrop{
 border:none;
 background-color:transparent;
 background-size:16px 16px;}
+
+scrollbar>contents>button:disabled,
+scrollbar>contents>button:disabled:backdrop{
+-gtk-icon-source:-gtk-scaled(url("../../images/gtk-3.0/arrow-down_insensitive.svg"),url("../../images/gtk-3.0/arrow-down_insensitive2.svg"));}
 
 scrollbar slider,
 scrollbar slider:backdrop{

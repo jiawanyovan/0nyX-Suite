@@ -30,7 +30,6 @@ color:@fg_color;}
 color:@fg_color;
 font-weight:Bold;}
 
-
 #XfcePanelWindowWrapper{
 -GtkWidget-window-dragging:false;
 border-color:transparent;
@@ -110,3 +109,11 @@ background:@selected_base_color;}
 XfdesktopIconView.rubberband{
 border:1px solid @selected_base_color;
 background:alpha(@selected_base_color,0.2);}
+
+#xfce4-terminal-notebook scrollbar,
+#xfce4-terminal-notebook scrollbar:backdrop{
+-GtkScrollbar-has-backward-stepper:0;
+-GtkScrollbar-has-forward-stepper:1;
+-GtkScrollbar-has-secondary-backward-stepper:1;
+-GtkScrollbar-has-secondary-forward-stepper:0;
+margin:-1px;}

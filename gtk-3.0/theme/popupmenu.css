@@ -17,6 +17,9 @@ padding-right:2px;}
 menu:dir(rtl)>*{
 padding-left:2px;
 padding-right:3px;}
+window>menu>separator,
+window>menu>separator:backdrop{
+background-color:@border_color;}
 
 popover.background,
 popover.background:backdrop{
@@ -36,3 +39,8 @@ background:@selected_base_color;}
 popover treeview.view:not(:hover):not(:selected),
 popover treeview.view:not(:hover):not(:selected):backdrop{
 background:@object_color;}
+popover entry,
+popover entry:backdrop,
+popover scrolledwindow,
+popover scrolledwindow:backdrop{
+margin:1px;}

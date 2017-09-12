@@ -1,0 +1,123 @@
+/*www.i-hate-frames.com*/
+/*frame,
+frame:backdrop{
+margin:3px;
+border:1px solid @border_color;}
+frame>label,
+frame>label:backdrop{
+font-weight:bold;;}
+window>frame,
+window>frame:backdrop{
+margin:3px;
+border:1px solid transparent;}
+frame>*
+frame>*:backdrop{
+margin:3px;}
+frame>notebook,
+frame>notebook:backdrop,
+frame>paned>notebook,
+frame>paned>notebook:backdrop{
+margin:-1px;}
+frame stacksidebar viewport.frame,
+frame stacksidebar viewport.frame:backdrop{
+margin-left:-1px;
+margin-top:-1px;
+margin-bottom:-1px;}
+frame stacksidebar viewport.frame:dir(rtl),
+frame stacksidebar viewport.frame:backdrop:dir(rtl){
+margin-left:0px;
+margin-right:-1px;
+margin-top:-1px;
+margin-bottom:-1px;}
+frame>border,
+frame>border:backdrop,
+frame>paned,
+frame>paned:backdrop,
+frame>box,
+frame>box:backdrop{
+margin:0px;}
+.frame,
+.frame:backdrop{
+border:1px solid @border_color;}
+.frame>.frame,
+.frame>.frame:backdrop{
+margin:-1px;}
+viewport.frame,
+viewport.frame:backdrop,
+scrolledwindow.frame,
+scrolledwindow.frame:backdrop {
+color:@text_color;
+background:@base_color;}
+frame scrolledwindow.frame,
+frame scrolledwindow.frame:backdrop {
+margin:-1px;}
+scrolledwindow:not(.frame)>viewport.frame,
+scrolledwindow:not(.frame)>viewport.frame:backdrop {
+border:1px solid @border_color;}
+stacksidebar>scrolledwindow>viewport.frame:dir(ltr),
+stacksidebar>scrolledwindow>viewport.frame:dir(ltr):backdrop {
+margin-right:-1px;}
+stacksidebar>scrolledwindow>viewport.frame:dir(rtl),
+stacksidebar>scrolledwindow>viewport.frame:dir(rtl):backdrop {
+margin-left:-1px;}
+frame.view,
+frame.view:backdrop{
+border:1px solid @border_color;}
+notebook.frame>stack>scrolledwindow>viewport.frame,
+notebook.frame>stack>scrolledwindow>viewport.frame:backdrop {
+margin:10px;}
+frame>*,
+frame>*:backdrop{
+margin:3px;}
+statusbar>frame>*,
+statusbar>frame>*:backdrop,
+window>frame>*,
+window>frame>*:backdrop{
+padding:0px;
+margin:0px;}
+frame>scrolledwindow,
+frame>scrolledwindow:backdrop{
+margin:0px;}
+frame>scrolledwindow>scrollbar:dir(ltr),
+frame>scrolledwindow>scrollbar:backdrop:dir(ltr){
+margin:-1px;
+margin-left:0px;}
+frame>scrolledwindow>scrollbar:dir(rtl),
+frame>scrolledwindow>scrollbar:backdrop:dir(rtl){
+margin:-1px;
+margin-right:0px;}
+notebook.frame *.frame,
+notebook.frame *.frame:backdrop {
+margin:1px;}*/
+frame,
+frame:backdrop,
+*.frame,
+*.frame:backdrop{
+border:1px solid @border_color;}
+
+frame>border,
+frame>border:backdrop,
+frame>paned,
+frame>paned:backdrop,
+frame>box>frame,
+frame>box>frame:backdrop,
+frame>stack>frame,
+frame>stack>frame:backdrop,
+frame>grid>frame,
+frame>grid>frame:backdrop,
+frame>box>*.frame,
+frame>box>*.frame:backdrop,
+frame>stack>*.frame,
+frame>stack>*.frame:backdrop,
+frame>grid>*.frame,
+frame>grid>*.frame:backdrop{
+margin:0px;}
+*.frame>viewport.frame,
+*.frame>viewport.frame:backdrop {
+margin:-1px;}
+frame scrolledwindow.frame,
+frame scrolledwindow.frame:backdrop{
+margin:1px;}
+overlay>frame,
+overlay>frame:backdrop{
+border-color:transparent;}

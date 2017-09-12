@@ -34,6 +34,12 @@ button:active:not(:disabled),
 button:active:not(:disabled):backdrop{
 background-color:@selected_bg_color;
 border:1px solid @border_color;}
+*:selected>button,
+*:selected>button:backdrop,
+infobar button:not(:checked):not(:active),
+infobar button:not(:checked):not(:active):backdrop{
+border:1px solid @border_color;
+background-color:@base_color;}
 
 .view button:not(:checked),
 .view button:not(:checked):backdrop,
@@ -48,7 +54,7 @@ min-height:18px;
 min-width:18px;}
 notebook>header>tabs>tab:checked>box>button,
 notebook>header>tabs>tab:checked>box>button:backdrop{
-background:@object_color;
+background:@base_color;
 border:1px solid rgba(0,0,0,0.9);}
 
 
