@@ -1,6 +1,6 @@
 style"chromium"{
-ChromeGtkFrame::frame-color=shade(0.7,@bg_color)
-ChromeGtkFrame::inactive-frame-color=shade(0.7,@bg_color)
+ChromeGtkFrame::frame-color=shade(1.15,@base_color)
+ChromeGtkFrame::inactive-frame-color=shade(1.15,@base_color)
 ChromeGtkFrame::frame-gradient-size=0
 ChromeGtkFrame::frame-gradient-color=@bg_color
 ChromeGtkFrame::scrollbar-trough-color=@bg_color
