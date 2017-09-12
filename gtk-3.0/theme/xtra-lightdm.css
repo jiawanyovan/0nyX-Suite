@@ -1,4 +1,5 @@
-.lightdm-gtk-greeter frame{
+.lightdm-gtk-greeter frame,
+.lightdm-gtk-greeter border{
 border-color:transparent;}
 
 .lightdm-gtk-greeter #shutdown_dialog,
