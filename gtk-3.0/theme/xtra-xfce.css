@@ -117,3 +117,6 @@ background:alpha(@selected_base_color,0.2);}
 -GtkScrollbar-has-secondary-backward-stepper:1;
 -GtkScrollbar-has-secondary-forward-stepper:0;
 margin:-1px;}
+window.fullscreen #xfce4-terminal-notebook,
+window.fullscreen #xfce4-terminal-notebook:backdrop{
+margin:-2px;}
