@@ -117,7 +117,9 @@ frame>grid>*.frame:backdrop{
 margin:0px;}
 
 *.frame>viewport.frame,
-*.frame>viewport.frame:backdrop {
+*.frame>viewport.frame:backdrop,
+frame>scrolledwindow.frame,
+frame>scrolledwindow.frame:backdrop {
 margin:-1px;}
 /*
 frame scrolledwindow.frame,

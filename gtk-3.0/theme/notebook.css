@@ -14,11 +14,11 @@ notebook>header tab,
 notebook>header tab:backdrop{
 min-height:24px;
 font-weight:bold;}
-notebook>header.top tab:checked,
-notebook>header.bottom tab:checked{
+notebook>header.top tab:checked:not:(:insensitive),
+notebook>header.bottom tab:checked:not:(:insensitive){
 background-color:@selected_base_color;}
-notebook>header.left tab:checked,
-notebook>header.right tab:checked{
+notebook>header.left tab:checked:not:(:insensitive),
+notebook>header.right tab:checked:not:(:insensitive){
 border-bottom:1px solid @selected_base_color;}
 notebook>header.top{
 border-bottom:1px solid @border_color;}

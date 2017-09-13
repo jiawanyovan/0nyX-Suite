@@ -2,13 +2,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 16 16">
  <g fill-opacity=".99827" fill="#f1f2f2">
   <path d="m0.5001 3.0003c-0.277 0-0.5 0.223-0.5 0.5l0.00006556 11c0.00000167 0.277 0.223 0.5 0.5 0.5h14c0.277 0 0.5-0.223 0.5-0.5l-0.000066-11c-0.000002-0.277-0.223-0.5-0.5-0.5zm0.92773 1h12.144c0.23743 0 0.42773 0.19031 0.42773 0.42773v9.144c0 0.238-0.19 0.428-0.428 0.428h-12.144c-0.2375 0-0.4278-0.19-0.4278-0.428l-0.0001-9.144c0-0.2374 0.1903-0.4277 0.4277-0.4277z"/>
-  <rect transform="rotate(90)" height="1" width="2" y="-12" x="7"/>
-  <rect transform="rotate(90)" height="1" width="1" y="-11" x="7"/>
-  <rect transform="rotate(90)" height="1" width="1" y="-12" x="10"/>
-  <rect transform="rotate(90)" height="1" width="2" y="-11" x="9"/>
-  <rect height="10" width="1" y="4" x="7"/>
+  <rect ry=".5" transform="rotate(90)" height="1" width="3" y="-12" x="6" stroke-width="1.2247"/>
+  <rect ry=".5" transform="rotate(90)" height="2" width="1" y="-12" x="6" stroke-width="1.4142"/>
+  <rect ry=".5" transform="rotate(90)" height="2" width="1" y="-12" x="10" stroke-width="1.4142"/>
+  <rect ry=".5" transform="rotate(90)" height="1" width="3" y="-11" x="8" stroke-width="1.2247"/>
+  <rect y="4" width="1" height="10" x="7"/>
   <rect opacity=".6" height="10" width="6" y="4" x="1"/>
+  <rect transform="scale(-1)" ry=".5" height="1" width="2" y="-9" x="-12" stroke-width=".99996"/>
  </g>
- <rect fill-opacity=".99827" transform="rotate(90)" height="1" width="4" y="-5" x="7" fill="#333"/>
- <rect fill-opacity=".99827" transform="rotate(90)" height="1" width="1" y="-4" x="7" fill="#333"/>
+ <rect ry=".5" fill-opacity=".99827" transform="rotate(90)" height="1" width="5" y="-5" x="6" stroke-width="1.118" fill="#333"/>
+ <rect ry=".5" fill-opacity=".99827" transform="rotate(90)" height="2" width="1" y="-5" x="6" stroke-width="1.4142" fill="#333"/>
 </svg>
