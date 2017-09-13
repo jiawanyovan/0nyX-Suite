@@ -34,6 +34,7 @@ include "theme/xtra-chromiumr.c"
 include "theme/xtra-geanyr.c"
 include "theme/xtra-xfcer.c"
 include "theme/xtra-lxder.c"
+include "theme/xtra-roxr.c"
 #####settings
 include "theme/iconandfontfixesr.c"
 include "settings.ini"
