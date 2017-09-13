@@ -129,6 +129,10 @@ margin:2px;
 padding:2px;
 background-color:shade(@titlebar_color,0.7);
 border:1px solid shade(@titlebar_color,0.0);}
+/*slight margin for all csd dialogs - removes double shadows*/
+dialog.csd>*:not(decoration):not(headerbar),
+dialog.csd>*:not(decoration):not(headerbar):backdrop{
+padding:3px;}
 
 *:not(.csd) .titlebar .title,
 *:not(.csd) .titlebar .title:backdrop{
