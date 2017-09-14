@@ -87,7 +87,9 @@ button.link:backdrop:active,
 .view button.link,
 .view button.link:active,
 .view button.link:backdrop,
-.view button.link:backdrop:active{
+.view button.link:backdrop:active,
+headerbar:not(.titlebar) button:not(:checked):not(:active),
+headerbar:not(.titlebar) button:not(:checked):not(:active):backdrop{
 border-color:transparent;
 background:transparent;}
 

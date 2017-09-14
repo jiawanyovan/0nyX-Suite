@@ -2,5 +2,7 @@ toolbar,
 toolbar:backdrop{
 margin:0px 1px;}
 toolbar.horizontal.primary-toolbar,
-toolbar.horizontal.primary-toolbar:backdrop{
+toolbar.horizontal.primary-toolbar:backdrop,
+headerbar>*,
+headerbar>*:backdrop{{
 margin:2px 1px;}
