@@ -39,7 +39,7 @@
 
 ### Packages
 
-Packages for Debian and Manjaro can be found on the [Opendesktop-page](https://www.opendesktop.org/p/1175851).
+Packages for Debian, SuSE and Manjaro can be found on the [Opendesktop-page](https://www.opendesktop.org/p/1175851).
 
 Note: Qt5ct for Debian can be found [here](https://github.com/mati75/qt5ct).
 

@@ -1,4 +1,5 @@
 #!/bin/sh
+set -e
 basedir="$(dirname "$(readlink -f "${0}")")"
 cd "$basedir"
 _prefix=$(yad --title="Set Prefix" --on-top --center --text="Change Prefix" --image="dialog-question" --entry --entry-label="Prefix:" --entry-text="/usr" --button="gtk-ok:0")

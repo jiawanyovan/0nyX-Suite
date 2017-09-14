@@ -82,11 +82,6 @@ if [ -d ${_tmpdir}/usr/share/themes/0nyX ]; then
 #	printf "export GTK_OVERLAY_SCROLLING=0\nexport LIBOVERLAY_SCROLLBAR=0\n" > ${_tmpdir}/etc/X11/Xsession.d/98_0nyX
 #xsession.d was a good idea however it wont work with root apps like synaptic so use /etc/environment instead
 	printf '\n#0nyX\nGTK_OVERLAY_SCROLLING=0\n#0nyX\nLIBOVERLAY_SCROLLBAR=0'>> /etc/environment
-#create a file list!
-	find ${_tmpdir} > ${_tmpdir}/usr/share/themes/0nyX/files
-	sed -i 's|^/tmp/0nyX.tmp||g' ${_tmpdir}/usr/share/themes/0nyX/files
-	chmod -R 755 ${_tmpdir}
-	cp -R ${_tmpdir}/* /
 ##################
 ###Debian-only!###
 ##################
@@ -95,4 +90,9 @@ if [ -d ${_tmpdir}/usr/share/themes/0nyX ]; then
 	cat <<\EOF > ${_tmpdir}/etc/chromium.d/0nyX
 export CHROMIUM_FLAGS="$CHROMIUM_FLAGS --load-extension=/usr/share/themes/0nyX/@extra/appthemes/Chromium_unpackedextension/0nyX"
 EOF
+#create a file list!
+	find ${_tmpdir} > ${_tmpdir}/usr/share/themes/0nyX/files
+	sed -i 's|^/tmp/0nyX.tmp||g' ${_tmpdir}/usr/share/themes/0nyX/files
+	chmod -R 755 ${_tmpdir}
+	cp -R ${_tmpdir}/* /
 fi
