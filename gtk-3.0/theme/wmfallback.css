@@ -63,12 +63,21 @@ padding:0px;
 margin:0px;
 box-shadow: 0px 4px 6px 0px rgba(0,0,0,0.6);
 border:1px solid shade(@titlebar_color,0.0);}
+*.solid-csd decoration,
+*.solid-csd decoration:backdrop {
+padding:0px;
+margin:0px;
+border:1px solid shade(@titlebar_color,0.0);}
 *.csd.popup decoration,
-*.csd.popup decoration:backdrop{
+*.csd.popup decoration:backdrop,
+*.solid-csd.popup decoration,
+*.solid-csd.popup decoration:backdrop{
 box-shadow:none;
 border:none;}
 *.csd .titlebar,
-*.csd .titlebar:backdrop{
+*.csd .titlebar:backdrop,
+*.solid-csd .titlebar,
+*.solid-csd .titlebar:backdrop{
 min-height:22px;
 background:@titlebar_color;
 border-bottom:1px solid shade(@titlebar_color,0.0)}
@@ -76,24 +85,34 @@ border-bottom:1px solid shade(@titlebar_color,0.0)}
 *.csd .titlebar>*:backdrop{
 margin: 2px 5px;}
 *.csd .titlebar .image-button:not(:checked):not(active),
-*.csd .titlebar .image-button:not(:checked):not(active):backdrop{
+*.csd .titlebar .image-button:not(:checked):not(active):backdrop,
+*.solid-csd .titlebar .image-button:not(:checked):not(active),
+*.solid-csd .titlebar .image-button:not(:checked):not(active):backdrop{
 background:none;
 border:1px solid transparent;}
 *.csd .titlebar .title,
-*.csd .titlebar .title:backdrop{
+*.csd .titlebar .title:backdrop,
+*.solid-csd .titlebar .title,
+*.solid-csd .titlebar .title:backdrop{
 color:@titlebar_text;
 font-weight:bold;}
 *.csd .titlebar .subtitle,
-*.csd .titlebar .subtitle:backdrop{
+*.csd .titlebar .subtitle:backdrop,
+*.solid-csd .titlebar .subtitle,
+*.solid-csd .titlebar .subtitle:backdrop{
 opacity:0.8;
 color:@titlebar_text;
 font-weight:bold;
-font-size:80%;}
+font-size:60%;}
 *.csd .titlebar .title:backdrop,
-*.csd .titlebar .subtitle:backdrop{
+*.csd .titlebar .subtitle:backdrop,
+*.solid-csd .titlebar .title:backdrop,
+*.solid-csd .titlebar .subtitle:backdrop{
 color:@inactive_fg_color;}
 *.csd headerbar.titlebar button image,
-*.csd headerbar.titlebar button image:backdrop{
+*.csd headerbar.titlebar button image:backdrop,
+*.solid-csd headerbar.titlebar button image,
+*.solid-csd headerbar.titlebar button image:backdrop{
 -gtk-icon-style:symbolic;}
 *.csd headerbar.titlebar button:not(:checked):not(.titlebutton),
 *.csd headerbar.titlebar button.titlebutton.toggle.appmenu:not(:checked),
@@ -109,20 +128,34 @@ border:1px solid @border_color;}
 *.csd headerbar.titlebar button.titlebutton.toggle.appmenu:checked,
 *.csd headerbar.titlebar button.titlebutton.toggle.appmenu:checked:backdrop,
 *.csd headerbar.titlebar button.titlebutton.toggle.appmenu:active,
-*.csd headerbar.titlebar button.titlebutton.toggle.appmenu:active:backdrop{
+*.csd headerbar.titlebar button.titlebutton.toggle.appmenu:active:backdrop,
+*.solid-csd headerbar.titlebar button:checked:not(.titlebutton),
+*.solid-csd headerbar.titlebar button:checked:not(.titlebutton):backdrop,
+*.solid-csd headerbar.titlebar button:active:not(.titlebutton),
+*.solid-csd headerbar.titlebar button:active:not(.titlebutton):backdrop,
+*.solid-csd headerbar.titlebar button.titlebutton.toggle.appmenu:checked,
+*.solid-csd headerbar.titlebar button.titlebutton.toggle.appmenu:checked:backdrop,
+*.solid-csd headerbar.titlebar button.titlebutton.toggle.appmenu:active,
+*.solid-csd headerbar.titlebar button.titlebutton.toggle.appmenu:active:backdrop{
 background:@selected_base_color;
 border:1px solid shade(@titlebar_color,0.0);}
 *.csd headerbar.titlebar image,
-*.csd headerbar.titlebar image:backdrop{
+*.csd headerbar.titlebar image:backdrop,
+*.solid-csd headerbar.titlebar image,
+*.solid-csd headerbar.titlebar image:backdrop{
 color:@titlebar_text;
 -gtk-icon-style:symbolic;}
 *.csd headerbar.titlebar switch:not(:checked),
-*.csd headerbar.titlebar switch:not(:checked):backdrop{
+*.csd headerbar.titlebar switch:not(:checked):backdrop,
+*.solid-csd headerbar.titlebar switch:not(:checked),
+*.solid-csd headerbar.titlebar switch:not(:checked):backdrop{
 background:shade(@titlebar_color,1.3);
 color:@titlebar_text;
 border:1px solid shade(@titlebar_color,0.0);}
 *.csd headerbar.titlebar switch slider,
-*.csd headerbar.titlebar switch slider:backdrop{
+*.csd headerbar.titlebar switch slider:backdrop,
+*.solid-csd headerbar.titlebar switch slider,
+*.solid-csd headerbar.titlebar switch slider:backdrop{
 min-height:16px;
 min-width:16px;
 margin:2px;
@@ -131,7 +164,9 @@ background-color:shade(@titlebar_color,0.7);
 border:1px solid shade(@titlebar_color,0.0);}
 /*slight margin for all csd dialogs - removes double shadows*/
 dialog.csd>*:not(decoration):not(headerbar),
-dialog.csd>*:not(decoration):not(headerbar):backdrop{
+dialog.csd>*:not(decoration):not(headerbar):backdrop,
+dialog.solid-csd>*:not(decoration):not(headerbar),
+dialog.solid-csd>*:not(decoration):not(headerbar):backdrop{
 padding:3px;}
 
 *:not(.csd) .titlebar .title,
