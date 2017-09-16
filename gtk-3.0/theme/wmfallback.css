@@ -82,7 +82,9 @@ min-height:22px;
 background:@titlebar_color;
 border-bottom:1px solid shade(@titlebar_color,0.0)}
 *.csd .titlebar>*,
-*.csd .titlebar>*:backdrop{
+*.csd .titlebar>*:backdrop,
+*.solid-csd .titlebar>*,
+*.solidcsd .titlebar>*:backdrop{
 margin: 2px 5px;}
 *.csd .titlebar .image-button:not(:checked):not(active),
 *.csd .titlebar .image-button:not(:checked):not(active):backdrop,
@@ -117,7 +119,11 @@ color:@inactive_fg_color;}
 *.csd headerbar.titlebar button:not(:checked):not(.titlebutton),
 *.csd headerbar.titlebar button.titlebutton.toggle.appmenu:not(:checked),
 *.csd headerbar.titlebar button:not(:checked):not(.titlebutton):backdrop,
-*.csd headerbar.titlebar button.titlebutton.toggle.appmenu:not(:checked):backdrop{
+*.csd headerbar.titlebar button.titlebutton.toggle.appmenu:not(:checked):backdrop,
+*.solid-csd headerbar.titlebar button:not(:checked):not(.titlebutton),
+*.solid-csd headerbar.titlebar button.titlebutton.toggle.appmenu:not(:checked),
+*.solid-csd headerbar.titlebar button:not(:checked):not(.titlebutton):backdrop,
+*.solid-csd headerbar.titlebar button.titlebutton.toggle.appmenu:not(:checked):backdrop{
 background:shade(@titlebar_color,1.6);
 color:@titlebar_text;
 border:1px solid @border_color;}
@@ -164,10 +170,11 @@ background-color:shade(@titlebar_color,0.7);
 border:1px solid shade(@titlebar_color,0.0);}
 /*slight margin for all csd dialogs - removes double shadows*/
 dialog.csd>*:not(decoration):not(headerbar),
-dialog.csd>*:not(decoration):not(headerbar):backdrop,
+dialog.csd>*:not(decoration):not(headerbar):backdrop{
+padding:3px;}
 dialog.solid-csd>*:not(decoration):not(headerbar),
 dialog.solid-csd>*:not(decoration):not(headerbar):backdrop{
-padding:3px;}
+padding:0px;}
 
 *:not(.csd) .titlebar .title,
 *:not(.csd) .titlebar .title:backdrop{
