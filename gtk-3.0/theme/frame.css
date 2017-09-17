@@ -89,14 +89,19 @@ margin-right:0px;}
 notebook.frame *.frame,
 notebook.frame *.frame:backdrop {
 margin:1px;}*/
-frame,
-frame:backdrop{
-border:none;}
 *.frame,
 *.frame:backdrop,
 border,
 border:backdrop{
 border:1px solid @border_color;}
+
+frame,
+frame:backdrop,
+*.frame.flat,
+*.frame.flat:backdrop,
+border.flat,
+border.flat:backdrop{
+border:none;}
 
 frame>border,
 frame>border:backdrop,
