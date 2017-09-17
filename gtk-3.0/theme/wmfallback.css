@@ -84,7 +84,7 @@ border-bottom:1px solid shade(@titlebar_color,0.0)}
 *.csd .titlebar>*,
 *.csd .titlebar>*:backdrop,
 *.solid-csd .titlebar>*,
-*.solidcsd .titlebar>*:backdrop{
+*.solid-csd .titlebar>*:backdrop{
 margin: 2px 5px;}
 *.csd .titlebar .image-button:not(:checked):not(active),
 *.csd .titlebar .image-button:not(:checked):not(active):backdrop,

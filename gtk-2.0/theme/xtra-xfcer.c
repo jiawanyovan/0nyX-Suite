@@ -23,6 +23,7 @@ text[SELECTED]=@fg_color
 text[INSENSITIVE]=@fg_color}
 widget"*XfceHeading*"style"xfceheaders"
 
+
 style"xfdesktop"{
 font_name="bold"
 XfdesktopIconView::shadow-blur-radius=2
