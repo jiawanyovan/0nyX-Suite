@@ -1,6 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
-    <g color="#f1f2f2" font-weight="400" fill="#f1f2f2">
-        <path style="line-height:normal;-inkscape-font-specification:'Bitstream Vera Sans';text-indent:0;text-align:start;text-decoration-line:none;text-decoration-color:currentColor;text-transform:none;marker:none" d="M8.78 5.008a1.023 1.023 0 0 0-.47.281l-3.03 3c-.236.23-.345.583-.282.906v.813h2.47L6.282 11.28c-.214.22-.321.54-.281.844a1.464 1.464 0 0 0 0 .094V13h1a1.03 1.03 0 0 0 .719-.281l3-2.993c.183-.19.287-.454.281-.718a.87.87 0 0 0 0-.125v-.875H8.436l1.312-1.282a1.03 1.03 0 0 0 .281-.843 1.464 1.464 0 0 0 0-.094v-.781h-1a1.015 1.015 0 0 0-.25 0z" font-size="xx-small" font-family="Bitstream Vera Sans" overflow="visible"/>
-        <path style="line-height:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-color:currentColor;text-transform:none;isolation:auto;marker:none" d="M5.469.006c-.492 0-.799.216-1.034.457C4.2.703 4 1.02 4 1.493V2H2v14l12.002.002v-14h-2v-.398L12 1.576a1.625 1.625 0 0 0-.416-1.014c-.236-.28-.62-.587-1.201-.554l.056-.002H5.47zm.533 2.002L10 2.01v1.994h1.998v9.994H4.002V4.002h2V2.008z" overflow="visible" opacity=".5"/>
-    </g>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 16 16">
+ <g transform="rotate(90,8,8)" fill="#f1f2f2">
+  <path style="color:#000000" d="m1 2.998v10h7v-1h-6v-7.998l10-0.002v2h2v2.1094c0.365 0.0736 0.696 0.1878 1 0.3281v-1.9667-0.002c0-0.49-0.228-0.7963-0.469-1.0313-0.24-0.235-0.527-0.4375-1-0.4375h-0.531v-2h-12zm2 2v6h2v-6h-2zm3 0v6h2v-6h-2zm3 0v4.0801c0.0398-0.0351 0.0716-0.0729 0.1133-0.1074 0.4806-0.3974 1.1237-0.7095 1.8867-0.8633v-3.1094h-2z" transform="rotate(-90,8,8)"/>
+ </g>
+ <path fill="#f1f2f2" d="m12 9c-2 0-3 1.308-3 2v3.2812c0 0.385 0.3512 0.719 0.7812 0.719h0.2188v-3h5v3h0.2207c0.43 0 0.779-0.334 0.779-0.719v-3.281c0-0.692-1-2-3-2zm-1 4v3h1v-3zm2 0v3h1v-3z"/>
 </svg>
