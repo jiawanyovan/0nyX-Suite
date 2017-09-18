@@ -2,9 +2,24 @@
 
 # Contents
 
+* [Main features](#main-features)
 * [Dependencies](#dependencies)
 * [Installation](#installation)
 * [Optional](#optional)
+
+## Main features
+
+* A Traditional Style
+  * Squared style - no round corners
+  * No gradients
+  * Borders around widgets
+  * No hovers or other animations
+  * Touchscreen unfriendly - made for mouses 
+  * Traditional Scrollbars with arrows 
+  * Adjustable Highlight color
+  * A GTK3 theme that fully supports GTK3-nocsd
+* Matching HighContrast icon theme
+* App-themes to provide a consistent desktop
 
 ## Dependencies
 
