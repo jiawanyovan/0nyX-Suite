@@ -111,11 +111,12 @@ font-size:60%;}
 *.solid-csd .titlebar .title:backdrop,
 *.solid-csd .titlebar .subtitle:backdrop{
 color:@inactive_fg_color;}
+/*
 *.csd headerbar.titlebar button image,
 *.csd headerbar.titlebar button image:backdrop,
 *.solid-csd headerbar.titlebar button image,
 *.solid-csd headerbar.titlebar button image:backdrop{
--gtk-icon-style:symbolic;}
+-gtk-icon-style:symbolic;}*/
 *.csd headerbar.titlebar button:not(:checked):not(.titlebutton),
 *.csd headerbar.titlebar button.titlebutton.toggle.appmenu:not(:checked),
 *.csd headerbar.titlebar button:not(:checked):not(.titlebutton):backdrop,
