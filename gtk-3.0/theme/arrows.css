@@ -95,7 +95,9 @@ min-width:16px;
 -gtk-icon-source:-gtk-scaled(url("../../images/gtk-3.0/arrow-down_active.svg"),url("../../images/gtk-3.0/arrow-down_active2.svg"));}
 
 arrow:disabled,
-arrow:disabled:backdrop{
+arrow:disabled:backdrop,
+*:disabled arrow,
+*:disabled:backdrop arrow{
 -gtk-icon-effect:dim;
 opacity:0.3;}
 
