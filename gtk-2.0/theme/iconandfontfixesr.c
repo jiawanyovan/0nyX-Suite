@@ -23,6 +23,7 @@ widget"*GtkComboBox*GtkCellView*" style "gtklabelimage"
 widget"*XfcePanelImage*"style"gtklabelimage"
 widget"*XfcePanelWindow*Image*"style"gtklabelimage"
 widget"*GtkIconView**"style"gtklabelimage"
+widget"*GtkCellView*" style "gtklabelimage"
 
 style"gtklabelbold"{
 font_name="bold"}

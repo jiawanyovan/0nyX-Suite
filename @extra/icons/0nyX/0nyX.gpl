@@ -2,7 +2,7 @@ GIMP Palette
 Name: 0nyX
 Columns: 1
 #
-51 51 51	emblemborder
+51 51 51	borders
 241 242 242	iconwhite
 204   0   0	off-error
 102 153   0	success
