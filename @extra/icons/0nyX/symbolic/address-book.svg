@@ -11,6 +11,4 @@
    <path style="text-decoration-color:#000000;isolation:auto;mix-blend-mode:normal;text-indent:0;text-decoration-line:none;text-transform:none;text-decoration-style:solid" d="m1.5338 11a0.53381 0.5 0 1 0 0 1h1.9324a0.53381 0.5 0 1 0 0 -1z"/>
   </g>
  </g>
- <path fill="#333" d="m11 7.99a1.0099 1.0099 0 0 0 -1.0098 1.0098v0.9863h-0.9902a1.0099 1.0099 0 0 0 -1.0098 1.0098v1.998a1.0099 1.0099 0 0 0 1.0098 1.01h0.9902v0.986a1.0099 1.0099 0 0 0 1.0098 1.01h2a1.0099 1.0099 0 0 0 1.01 -1.01v-0.986h0.99a1.0099 1.0099 0 0 0 1.01 -1.0098v-1.998a1.0099 1.0099 0 0 0 -1.01 -1.01h-0.99v-0.9863a1.0099 1.0099 0 0 0 -1.01 -1.0098z"/>
- <path fill="#690" d="m11 9v1.996h-2v1.997h2v1.997h2v-1.997h2v-1.997h-2v-1.996z"/>
 </svg>
