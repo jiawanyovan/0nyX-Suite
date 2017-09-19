@@ -167,9 +167,13 @@ xfconf-query -c xsettings -p /Gtk/IconSizes -s "gtk-menu=32,32:gtk-small-toolbar
 
 #### double your font dpi (eg:192)
 
-* again this can be done with [gtk2-settings](https://developer.gnome.org/gtk2/stable/GtkSettings.html#GtkSettings--gtk-xft-dpi)
+* again, this can be done with [gtk2-settings](https://developer.gnome.org/gtk2/stable/GtkSettings.html#GtkSettings--gtk-xft-dpi)
 * on Xfce(@GTK2):
 
 ```
 xfconf-query -c xsettings -p /Xft/DPI -s "192"
 ```
+
+#### double your cursor size
+
+* again, this can be done with [gtk2-settings](https://developer.gnome.org/gtk2/stable/GtkSettings.html#GtkSettings--gtk-cursor-theme-size)

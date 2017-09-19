@@ -106,9 +106,7 @@ if [ -d ${_tmpdir}/usr/share/themes/0nyX ]; then
 	mkdir -p ${_tmpdir}/usr/share/albert/themes
 	cp ${_tmpdir}/usr/share/themes/0nyX/@extra/appthemes/albert/0nyX/0nyX.qss ${_tmpdir}/usr/share/albert/themes/0nyX.qss
 #subthemes theme
-	#ln -sf 0nyX/@extra/subthemes/0nyX-hidpi ${_tmpdir}/usr/share/themes/0nyX-HiDPI
-	#ln -sf 0nyX/@extra/subthemes/0nyX-highcontrast ${_tmpdir}/usr/share/themes/0nyX-highcontrast
-	#ln -sf 0nyX/@extra/subthemes/0nyX-lighter ${_tmpdir}/usr/share/themes/0nyX-lighter
+	ln -sf 0nyX/@extra/subthemes/0nyX-HiDPI ${_tmpdir}/usr/share/themes/0nyX-HiDPI
 #icon theme
 	mkdir -p ${_tmpdir}/usr/share/icons
 	ln -sf ../themes/0nyX/@extra/icons/0nyX ${_tmpdir}/usr/share/icons/0nyX
