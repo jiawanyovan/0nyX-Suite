@@ -1,4 +1,4 @@
-0nyX (GIT) unstable; urgency=low
+0nyX (0.95-1) unstable; urgency=low
 
   * many GTK3 notebook improvements
   * nicer Gtk2 inactive Comboboxes
@@ -10,6 +10,8 @@
   * - since the gtk3 theme foreces regular icons so only broken GTK3 apps would benefit from it
   * - ~14000 less symbolic links
   * - symbolic draw is broken due the new border around it
+
+-- SSF <https://github.com/sixsixfive> Tue, 19 Sep 2017 18:38:50 +0200
 
 0nyX (0.90-1) unstable; urgency=low
 
