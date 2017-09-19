@@ -9,7 +9,7 @@ background_color #5a5a5a
 msg_x 50%
 msg_y 5%
 msg_color #ffffff
-msg_font Sans:bold:size=12:dpi=96
+msg_font Sans:bold:size=12:dpi=192
 msg_shadow_xoffset 0
 msg_shadow_yoffset 2
 msg_shadow_color #000000
