@@ -1,3 +1,14 @@
+0nyX (GIT) unstable; urgency=low
+
+  * many GTK3 notebook improvements
+  * nicer Gtk2 inactive Comboboxes
+  * many changed icons
+  * all colored icons have now borders to ensure their readability
+  * removed the symbolic icons
+  * - since the gtk theme foreces regular icons so only broken GTK3 apps would benefit from it
+  * - ~14000 less symbolic links
+  * - symbolic draw is broken due the new border oround it
+
 0nyX (0.90-1) unstable; urgency=low
 
   * tiny GTK2 improvements
