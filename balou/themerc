@@ -3,7 +3,7 @@ Name=0nyX
 Description=Simple Balou splash theme.
 
 [Splash Screen]
-bgcolor=#555454
+bgcolor=#5a5a5a
 fgcolor=#f2f1f1
 logo=logo
 
