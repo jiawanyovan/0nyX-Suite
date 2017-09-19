@@ -35,18 +35,18 @@
 * Xfce, IceWM or Openbox
 * Chrome/Chromium(@GTK3)(any blink based browser will work due the internal styling of html forms)
 
-### also included: 
+### Currently included: 
 
 * Xfce themes(XfDashboard, Balou, XfceNotifyd)
 * WindowManager themes(Xfwm, Metacity(Marco/Muffin), Openbox, IceWM)
 * Plank themes
 * Chrome/Chromium Scrollbars
+* SLiM theme
+* WinAMP 2.9x theme(Audacious, QMMP, XMMS etc.)
 * Onboard theme
-* A simple high contrast icon theme
-* Qt5ct qss style
-* WinAMP 2.9x theme
+* Icon theme
 * Albert theme
-* and more
+* Qt5 QSSfixes
 
 ## Installation
 
