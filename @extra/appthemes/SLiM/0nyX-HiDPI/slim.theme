@@ -9,7 +9,7 @@ background_color #5a5a5a
 msg_x 50%
 msg_y 5%
 msg_color #ffffff
-msg_font Sans:bold:size=12:dpi=192
+msg_font Sans:bold:size=12:dpi=96
 msg_shadow_xoffset 0
 msg_shadow_yoffset 2
 msg_shadow_color #000000
@@ -44,9 +44,9 @@ input_panel_y 50%
 # to use a single input box for username/password (GDM Style).
 # Note that this fields only accept absolute values.
 input_name_x 92
-input_name_y 140
+input_name_y 142
 input_pass_x 92
-input_pass_y 220
+input_pass_y 222
 # Input controls font and color
 input_font Sans:bold:size=12:dpi=192
 input_color #f1f2f2
