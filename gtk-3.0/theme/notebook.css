@@ -63,3 +63,10 @@ margin:3px;}
 notebook.frame>stack notebook.frame,
 notebook.frame>stack notebook.frame:backdrop {
 margin:5px;}
+
+notebook>stack:only-child,
+notebook>stack:only-child:backdrop {
+border:none;}
+notebook>stack:only-child>frame>border,
+notebook>stack:only-child>frame>border:backdrop {
+margin:2px;}

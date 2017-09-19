@@ -33,3 +33,9 @@ background:@bg_color;}
 .nautilus-window .linked.path-bar button.slider-button:checked:backdrop{
 border-color:transparent;
 background:transparent;}
+
+
+/*a really ugly fix for brasero*/
+window.background>box.vertical>notebook>stack>box.vertical>paned.horizontal>box.vertical>box.vertical>notebook>stack>frame>widget,
+window.background>box.vertical>notebook>stack>box.vertical>paned.horizontal>box.vertical>box.vertical>notebook>stack>frame>widget:backdrop {
+background:@base_color;}
