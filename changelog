@@ -3,11 +3,11 @@
   * many GTK3 notebook improvements
   * nicer Gtk2 inactive Comboboxes
   * many changed icons
-  * all colored icons have now borders to ensure their readability
+  * all colored icons have now borders to ensure their readability even if highlighted
   * removed the symbolic icons
-  * - since the gtk theme foreces regular icons so only broken GTK3 apps would benefit from it
+  * - since the gtk3 theme foreces regular icons so only broken GTK3 apps would benefit from it
   * - ~14000 less symbolic links
-  * - symbolic draw is broken due the new border oround it
+  * - symbolic draw is broken due the new border around it
 
 0nyX (0.90-1) unstable; urgency=low
 
@@ -22,6 +22,7 @@
   * focusing on the dark theme removed the light theme
   * removed all dependencies and add them as recommends
   * removed the murrine engine(slightly different scale than on GTK3)
+  * renamed to 0nyX
 
 -- SSF <https://github.com/sixsixfive> Sat, 09 Sep 2017 03:25:20 +0200
 
