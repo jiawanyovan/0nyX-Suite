@@ -24,7 +24,7 @@ License: CC-BY-SA_V4
 Requires: unzip, curl, findutils
 Provides: 0nyx-theme = %version, gnome-icon-theme
 Obsoletes: phlat, 0nyx-theme <= %version
-Recommends: gtk3-nocsd, libgtk-3-0 >= 3.20, gtk2-engine-mist, hicolor-icon-theme, qt5ct, libqt5-qtsvg, xfwm4, icewm, openbox, xfce4-notifyd, xfdashboard, onboard, audacious, qmmp, albert
+Recommends: gtk3-nocsd, libgtk-3-0 >= 3.20, gtk2-engine-mist, hicolor-icon-theme, qt5ct, libqt5-qtsvg, xfwm4, icewm, openbox, xfce4-notifyd, xfdashboard, onboard, audacious, qmmp, slim, albert
 Group: System/GUI/Xfce
 BuildArch: noarch
 
@@ -90,6 +90,11 @@ if [ -d ${_tmpdir}/usr/share/themes/0nyX ]; then
 	mkdir -p ${_tmpdir}/usr/share/onboard/themes
 	for _f in $(find ${_tmpdir}/usr/share/themes/0nyX/@extra/appthemes/onboard -type f|sed 's\^.*/\\g'); do
 		ln -sf ../../themes/0nyX/@extra/appthemes/onboard/$_f ${_tmpdir}/usr/share/onboard/themes/$_f
+	done
+#SLiM
+	mkdir -p ${_tmpdir}/usr/share/slim/themes
+	for _f in $(find ${_tmpdir}/usr/share/themes/0nyX/@extra/appthemes/SLiM -mindepth 1 -type d|sed 's\^.*/\\g'); do
+		ln -sf ../../themes/0nyX/@extra/appthemes/SLiM/$_f ${_tmpdir}/usr/share/slim/themes/$_f
 	done
 #qt5ct
 	mkdir -p ${_tmpdir}/usr/share/qt5ct/colors ${_tmpdir}/usr/share/qt5ct/qss

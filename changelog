@@ -3,6 +3,7 @@
   * many GTK3 notebook improvements
   * nicer Gtk2 inactive Comboboxes
   * many changed icons
+  * added SLiM theme
   * all colored icons have now borders to ensure their readability even if highlighted
   * removed the symbolic icons
   * - since the gtk3 theme foreces regular icons so only broken GTK3 apps would benefit from it
