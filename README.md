@@ -151,3 +151,25 @@ to set the whole theme you can run the following script eg:
 ```
 sh $prefix/share/themes/0nyX/@extra/scripts/setxfcetheme.sh
 ```
+
+### GTK2 HiDPI notes
+
+the theme includes a fake HiDPI theme for GTK2 that doubles all GTK2 borders, paddings. But unlike the GTK3 theme this needs some additional tweaks:
+
+#### double the GTK2 icon size 
+
+* this can be done with [gtk2-settings](https://developer.gnome.org/gtk2/stable/GtkSettings.html#GtkSettings--gtk-icon-sizes)
+* on Xfce(@GTK2):
+
+```
+xfconf-query -c xsettings -p /Gtk/IconSizes -s "gtk-menu=32,32:gtk-small-toolbar=48,48:gtk-large-toolbar=48,48:gtk-dnd=96,96:gtk-button=48,48:gtk-dialog=96,96:gtk-panel=48,48:panel-applications-menu=48,48:panel-tasklist-menu=64,64:panel-menu=48,48:panel-directory-menu=48,48:panel-launcher-menu=48,48:panel-window-menu=48,48:panel-menu-bar=48,48:ev-icon-size-annot-window=32,32:webkit-media-button-size=48,48"
+```
+
+#### double your font dpi (eg:192)
+
+* again this can be done with [gtk2-settings](https://developer.gnome.org/gtk2/stable/GtkSettings.html#GtkSettings--gtk-xft-dpi)
+* on Xfce(@GTK2):
+
+```
+xfconf-query -c xsettings -p /Xft/DPI -s "192"
+```

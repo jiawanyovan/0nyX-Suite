@@ -2,6 +2,7 @@
 
   * many GTK3 notebook improvements
   * nicer Gtk2 inactive Comboboxes
+  * GTK2 HiDPI theme is back!
   * many changed icons
   * added SLiM theme
   * all colored icons have now borders to ensure their readability even if highlighted
