@@ -72,6 +72,9 @@ unzip master.zip
 mkdir -p $prefix/share/themes
 mv /tmp/0nyX/0nyX-master $prefix/share/themes/0nyX
 
+## HiDPI
+ln -s $prefix/share/themes/0nyX/@extra/subthemes/0nyX-HiDPI $prefix/share/themes/0nyX-HiDPI
+
 ## Icon theme
 mkdir -p $prefix/share/icons
 ln -s $prefix/share/themes/0nyX/@extra/icons/0nyX $prefix/share/icons/0nyX
@@ -88,6 +91,7 @@ ln -s $prefix/share/themes/0nyX/@extra/appthemes/onboard/0nyX.theme $prefix/shar
 ## SLiM
 mkdir -p $prefix/slim/themes
 ln -s $prefix/share/themes/0nyX/@extra/appthemes/SLiM/0nyX $prefix/share/slim/themes/0nyX
+ln -s $prefix/share/themes/0nyX/@extra/appthemes/SLiM/0nyX-HiDPI $prefix/share/slim/themes/0nyX-HiDPI
 
 ## Albert(app does not support symlinks)
 mkdir -p $prefix/albert/themes
@@ -97,7 +101,8 @@ cp $prefix/share/themes/0nyX/@extra/appthemes/albert/0nyX.qss $prefix/share/albe
 mkdir -p $prefix/share/plank/themes
 ln -s $prefix/share/themes/0nyX/@extra/appthemes/plank/0nyX $prefix/share/plank/themes/0nyX
 ln -s $prefix/share/themes/0nyX/@extra/appthemes/plank/0nyX-full $prefix/share/plank/themes/0nyX-full
-
+ln -s $prefix/share/themes/0nyX/@extra/appthemes/plank/0nyX-HiDPI $prefix/share/plank/themes/0nyX-HiDPI
+ln -s $prefix/share/themes/0nyX/@extra/appthemes/plank/0nyX-full-HiDPI $prefix/share/plank/themes/0nyX-full-HiDPI
 ## WinAMP theme
 ## If your player needs PNG or BMP graphics use the included script!
 ## (audacious example)
