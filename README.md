@@ -37,6 +37,7 @@
 
 ### Currently included: 
 
+* GTK themes(GTK, GTK2, GTK3)
 * Xfce themes(XfDashboard, Balou, XfceNotifyd)
 * WindowManager themes(Xfwm, Metacity(Marco/Muffin), Openbox, IceWM)
 * Plank themes
