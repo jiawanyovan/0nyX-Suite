@@ -85,6 +85,10 @@ mkdir -p $prefix/onboard/themes
 ln -s $prefix/share/themes/0nyX/@extra/appthemes/onboard/0nyX.colors $prefix/share/onboard/themes/0nyX.colors
 ln -s $prefix/share/themes/0nyX/@extra/appthemes/onboard/0nyX.theme $prefix/share/onboard/themes/0nyX.theme
 
+## SLiM
+mkdir -p $prefix/slim/themes
+ln -s $prefix/share/themes/0nyX/@extra/appthemes/SLiM/0nyX $prefix/share/slim/themes/0nyX
+
 ## Albert(app does not support symlinks)
 mkdir -p $prefix/albert/themes
 cp $prefix/share/themes/0nyX/@extra/appthemes/albert/0nyX.qss $prefix/share/albert/themes/0nyX.qss
