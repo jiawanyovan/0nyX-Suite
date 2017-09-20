@@ -18,139 +18,139 @@ Size=16
 Context=Actions
 Type=Scalable
 MinSize=8
-MaxSize=20
+MaxSize=18
 
 [symbolic]
 Size=16
 Context=Applications
 Type=Scalable
 MinSize=8
-MaxSize=20
+MaxSize=18
 
 [symbolic]
 Size=16
 Context=MimeTypes
 Type=Scalable
 MinSize=8
-MaxSize=20
+MaxSize=18
 
 [symbolic]
 Size=16
 Context=Devices
 Type=Scalable
 MinSize=8
-MaxSize=20
+MaxSize=18
 
 [symbolic]
 Size=16
 Context=Emotes
 Type=Scalable
 MinSize=8
-MaxSize=20
+MaxSize=18
 
 [symbolic]
 Size=16
 Context=FileSystems
 Type=Scalable
 MinSize=8
-MaxSize=20
+MaxSize=18
 
 [symbolic]
 Size=16
 Context=Places
 Type=Scalable
 MinSize=8
-MaxSize=20
+MaxSize=18
 
 [symbolic]
 Size=16
 Context=Categories
 Type=Scalable
 MinSize=8
-MaxSize=20
+MaxSize=18
 
 [symbolic]
 Size=16
 Context=Status
 Type=Scalable
 MinSize=8
-MaxSize=20
+MaxSize=18
 
 [symbolic]
 Size=16
 Context=Stock
 Type=Scalable
 MinSize=8
-MaxSize=20
+MaxSize=18
 
 [symbolic-22]
 Size=22
 Context=Actions
 Type=Scalable
-MinSize=21
+MinSize=19
 MaxSize=23
 
 [symbolic-22]
 Size=22
 Context=Applications
 Type=Scalable
-MinSize=21
+MinSize=19
 MaxSize=23
 
 [symbolic-22]
 Size=22
 Context=MimeTypes
 Type=Scalable
-MinSize=21
+MinSize=19
 MaxSize=23
 
 [symbolic-22]
 Size=22
 Context=Devices
 Type=Scalable
-MinSize=21
+MinSize=19
 MaxSize=23
 
 [symbolic-22]
 Size=22
 Context=Emotes
 Type=Scalable
-MinSize=21
+MinSize=19
 MaxSize=23
 
 [symbolic-22]
 Size=22
 Context=FileSystems
 Type=Scalable
-MinSize=21
+MinSize=19
 MaxSize=23
 
 [symbolic-22]
 Size=22
 Context=Places
 Type=Scalable
-MinSize=21
+MinSize=19
 MaxSize=23
 
 [symbolic-22]
 Size=22
 Context=Categories
 Type=Scalable
-MinSize=21
+MinSize=19
 MaxSize=23
 
 [symbolic-22]
 Size=22
 Context=Status
 Type=Scalable
-MinSize=21
+MinSize=19
 MaxSize=23
 
 [symbolic-22]
 Size=22
 Context=Stock
 Type=Scalable
-MinSize=21
+MinSize=19
 MaxSize=23
 
 [symbolic-32]

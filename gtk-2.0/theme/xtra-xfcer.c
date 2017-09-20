@@ -112,7 +112,7 @@ XfceWindowMenuPlugin::max-width-chars = 24
 # hide the icon) and 100 (don't lighten the icon).
 XfceWindowMenuPlugin::minimized-icon-lucency = 50
 # Fix the panel images to a default gtk icon size
-XfcePanelImage::force-gtk-icon-sizes=0}
+XfcePanelImage::force-gtk-icon-sizes=true}
 class "*" style "xfcepanelsettings"
 widget "*" style "xfcepanelsettings"
 
