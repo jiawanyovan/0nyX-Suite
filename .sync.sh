@@ -72,7 +72,7 @@ for f in $(find $basedir/@extra/icons/0nyX/emblems-24 -type f -name "*.svg");do
 done
 cd $basedir
 #no 8px emblems!
-for file in $(ls $basedir/@extra/icons/0nyX/emblems);do 
+for file in $(ls $basedir/@extra/icons/0nyX/emblems|grep .svg);do 
 	cd $basedir/@extra/icons/0nyX/emblems-8
 	ln -s emblem-none.svg $file
 done
