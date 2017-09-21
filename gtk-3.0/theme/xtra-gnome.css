@@ -34,8 +34,36 @@ background:@bg_color;}
 border-color:transparent;
 background:transparent;}
 
+.terminator-terminal-window paned>separator,
+.terminator-terminal-window paned>separator:backdrop {
+padding:0px;
+margin:0px;
+background:@base_color;}
+.terminator-terminal-window scrollbar,
+.terminator-terminal-window scrollbar:backdrop{
+-GtkScrollbar-has-backward-stepper:0;
+-GtkScrollbar-has-forward-stepper:0;
+-GtkScrollbar-has-secondary-backward-stepper:0;
+-GtkScrollbar-has-secondary-forward-stepper:0;
+margin:-1px;}
+.terminator-terminal-window scrollbar.vertical,
+.terminator-terminal-window scrollbar.vertical:backdrop {
+min-width:10px;}
+.terminator-terminal-window scrollbar.vertical slider,
+.terminator-terminal-window scrollbar.vertical slider:backdrop{
+margin:-1px;
+min-width:10px;
+min-height:21px;
+background-color:@selected_bg_color;
+border:1px solid @border_color;}
+.terminator-terminal-window viewport.frame:not(:selected),
+.terminator-terminal-window viewport.frame:backdrop,
+.terminator-terminal-window viewport.frame label,
+.terminator-terminal-window viewport.frame label:backdrop  {
+font-weight:bold;
 
 /*a really ugly fix for brasero*/
 window.background>box.vertical>notebook>stack>box.vertical>paned.horizontal>box.vertical>box.vertical>notebook>stack>frame>widget,
 window.background>box.vertical>notebook>stack>box.vertical>paned.horizontal>box.vertical>box.vertical>notebook>stack>frame>widget:backdrop {
 background:@base_color;}
+

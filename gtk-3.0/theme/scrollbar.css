@@ -4,7 +4,7 @@ scrollbar.vertical:backdrop {
 min-width:17px;
 min-height:60px;
 border:1px solid @border_color;
-background:@object_color;}
+background-color:@object_color;}
 
 scrollbar.horizontal,
 scrollbar.horizontal:backdrop {
