@@ -148,13 +148,43 @@ sh $prefix/share/themes/0nyX/@extra/scripts/changecolor.sh -c "#16A085"
 
 Note: Remember that there is text to display above that color(eg: on selections) !!!
 
-### Set all themes
+### Set all themes on Xfce
 
 to set the whole theme you can run the following script eg:
 
-
 ```
 sh $prefix/share/themes/0nyX/@extra/scripts/setxfcetheme.sh
+```
+
+### Set the GTK themes on Icewm or Openbox
+
+for GTK create a file ~/.gtkrc with something like:
+
+```
+include "/usr/share/themes/0nyX/gtk/gtkrc"
+```
+
+for GTK2 create a file ~/.gtkrc-2.0 with something like:
+
+```
+include "/usr/share/themes/0nyX/gtk-2.0/gtkrc"
+gtk-toolbar-style=GTK_TOOLBAR_ICONS
+gtk-menu-images=1
+gtk-button-images=0
+gtk-fallback-icon-theme="hicolor"
+gtk-icon-theme-name="0nyX"
+gtk-xft-dpi=-1
+gtk-cursor-theme-name="DMZ-White"
+gtk-cursor-theme-size=16
+```
+settings.ini
+for GTK3 create a file ${XDG_CONFIG_HOME}/gtk-3.0/settings.ini with something like:
+
+```
+[Settings]
+gtk-theme-name=0nyX
+gtk-application-prefer-dark-theme=false
+gtk-menu-images=true
 ```
 
 ### GTK2 HiDPI notes
