@@ -33,3 +33,13 @@ radio:checked:disabled{
 -gtk-icon-source:-gtk-scaled(url("../../images/gtk-3.0/radio-check_insensitive.svg"),url("../../images/gtk-3.0/radio-check_insensitive2.svg"));}
 radio:indeterminate:disabled{
 -gtk-icon-source:-gtk-scaled(url("../../images/gtk-3.0/radio-semi_insensitive.svg"),url("../../images/gtk-3.0/radio-semi_insensitive2.svg"));}
+
+*:selected check:not(:checked):not(:disabled),
+*:selected check:not(:checked):not(:disabled):backdrop,
+*:selected radio:not(:checked):not(:disabled),
+*:selected radio:not(:checked):not(:disabled):backdrop,
+menuitem:hover check:not(:checked):not(:disabled),
+menuitem:hover check:not(:checked):not(:disabled):backdrop,
+menuitem:hover radio:not(:checked):not(:disabled),
+menuitem:hover radio:not(:checked):not(:disabled):backdrop{
+background-color:@base_color;}

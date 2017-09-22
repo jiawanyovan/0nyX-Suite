@@ -110,3 +110,7 @@ margin:5px;}
 .titlebar button.text-button.radio,
 .titlebar button.text-button.radio:backdrop{
 font-weight:bold;}
+
+*:selected button:not(:checked),
+*:selected button:not(:checked):backdrop{
+background-color:@base_color;}
