@@ -82,6 +82,7 @@ ln -s $prefix/share/themes/0nyX/@extra/icons/0nyX $prefix/share/icons/0nyX
 ## IceWM
 mkdir -p $prefix/icewm/themes
 ln -s $prefix/share/themes/0nyX/@extra/appthemes/icewm/0nyX $prefix/share/icewm/themes/0nyX
+ln -s $prefix/share/themes/0nyX/@extra/appthemes/icewm/0nyX-HiDPI $prefix/share/icewm/themes/0nyX-HiDPI
 
 ## OnBoard
 mkdir -p $prefix/onboard/themes
@@ -103,6 +104,7 @@ ln -s $prefix/share/themes/0nyX/@extra/appthemes/plank/0nyX $prefix/share/plank/
 ln -s $prefix/share/themes/0nyX/@extra/appthemes/plank/0nyX-full $prefix/share/plank/themes/0nyX-full
 ln -s $prefix/share/themes/0nyX/@extra/appthemes/plank/0nyX-HiDPI $prefix/share/plank/themes/0nyX-HiDPI
 ln -s $prefix/share/themes/0nyX/@extra/appthemes/plank/0nyX-full-HiDPI $prefix/share/plank/themes/0nyX-full-HiDPI
+
 ## WinAMP theme
 ## If your player needs PNG or BMP graphics use the included script!
 ## (audacious example)
