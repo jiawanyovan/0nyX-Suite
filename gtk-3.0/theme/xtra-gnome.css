@@ -56,11 +56,9 @@ min-width:10px;
 min-height:21px;
 background-color:@selected_bg_color;
 border:1px solid @border_color;}
-.terminator-terminal-window viewport.frame:not(:selected),
-.terminator-terminal-window viewport.frame:backdrop,
 .terminator-terminal-window viewport.frame label,
 .terminator-terminal-window viewport.frame label:backdrop  {
-font-weight:bold;
+font-weight:bold;}
 
 /*a really ugly fix for brasero*/
 window.background>box.vertical>notebook>stack>box.vertical>paned.horizontal>box.vertical>box.vertical>notebook>stack>frame>widget,
