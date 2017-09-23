@@ -1,5 +1,5 @@
 style"menu"{
-bg[NORMAL]=@base_color}
+bg[NORMAL]=shade(0.85,@bg_color)}
 widget"*GtkWindow.gtk-combobox-popup-menu*"style"menu"
 widget"*GtkMenu"style"menu"
 widget_class"*<GtkMenu>*"style"menu"

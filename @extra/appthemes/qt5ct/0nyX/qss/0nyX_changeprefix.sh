@@ -1,5 +1,11 @@
 #!/bin/sh
 set -e
+if type yad &>/dev/null; then
+	printf "\n"
+else
+	printf "missing yad\n"
+	exit 1
+fi
 basedir="$(dirname "$(readlink -f "${0}")")"
 cd "$basedir"
 _prefix=$(yad --title="Set Prefix" --on-top --center --text="Change Prefix" --image="dialog-question" --entry --entry-label="Prefix:" --entry-text="/usr" --button="gtk-ok:0")

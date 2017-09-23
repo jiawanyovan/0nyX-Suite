@@ -1,3 +1,12 @@
+0nyX (GIT) unstable; urgency=low
+
+  * some GTK contrast improvements
+  * many changed and new icons
+  * added IceWM-HiDPI theme
+  * less colored icons
+
+-- SSF <https://github.com/sixsixfive>
+
 0nyX (0.95-1) unstable; urgency=low
 
   * many GTK3 notebook improvements
