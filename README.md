@@ -17,7 +17,7 @@
   * Adjustable Highlight color
   * A GTK3 theme that fully supports GTK3-nocsd
 * Matching HighContrast icon theme
-* App-themes to provide a consistent desktop
+* A consistent desktop
 
 ## Dependencies
 
@@ -25,7 +25,7 @@
 
 * GTK2 (mist and pixbuf engine with SVG support!)
 * GTK3>=3.20 + disabled GTK3 overlay scrollbars (export GTK_OVERLAY_SCROLLING=0)
-* [Qt5ct](https://sourceforge.net/projects/qt5ct/) + Qt SVG module + QGtkStyle
+* [Qt5ct](https://sourceforge.net/projects/qt5ct/) + (Qt SVG module + QGtkStyle)
 * [YAD](https://sourceforge.net/projects/yad-dialog)
 
 ### Recommends: 
