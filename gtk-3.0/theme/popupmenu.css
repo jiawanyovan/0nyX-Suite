@@ -3,7 +3,7 @@ menu,
 box-shadow:none;
 font-weight:bold;
 padding:1px;
-background-color:@base_color;
+background-color:shade(@bg_color,0.85);
 border:1px solid @border_color;}
 
 menu separator,
