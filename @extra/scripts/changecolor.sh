@@ -61,7 +61,7 @@ while [ 1 ];do
 	fi
 #some fail colors(colors already used by theme)
 	case "$(echo ${newcolor}|sed 's/#//'|tr '[:upper:]' '[:lower:]')" in
-		424141|ffffff|f1f2f2|fafafa|656666|323131|2980b9|bdc3c7|cc0000|3366cc|ff6600|669900|5e86d7,ff00ff,333333,9A9999)
+		424141|ffffff|f1f2f2|fafafa|656666|323131|2980b9|bdc3c7|cc0000|3366cc|ff6600|669900|5e86d7|ff00ff|333333|9A9999)
 		if type yad >/dev/null 2>&1; then
 			yad --on-top --center --title Error --image=dialog-error --text "\nSorry the colors: 424141,ffffff,fafafa,f1f2f2,656666,323131,2980b9,bdc3c7,cc0000,3366cc,ff6600,669900,5e86d7,ff00ff,333333,9A9999 are not available!" --button="gtk-ok:0"
 		else
@@ -89,8 +89,8 @@ _folders="images gtk gtk-3.0 gtk-2.0 gtk xfwm4 xfdashboard-1.0 openbox-3 balou \
 @extra"
 for _folder in $_folders; do
 	cd $_folder
-	find "$basedir/$_folder" -type f -exec sed -i 's/#bf584e/'$newcolor'/g' {} \;
-	find "$basedir/$_folder" -type f -exec sed -i 's/#bf584e/'$newcolor'/g' {} \;
+	find "$basedir/$_folder" -type f -not -path "*/icons/*" -exec sed -i 's/#bf584e/'$newcolor'/g' {} \;
+	find "$basedir/$_folder" -type f -not -path "*/icons/*" -exec sed -i 's/#bf584e/'$newcolor'/g' {} \;
 	cd $basedir
 done
 sed -i 's/#bf584e/'$newcolor'/g' "$basedir/@extra/scripts/changecolor.sh"
