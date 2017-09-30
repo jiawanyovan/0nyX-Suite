@@ -7,17 +7,13 @@
 
 ## Main features
 
-* A Traditional Style
-  * Squared style - no round corners
-  * No gradients
+* A Traditional Style that stays in the background to focus apps/work
+  * Simplified Style without gradients, hovers or animations
   * Borders around widgets
-  * No hovers or other animations
   * Touchscreen unfriendly - made for mouses 
   * Traditional Scrollbars with arrows 
-  * Adjustable Highlight color
-  * A GTK3 theme that fully supports GTK3-nocsd
 * Matching HighContrast icon theme
-* A consistent desktop
+* A consistent desktop experience
 
 ## Dependencies
 

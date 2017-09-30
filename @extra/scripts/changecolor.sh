@@ -1,5 +1,5 @@
 #!/bin/sh
-#set -xe
+set -e
 #if [ ! -t 0 ]; then
 #	x-terminal-emulator -e "$0"
 #	exit 0
@@ -12,9 +12,7 @@ case $color in
 	newcolor="$2";;
 esac
 #well, we need some common tools
-type sed >/dev/null 2>&1 &&
-type tr >/dev/null 2>&1 &&
-type find >/dev/null 2>&1||_missingdep=true
+(type sed >/dev/null 2>&1 && type tr >/dev/null 2>&1 && type bc >/dev/null 2>&1 && type find >/dev/null 2>&1)||_missingdep=true
 case $_missingdep in
 	true)
 		if type yad >/dev/null 2>&1; then
@@ -84,15 +82,29 @@ while [ 1 ];do
 		unset newcolor
 	fi
 done
+#convert hex to rgb
+newcolorhexup=$(echo "$newcolor"|sed 's/#//'|tr '[:lower:]' '[:upper:]')
+rhexup=$(echo $newcolorhexup|cut -c-2)
+ghexup=$(echo $newcolorhexup|cut -c3-4)
+bhexup=$(echo $newcolorhexup|cut -c5-6)
+r=$(echo "ibase=16; $rhexup"|bc)
+g=$(echo "ibase=16; $ghexup"|bc)
+b=$(echo "ibase=16; $bhexup"|bc)
+newcolorrgb="$r,$g,$b"
 #recolor the ui themes
 _folders="images gtk gtk-3.0 gtk-2.0 gtk xfwm4 xfdashboard-1.0 openbox-3 balou \
-@extra"
+@extra/appthemes @extra/subthemes"
 for _folder in $_folders; do
 	cd $_folder
 	find "$basedir/$_folder" -type f -not -path "*/icons/*" -exec sed -i 's/#bf584e/'$newcolor'/g' {} \;
 	find "$basedir/$_folder" -type f -not -path "*/icons/*" -exec sed -i 's/#bf584e/'$newcolor'/g' {} \;
 	cd $basedir
 done
+#WINE
+sed -i 's/191 88 78/'$r' '$g' '$b'/g' "$basedir/@extra/appthemes/WINE/0nyX.reg"
+
+#change initial colors
+sed -i 's#s/191 88 78#s/'$r' '$g' '$b'#g' "$basedir/@extra/scripts/changecolor.sh"
 sed -i 's/#bf584e/'$newcolor'/g' "$basedir/@extra/scripts/changecolor.sh"
 cat <<\EOF
 

@@ -3,6 +3,12 @@ Name=0nyX
 Comment=Simple HighContrast theme
 Example=face-wink
 Inherits=hicolor
+Directories=scalable,symbolic,symbolic-22,symbolic-32,symbolic-24,emblems,emblems-8,emblems-24,emblems-32
+
+########################################################################
+# Doesnt really matter since the theme will never get loaded on KDE due some ancient bugs in KDE
+# however I leave this here just for the case and until then we can use qt5ct which loads it fine
+DisplayDepth=32
 FollowsColorScheme=false
 DesktopDefault=48
 ToolbarDefault=22
@@ -10,8 +16,14 @@ MainToolbarDefault=22
 SmallDefault=16
 PanelDefault=22
 DialogDefault=48
+DesktopSizes=16,22,24,32,48,96,144,240,288,336,384,432,480
+ToolbarSizes=16,22,24,32,48,96,144,240,288,336,384,432,480
+MainToolbarSizes=16,22,24,32,48,96,144,240,288,336,384,432,480
+SmallSizes=16,22,24,32,48,96,144,240,288,336,384,432,480
+PanelSizes=16,22,24,32,48,96,144,240,288,336,384,432,480
+DialogSizes=16,22,24,32,48,96,144,240,288,336,384,432,480
 KDE-Extensions=.svg
-Directories=scalable,symbolic,symbolic-22,symbolic-32,symbolic-24,emblems,emblems-8,emblems-24,emblems-32
+########################################################################
 
 [symbolic]
 Size=16
@@ -23,174 +35,145 @@ Size=16
 Context=Applications
 Type=Fixed
 
-
 [symbolic]
 Size=16
 Context=MimeTypes
 Type=Fixed
 
-
 [symbolic]
 Size=16
 Context=Devices
 Type=Fixed
-
 
 [symbolic]
 Size=16
 Context=Emotes
 Type=Fixed
 
-
 [symbolic]
 Size=16
 Context=FileSystems
 Type=Fixed
-
 
 [symbolic]
 Size=16
 Context=Places
 Type=Fixed
 
-
 [symbolic]
 Size=16
 Context=Categories
 Type=Fixed
-
 
 [symbolic]
 Size=16
 Context=Status
 Type=Fixed
 
-
 [symbolic]
 Size=16
 Context=Stock
 Type=Fixed
-
 
 [symbolic-22]
 Size=22
 Context=Actions
 Type=Fixed
 
-
 [symbolic-22]
 Size=22
 Context=Applications
 Type=Fixed
-
 
 [symbolic-22]
 Size=22
 Context=MimeTypes
 Type=Fixed
 
-
 [symbolic-22]
 Size=22
 Context=Devices
 Type=Fixed
-
 
 [symbolic-22]
 Size=22
 Context=Emotes
 Type=Fixed
 
-
 [symbolic-22]
 Size=22
 Context=FileSystems
 Type=Fixed
-
 
 [symbolic-22]
 Size=22
 Context=Places
 Type=Fixed
 
-
 [symbolic-22]
 Size=22
 Context=Categories
 Type=Fixed
-
 
 [symbolic-22]
 Size=22
 Context=Status
 Type=Fixed
 
-
 [symbolic-22]
 Size=22
 Context=Stock
 Type=Fixed
-
 
 [symbolic-32]
 Size=32
 Context=Actions
 Type=Fixed
 
-
 [symbolic-32]
 Size=32
 Context=Applications
 Type=Fixed
-
 
 [symbolic-32]
 Size=32
 Context=MimeTypes
 Type=Fixed
 
-
 [symbolic-32]
 Size=32
 Context=Devices
 Type=Fixed
-
 
 [symbolic-32]
 Size=32
 Context=Emotes
 Type=Fixed
 
-
 [symbolic-32]
 Size=32
 Context=FileSystems
 Type=Fixed
-
 
 [symbolic-32]
 Size=32
 Context=Places
 Type=Fixed
 
-
 [symbolic-32]
 Size=32
 Context=Categories
 Type=Fixed
-
 
 [symbolic-32]
 Size=32
 Context=Status
 Type=Fixed
 
-
 [symbolic-32]
 Size=32
 Context=Stock
 Type=Fixed
-
 
 [symbolic-24]
 Size=24
@@ -214,7 +197,6 @@ Type=Scalable
 
 [symbolic-24]
 Size=24
-MaxSize=256
 Context=Emotes
 Type=Scalable
 
