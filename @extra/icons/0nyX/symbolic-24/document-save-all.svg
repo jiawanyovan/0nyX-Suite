@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="-4 -4 24 24">
- <path d="m3 3h10v2h-10zm7 4h3v2h-3zm0 4h3v2h-3z" color="#f1f2f2" overflow="visible" fill="#f1f2f2"/>
- <path style="text-decoration-line:none;text-transform:none;text-indent:0" fill="#333" d="m1 5c-0.6541-0.021153-1.1498 0.62558-1.0625 1.2508 0.00353 2.9517-0.00707 5.9038 0.00532 8.8553 0.042922 0.63 0.68157 1.0375 1.2768 0.95642 2.9621-0.0035 5.9246 0.0071 8.8864-0.0053 0.63-0.04292 1.0375-0.68157 0.95642-1.2768-0.0035-2.9413 0.0071-5.8829-0.0053-8.8239-0.043-0.6299-0.681-1.0374-1.2766-0.9563z"/>
- <path style="color:#000000;text-decoration-line:none;text-transform:none;text-indent:0" d="m1 6v8.937h9v-8.938h-8.5zm1 1h7v6.937h-7z" overflow="visible" font-weight="400" fill="#c00"/>
- <path fill="#c00" d="m8 10-2 3h-1l-2-3h2v-2h1v2z"/>
+ <g fill="#f1f2f2">
+  <path color="#f1f2f2" overflow="visible" d="m3 3h10v2h-10zm7 4h3v2h-3zm0 4h3v2h-3z"/>
+  <path style="color:#000000;text-decoration-line:none;text-transform:none;text-indent:0" d="m0 7.063v8.937h9v-8.938h-8.5zm1 1h7v6.937h-7z" overflow="visible" font-weight="400"/>
+  <path d="m7 11.063-2 3h-1l-2-3h2v-2h1v2z"/>
+ </g>
 </svg>
