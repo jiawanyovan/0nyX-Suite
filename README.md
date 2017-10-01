@@ -20,13 +20,13 @@
 ### Depends on: 
 
 * GTK2 (mist and pixbuf engine with SVG support!)
-* GTK3>=3.20 + disabled GTK3 overlay scrollbars (export GTK_OVERLAY_SCROLLING=0)
-* [Qt5ct](https://sourceforge.net/projects/qt5ct/) + (Qt SVG module + QGtkStyle)
 * [YAD](https://sourceforge.net/projects/yad-dialog)
 
 ### Recommends: 
 
 * [GTK3-NOCSD](https://github.com/PCMan/gtk3-nocsd)
+* GTK3>=3.20 + disabled GTK3 overlay scrollbars (export GTK_OVERLAY_SCROLLING=0)
+* [Qt5ct](https://sourceforge.net/projects/qt5ct/) + (Qt SVG module + QGtkStyle)
 * DMZ-White cursor theme
 * Xfce, IceWM or Openbox
 * Chrome/Chromium(@GTK3)(any blink based browser will work due the internal styling of html forms)
@@ -43,7 +43,6 @@
 * Onboard theme
 * Icon theme
 * Albert theme
-* Qt5 QSSfixes
 
 ## Installation
 
@@ -111,6 +110,7 @@ mkdir -p  $prefix/share/qmmp/skins
 ln -sf $prefix/share/themes/0nyX/@extra/appthemes/WinAMP/0nyX $prefix/share/qmmp/skins/0nyX
 
 #### Qt5
+## Note: This is not a real theme it uses QGtkStyle and some QSS fixes
 ## Qt5ct (if you use a different prefix than /usr you need to change the prefix(see yadscript: $prefix/share/themes/phlat/@extra/appthemes/qt5ct/0nyX/qss/0nyX_changeprefix.sh))
 mkdir -p $prefix/share/0nyX/qss
 mkdir -p $prefix/share/0nyX/colors
