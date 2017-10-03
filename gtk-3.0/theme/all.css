@@ -87,6 +87,7 @@ notebook:only-child:backdrop,
 margin:1px;}
 
 /*kill dragging*/
+window.background,
 paned,
 paned:backdrop,
 separator,
