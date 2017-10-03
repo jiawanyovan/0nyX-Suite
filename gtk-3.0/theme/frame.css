@@ -137,8 +137,6 @@ frame>border,
 frame>border:backdrop{
 margin:-1px;}
 */
-notebook.frame>stack>scrolledwindow.frame,
-notebook.frame>stack>scrolledwindow.frame:backdrop,
 notebook.frame>stack>scrolledwindow>viewport.frame,
 notebook.frame>stack>scrolledwindow>viewport.frame:backdrop{
 border:none;}

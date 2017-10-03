@@ -77,6 +77,6 @@ window>box.vertical>notebook:backdrop{
 margin:2px;}
 
 /*fixes double frames*/
-notebook>stack>scrolledwindow.frame,
-notebook>stack>scrolledwindow.frame:backdrop{
-margin:-1px;}
+notebook>stack>scrolledwindow,
+notebook>stack>scrolledwindow:backdrop{
+border:1px solid @border_color;}

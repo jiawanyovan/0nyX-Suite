@@ -73,9 +73,6 @@ margin:-0px -1px -1px -1px;}
 scrolledwindow:not(.frame),
 scrolledwindow:not(.frame):backdrop{
 margin:-1px;}
-notebook.frame>stack>scrolledwindow.frame,
-notebook.frame>stack>scrolledwindow.frame:backdrop {
-margin:-1px;}
-window>box>scrolledwindow,
-window>box>scrolledwindow:backdrop{
+window>box.vertical>scrolledwindow,
+window>box.vertical>scrolledwindow:backdrop{
 margin:1px;}
