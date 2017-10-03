@@ -81,6 +81,9 @@ border:none;}
 min-height:22px;
 background:@titlebar_color;
 border-bottom:1px solid shade(@titlebar_color,0.0)}
+box.titlebar>headerbar.titlebar,
+box.titlebar>headerbar.titlebar:backdrop {
+border-bottom:none;}
 *.csd .titlebar>*,
 *.csd .titlebar>*:backdrop,
 *.solid-csd .titlebar>*,

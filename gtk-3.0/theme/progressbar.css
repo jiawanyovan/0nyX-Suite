@@ -20,6 +20,18 @@ progressbar.vertical,
 progressbar.vertical:backdrop{ 
 margin:0px 2px;}
 
+progressbar.osd{
+margin:0px;}
+progressbar.osd trough {
+border:none;
+background:none;
+min-height:0px;}
+progressbar.osd progress{
+border:none;
+margin:-5px;
+min-height:8px;
+min-width:8px;}
+
 levelbar:backdrop,
 levelbar{
 margin:2px;

@@ -4,19 +4,13 @@ scrollbar.vertical:backdrop {
 min-width:17px;
 min-height:60px;
 border:1px solid @border_color;
-background-color:@object_color;}
+background:shade(@base_color,0.8);}
 
 scrollbar.horizontal,
 scrollbar.horizontal:backdrop {
 min-width:60px;
 min-height:17px;
 border:1px solid @border_color;
-background:@object_color;}
-
-scrolledwindow>scrollbar.vertical,
-scrolledwindow>scrollbar.vertical:backdrop,
-scrolledwindow>scrollbar.horizontal,
-scrolledwindow>scrollbar.horizontal:backdrop {
 background:shade(@base_color,0.8);}
 
 scrollbar>contents>button,
@@ -76,10 +70,9 @@ margin:-1px 0px -1px -1px;}
 scrolledwindow.frame>scrollbar.horizontal,
 scrolledwindow.frame>scrollbar.horizontal:backdrop{
 margin:-0px -1px -1px -1px;}
-window>stack>scrolledwindow:not(.frame),
-window>stack>scrolledwindow:not(.frame):backdrop{
-margin:1px;
-border:1px solid @border_color;}
+scrolledwindow:not(.frame),
+scrolledwindow:not(.frame):backdrop{
+margin:-1px;}
 notebook.frame>stack>scrolledwindow.frame,
 notebook.frame>stack>scrolledwindow.frame:backdrop {
 margin:-1px;}

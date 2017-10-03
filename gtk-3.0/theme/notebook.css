@@ -70,3 +70,13 @@ border:none;}
 notebook>stack:only-child>frame>border,
 notebook>stack:only-child>frame>border:backdrop {
 margin:2px;}
+
+/*fixes double lines eg mousepad*/
+window>box.vertical>notebook,
+window>box.vertical>notebook:backdrop{
+margin:2px;}
+
+/*fixes double frames*/
+notebook>stack>scrolledwindow.frame,
+notebook>stack>scrolledwindow.frame:backdrop{
+margin:-1px;}
