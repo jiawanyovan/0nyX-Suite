@@ -142,24 +142,3 @@ background:@selected_base_color;}
 XfdesktopIconView.rubberband{
 border:1px solid @selected_base_color;
 background:alpha(@selected_base_color,0.2);}
-
-#xfce4-terminal-notebook scrollbar,
-#xfce4-terminal-notebook scrollbar:backdrop{
--GtkScrollbar-has-backward-stepper:0;
--GtkScrollbar-has-forward-stepper:0;
--GtkScrollbar-has-secondary-backward-stepper:0;
--GtkScrollbar-has-secondary-forward-stepper:0;
-margin:-1px;}
-#xfce4-terminal-notebook scrollbar.vertical,
-#xfce4-terminal-notebook scrollbar.vertical:backdrop {
-min-width:10px;}
-#xfce4-terminal-notebook scrollbar.vertical slider,
-#xfce4-terminal-notebook scrollbar.vertical slider:backdrop{
-margin:-1px;
-min-width:10px;
-min-height:21px;
-background-color:@selected_bg_color;
-border:1px solid @border_color;}
-window.fullscreen #xfce4-terminal-notebook,
-window.fullscreen #xfce4-terminal-notebook:backdrop{
-margin:-2px;}

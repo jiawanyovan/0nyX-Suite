@@ -56,9 +56,9 @@ notebook>header tab button,
 notebook>header tab button:backdrop{
 margin:2px;}
 
-*:not(window)>notebook,
-*:not(window)>notebook:backdrop{
-margin:3px;}
+notebook.frame,
+notebook.frame:backdrop{
+border:1px solid @border_color;}
 
 notebook.frame>stack notebook.frame,
 notebook.frame>stack notebook.frame:backdrop {
@@ -71,12 +71,8 @@ notebook>stack:only-child>frame>border,
 notebook>stack:only-child>frame>border:backdrop {
 margin:2px;}
 
-/*fixes double lines eg mousepad*/
-window>box.vertical>notebook,
-window>box.vertical>notebook:backdrop{
-margin:2px;}
-
 /*fixes double frames*/
 notebook>stack>scrolledwindow,
 notebook>stack>scrolledwindow:backdrop{
+margin:2px;
 border:1px solid @border_color;}

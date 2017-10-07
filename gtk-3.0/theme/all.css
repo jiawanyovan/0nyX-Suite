@@ -179,11 +179,6 @@ background:@base_color;}
 border-color:@base_color;
 color:@inactive_text_color;}
 
-scrolledwindow.frame,
-scrolledwindow.frame:backdrop{
-color:@text_color;
-background:@base_color;}
-
 .view:selected,
 .view:selected:backdrop,
 list row:checked,
@@ -191,7 +186,8 @@ list row:checked:backdrop{
 border-color:@selected_base_color;
 color:@selected_text_color;
 background:@selected_base_color;}
-.view:selected:backdrop{
+.view:selected:backdrop,
+list row:checked:backdrop{
 border-color:shade(@base_color,1.3);;
 background:shade(@base_color,1.3);}
 
@@ -244,6 +240,7 @@ background:alpha(@selected_base_color,0.2);}
 cellview,
 cellview:backdrop{
 margin:0px 5px;}
+
 calendar,
 calendar:backdrop {
 color: @text_color;
@@ -253,10 +250,16 @@ row,
 row:backdrop {
 min-height:24px;}
 
-actionbar,
-actionbar:backdrop{
-margin:3px;}
-
 flowboxchild,
 flowboxchild:backdrop{
 background:transparent;}
+
+window>stack,
+window>grid,
+window>box,
+window>notebook,
+window>stack:backdrop,
+window>grid:backdrop,
+window>box:backdrop,
+window>notebook:backdrop{
+border:3px solid @bg_color;}

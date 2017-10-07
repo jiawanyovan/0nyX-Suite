@@ -3,31 +3,28 @@ nautilus-desktop-window.nautilus-window notebook box grid scrolledwindow:backdro
 border:none;
 background-color:transparent;}
 
-.nautilus-window notebook,
-.nautilus-window notebook:backdrop{
-margin:3px;}
 .nautilus-window notebook>stack scrolledwindow,
 .nautilus-window notebook>stack scrolledwindow:backdrop{
 background:@base_color;
 border:1px solid @border_color;
 margin:2px;}
 
-.linked.path-bar button.text-button,
-.linked.path-bar button.toggle,
-.linked.path-bar button.text-button:backdrop,
-.linked.path-bar button.toggle:backdrop{
+.nautilus-window headerbar box .linked.path-bar button.text-button,
+.nautilus-window headerbar box .linked.path-bar button.toggle,
+.nautilus-window headerbar box .linked.path-bar button.text-button:backdrop,
+.nautilus-window headerbar box .linked.path-bar button.toggle:backdrop{
 border-color:transparent;
 background:transparent;
 border-bottom: 2px solid transparent;}
-.linked.path-bar .text-button:checked,
-.linked.path-bar .text-button:checked:backdrop,
-.linked.path-bar button:checked:not(.image-button),
-.linked.path-bar button:checked:not(.image-button):backdrop {
+.nautilus-window headerbar box .linked.path-bar .text-button:checked,
+.nautilus-window headerbar box .linked.path-bar .text-button:checked:backdrop,
+.nautilus-window headerbar box .linked.path-bar button:checked:not(.image-button),
+.nautilus-window headerbar box .linked.path-bar button:checked:not(.image-button):backdrop {
 border-bottom: 2px solid @selected_bg_color}
-.linked.path-bar button.slider-button,
-.linked.path-bar button.slider-button:checked,
-.linked.path-bar button.slider-button:backdrop,
-.linked.path-bar button.slider-button:checked:backdrop{
+.nautilus-window headerbar box .linked.path-bar button.slider-button,
+.nautilus-window headerbar box .linked.path-bar button.slider-button:checked,
+.nautilus-window headerbar box .linked.path-bar button.slider-button:backdrop,
+.nautilus-window headerbar box .linked.path-bar button.slider-button:checked:backdrop{
 border-color:transparent;
 background:transparent;}
 

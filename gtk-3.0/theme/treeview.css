@@ -8,7 +8,6 @@ treeview:backdrop{
 -GtkTreeView-tree-line-pattern: "\001\001";
 -GtkTreeView-expander-size:22;}
 
-
 treeview.view:hover:not(:selected){
 border-color:alpha(@selected_base_color,0.0);
 background:alpha(@selected_base_color,0.3);}

@@ -34,10 +34,6 @@ box-shadow:none;
 padding:0px;
 background:shade(@bg_color,0.85);
 border:1px solid @border_color;}
-popover scrolledwindow{
-border-top:1px solid @border_color;
-border-bottom:1px solid @border_color;
-background:@base_color;}
 popover.background modelbutton{
 padding:2px 0px;
 font-weight:bold;}

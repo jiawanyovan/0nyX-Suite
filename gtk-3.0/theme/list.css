@@ -1,0 +1,8 @@
+list,
+list:backdrop{
+background:@base_color;}
+
+list>separator,
+list>separator:backdrop{
+opacity:0;
+background:inherit;}
