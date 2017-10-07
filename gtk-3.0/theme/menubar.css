@@ -16,3 +16,12 @@ menubar>menuitem>label,
 menubar>menuitem>label:backdrop{
 font-weight:bold;
 margin:0px;}
+
+
+window>box>menubar,
+window>box>menubar:backdrop{
+margin:-3px;}
+window>box>menubar>menuitem,
+window>box>menubar>menuitem:backdrop{
+margin:0px 2px;
+padding:6px 2px;}
