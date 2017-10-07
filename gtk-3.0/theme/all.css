@@ -254,12 +254,13 @@ flowboxchild,
 flowboxchild:backdrop{
 background:transparent;}
 
-window>stack,
-window>grid,
-window>box,
+window>stack>*,
+window>grid>*,
+window>box>*,
+window>overlay>*,
 window>notebook,
-window>stack:backdrop,
-window>grid:backdrop,
-window>box:backdrop,
+window>stack>*:backdrop,
+window>grid>*:backdrop,
+window>overlay>*:backdrop,
 window>notebook:backdrop{
-border:3px solid @bg_color;}
+margin:3px;}
