@@ -256,7 +256,6 @@ background:transparent;}
 
 window>stack>*,
 window>grid>*,
-window>box>*,
 window>overlay>*,
 window>notebook,
 window>stack>*:backdrop,
