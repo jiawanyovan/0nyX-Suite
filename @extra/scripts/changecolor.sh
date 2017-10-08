@@ -96,7 +96,7 @@ _folders="images gtk gtk-3.0 gtk-2.0 gtk xfwm4 xfdashboard-1.0 openbox-3 balou \
 @extra/appthemes @extra/subthemes"
 for _folder in $_folders; do
 	cd $_folder
-	find "$basedir/$_folder" -type f -not -path "*/icons/*" -exec sed -i 's/#bf584e/'$newcolor'/g' {} \;
+	find "$basedir/$_folder" -type f -not -path "*/icons/*" -exec sed -i 's/#BF584E/'$newcolor'/g' {} \;
 	find "$basedir/$_folder" -type f -not -path "*/icons/*" -exec sed -i 's/#bf584e/'$newcolor'/g' {} \;
 	cd $basedir
 done
@@ -106,6 +106,7 @@ sed -i 's/191 88 78/'$r' '$g' '$b'/g' "$basedir/@extra/appthemes/WINE/0nyX.reg"
 #change initial colors
 sed -i 's#s/191 88 78#s/'$r' '$g' '$b'#g' "$basedir/@extra/scripts/changecolor.sh"
 sed -i 's/#bf584e/'$newcolor'/g' "$basedir/@extra/scripts/changecolor.sh"
+sed -i 's/#BF584E/'$newcolor'/g' "$basedir/@extra/scripts/changecolor.sh"
 cat <<\EOF
 
 
