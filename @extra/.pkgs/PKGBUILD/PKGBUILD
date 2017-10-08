@@ -6,7 +6,7 @@ pkgrel=1
 pkgdesc='Everyday usable dark theme mainly made for Xfce, IceWM or Openbox.'
 arch=('any')
 url='https://github.com/sixsixfive/0nyX'
-depends=('sed')
+depends=('sed' 'bc')
 makedepends=(git coreutils)
 optdepends=('qt5ct'
 	'qt5-svg'
