@@ -13,11 +13,11 @@ ythickness=4}
 widget"*GimpStatusbar*GtkFrame" style"gimp3"
 
 style"gimp4"{
-#stock["gimp-anchor"] = {{ @"anchor" }}
+stock["gimp-anchor"] = {{ @"anchor" }}
 #stock["gimp-center"] = {{ @"align-center" }}
 stock["gimp-duplicate"] = {{ @"edit-duplicate" }}
 stock["gimp-edit"] = {{ @"edit" }}
-stock["gimp-reset"] = {{ @"document-revert" }}
+stock["gimp-reset"] = {{ @"edit-reset" }}
 stock["gimp-close"] = {{ @"dockwidget-close" }}
 stock["gimp-menu-left"] = {{ @"open-menu" }}
 stock["gimp-menu-right"] = {{ @"open-menu" }}
@@ -26,8 +26,8 @@ stock["gimp-invert"] = {{ @"edit-select-invert" }}
 #stock["gimp-layer-to-imagesize"] = {{ @"layer-to-imagesize" }}
 #stock["gimp-merge-down"] = {{ @"layer-merge-down" }}
 #stock["gimp-navigation"] = {{ @"edit-move" }}
-#stock["gimp-paste-as-new"] = {{ @"edit-paste-new" }}
-#stock["gimp-paste-into"] = {{ @"edit-paste-into" }}
+stock["gimp-paste-as-new"] = {{ @"document-new" }}
+stock["gimp-paste-into"] = {{ @"edit-paste-into-selection" }}
 #stock["gimp-path-stroke"] = {{ @"object-stroke" }}
 stock["gimp-plugin"] = {{ @"plugin" }}
 #stock["gimp-quick-mask-off"] = {{ @"view-mask-off" }}
@@ -39,7 +39,7 @@ stock["gimp-reshow-filter"] = {{ @"filter" }}
 #stock["gimp-resize"] = {{ @"edit-resize" }}
 stock["gimp-flip-horizontal"] = {{ @"object-flip-horizontal" }}
 stock["gimp-flip-vertical"] = {{ @"object-flip-vertical" }}
-stock["gimp-rotate-180"] = {{ @"layer-merge-down" }}
+#stock["gimp-rotate-180"] = {{ @"layer-merge-down" }}
 stock["gimp-rotate-270"] = {{ @"object-rotate-left" }}
 stock["gimp-rotate-90"] = {{ @"object-rotate-right" }}
 #stock["gimp-scale"] = {{ @"edit-resize" }}
@@ -74,7 +74,7 @@ stock["gimp-cursor"] = {{ @"tool-pointer" }}
 #stock["gimp-sample-point"] = {{ @"video-display" }}
 stock["gimp-shape-circle"] = {{ @"draw-ellipse" }}
 stock["gimp-shape-square"] = {{ @"draw-rectangle" }}
-#stock["gimp-shape-diamond"] = {{ @"draw-rectangle" }}
+stock["gimp-shape-diamond"] = {{ @"draw-diamond" }}
 stock["gimp-cap-butt"] = {{ @"stroke-cap-butt" }}
 stock["gimp-cap-round"] = {{ @"stroke-cap-round" }}
 stock["gimp-cap-square"] = {{ @"stroke-cap-square" }}
@@ -86,7 +86,6 @@ stock["gimp-selection-all"] = {{ @"edit-select-all" }}
 stock["gimp-selection-none"] = {{ @"edit-select-none" }}
 stock["gimp-selection-grow"] = {{ @"edit-select-grow" }}
 stock["gimp-selection-shrink"] = {{ @"edit-select-shrink" }}
-
 stock["gimp-selection-border"] = {{ @"video-display" }}
 stock["gimp-selection-add"] = {{ @"video-display" }}
 stock["gimp-selection-subtract"] = {{ @"video-display" }}
@@ -151,11 +150,19 @@ stock["gimp-error"] = {{ @"dialog-error" }}
 stock["gimp-info"] = {{ @"dialog-information" }}
 stock["gimp-question"] = {{ @"dialog-question" }}
 stock["gimp-warning"] = {{ @"dialog-warning" }}
-#stock["gimp-gegl"] = {{ @"video-display" }}
+stock["gimp-gegl"] = {{ @"gegl" }}
 stock["gimp-user-manual"] = {{ @"system-help" }}
 stock["gimp-wilber"] = {{ @"gimp" }}
+stock["gimp-wilber-outline"] = {{ @"gimp" }}
+stock["gimp-logo"] = {{ @"gimp" }}
+stock["wilber"] = {{ @"gimp" }}
 stock["gimp-wilber-eek"] = {{ @"face-raspberry" }}
 stock["gimp-zoom-follow-window"] = {{ @"zoom-fit-best" }}
+stock["gimp-controller-wheel"] = {{ @"input-mouse-wheel" }}
+stock["gimp-template"] = {{ @"template-x-generic" }}
+stock["gimp-clipboard"] = {{ @"edit-paste" }}
+stock["gimp-close-all"] = {{ @"document-close-all" }}
+
 #####FIXME-add-tools#####################################################################
 
 }class "*" style "gimp4"
