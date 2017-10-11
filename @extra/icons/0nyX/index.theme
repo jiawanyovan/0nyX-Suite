@@ -247,6 +247,8 @@ Size=32
 Context=Emblems
 Type=Scalable
 
+##scalable stuff
+
 [scalable]
 Size=16
 Context=Animations

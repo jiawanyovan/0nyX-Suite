@@ -126,7 +126,9 @@ notebook>header:backdrop,
 #yad-color-widget,
 #yad-color-widget:backdrop,
 scrolledwindow *,
-scrolledwindow *:backdrop{
+scrolledwindow *:backdrop,
+#Emacs>box>box *,
+#Emacs>box>box *:backdrop{
 -GtkWidget-window-dragging:false;}
 
 image:disabled,
