@@ -3,7 +3,7 @@ Name=0nyX
 Comment=Simple HighContrast theme
 Example=face-wink
 Inherits=hicolor
-Directories=scalable,symbolic,symbolic-22,symbolic-32,symbolic-24,emblems,emblems-8,emblems-24,emblems-32
+Directories=scalable,scalable-48,symbolic,symbolic-22,symbolic-24,symbolic-32,emblems,emblems-8,emblems-24,emblems-32
 
 ########################################################################
 # Doesnt really matter since the theme will never get loaded on KDE due some ancient bugs in KDE
@@ -28,202 +28,202 @@ KDE-Extensions=.svg
 [symbolic]
 Size=16
 Context=Actions
-Type=Fixed
+Type=Threshold
 
 [symbolic]
 Size=16
 Context=Applications
-Type=Fixed
+Type=Threshold
 
 [symbolic]
 Size=16
 Context=MimeTypes
-Type=Fixed
+Type=Threshold
 
 [symbolic]
 Size=16
 Context=Devices
-Type=Fixed
+Type=Threshold
 
 [symbolic]
 Size=16
 Context=Emotes
-Type=Fixed
+Type=Threshold
 
 [symbolic]
 Size=16
 Context=FileSystems
-Type=Fixed
+Type=Threshold
 
 [symbolic]
 Size=16
 Context=Places
-Type=Fixed
+Type=Threshold
 
 [symbolic]
 Size=16
 Context=Categories
-Type=Fixed
+Type=Threshold
 
 [symbolic]
 Size=16
 Context=Status
-Type=Fixed
+Type=Threshold
 
 [symbolic]
 Size=16
 Context=Stock
-Type=Fixed
+Type=Threshold
 
 [symbolic-22]
 Size=22
 Context=Actions
-Type=Fixed
+Type=Threshold
 
 [symbolic-22]
 Size=22
 Context=Applications
-Type=Fixed
+Type=Threshold
 
 [symbolic-22]
 Size=22
 Context=MimeTypes
-Type=Fixed
+Type=Threshold
 
 [symbolic-22]
 Size=22
 Context=Devices
-Type=Fixed
+Type=Threshold
 
 [symbolic-22]
 Size=22
 Context=Emotes
-Type=Fixed
+Type=Threshold
 
 [symbolic-22]
 Size=22
 Context=FileSystems
-Type=Fixed
+Type=Threshold
 
 [symbolic-22]
 Size=22
 Context=Places
-Type=Fixed
+Type=Threshold
 
 [symbolic-22]
 Size=22
 Context=Categories
-Type=Fixed
+Type=Threshold
 
 [symbolic-22]
 Size=22
 Context=Status
-Type=Fixed
+Type=Threshold
 
 [symbolic-22]
 Size=22
 Context=Stock
-Type=Fixed
-
-[symbolic-32]
-Size=32
-Context=Actions
-Type=Fixed
-
-[symbolic-32]
-Size=32
-Context=Applications
-Type=Fixed
-
-[symbolic-32]
-Size=32
-Context=MimeTypes
-Type=Fixed
-
-[symbolic-32]
-Size=32
-Context=Devices
-Type=Fixed
-
-[symbolic-32]
-Size=32
-Context=Emotes
-Type=Fixed
-
-[symbolic-32]
-Size=32
-Context=FileSystems
-Type=Fixed
-
-[symbolic-32]
-Size=32
-Context=Places
-Type=Fixed
-
-[symbolic-32]
-Size=32
-Context=Categories
-Type=Fixed
-
-[symbolic-32]
-Size=32
-Context=Status
-Type=Fixed
-
-[symbolic-32]
-Size=32
-Context=Stock
-Type=Fixed
+Type=Threshold
 
 [symbolic-24]
 Size=24
 Context=Actions
-Type=Fixed
+Type=Threshold
 
 [symbolic-24]
 Size=24
 Context=Applications
-Type=Fixed
+Type=Threshold
 
 [symbolic-24]
 Size=24
 Context=MimeTypes
-Type=Fixed
+Type=Threshold
 
 [symbolic-24]
 Size=24
 Context=Devices
-Type=Fixed
+Type=Threshold
 
 [symbolic-24]
 Size=24
 Context=Emotes
-Type=Fixed
+Type=Threshold
 
 [symbolic-24]
 Size=24
 Context=FileSystems
-Type=Fixed
+Type=Threshold
 
 [symbolic-24]
 Size=24
 Context=Places
-Type=Fixed
+Type=Threshold
 
 [symbolic-24]
 Size=24
 Context=Categories
-Type=Fixed
+Type=Threshold
 
 [symbolic-24]
 Size=24
 Context=Status
-Type=Fixed
+Type=Threshold
 
 [symbolic-24]
 Size=24
 Context=Stock
-Type=Fixed
+Type=Threshold
+
+[symbolic-32]
+Size=32
+Context=Actions
+Type=Threshold
+
+[symbolic-32]
+Size=32
+Context=Applications
+Type=Threshold
+
+[symbolic-32]
+Size=32
+Context=MimeTypes
+Type=Threshold
+
+[symbolic-32]
+Size=32
+Context=Devices
+Type=Threshold
+
+[symbolic-32]
+Size=32
+Context=Emotes
+Type=Threshold
+
+[symbolic-32]
+Size=32
+Context=FileSystems
+Type=Threshold
+
+[symbolic-32]
+Size=32
+Context=Places
+Type=Threshold
+
+[symbolic-32]
+Size=32
+Context=Categories
+Type=Threshold
+
+[symbolic-32]
+Size=32
+Context=Status
+Type=Threshold
+
+[symbolic-32]
+Size=32
+Context=Stock
+Type=Threshold
 
 ##Emblems
 
@@ -252,4 +252,54 @@ Type=Scalable
 [scalable]
 Size=16
 Context=Animations
+Type=Scalable
+
+[scalable-48]
+Size=24
+Context=Actions
+Type=Scalable
+
+[scalable-48]
+Size=24
+Context=Applications
+Type=Scalable
+
+[scalable-48]
+Size=24
+Context=MimeTypes
+Type=Scalable
+
+[scalable-48]
+Size=24
+Context=Devices
+Type=Scalable
+
+[scalable-48]
+Size=24
+Context=Emotes
+Type=Scalable
+
+[scalable-48]
+Size=24
+Context=FileSystems
+Type=Scalable
+
+[scalable-48]
+Size=24
+Context=Places
+Type=Scalable
+
+[scalable-48]
+Size=24
+Context=Categories
+Type=Scalable
+
+[scalable-48]
+Size=24
+Context=Status
+Type=Scalable
+
+[scalable-48]
+Size=24
+Context=Stock
 Type=Scalable
