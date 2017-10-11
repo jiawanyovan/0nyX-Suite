@@ -178,52 +178,52 @@ Type=Fixed
 [symbolic-24]
 Size=24
 Context=Actions
-Type=Scalable
+Type=Fixed
 
 [symbolic-24]
 Size=24
 Context=Applications
-Type=Scalable
+Type=Fixed
 
 [symbolic-24]
 Size=24
 Context=MimeTypes
-Type=Scalable
+Type=Fixed
 
 [symbolic-24]
 Size=24
 Context=Devices
-Type=Scalable
+Type=Fixed
 
 [symbolic-24]
 Size=24
 Context=Emotes
-Type=Scalable
+Type=Fixed
 
 [symbolic-24]
 Size=24
 Context=FileSystems
-Type=Scalable
+Type=Fixed
 
 [symbolic-24]
 Size=24
 Context=Places
-Type=Scalable
+Type=Fixed
 
 [symbolic-24]
 Size=24
 Context=Categories
-Type=Scalable
+Type=Fixed
 
 [symbolic-24]
 Size=24
 Context=Status
-Type=Scalable
+Type=Fixed
 
 [symbolic-24]
 Size=24
 Context=Stock
-Type=Scalable
+Type=Fixed
 
 ##Emblems
 
