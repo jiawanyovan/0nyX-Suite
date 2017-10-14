@@ -3,9 +3,9 @@ Name=0nyX
 Comment=Simple HighContrast theme
 Example=face-wink
 Inherits=hicolor
-Directories=symbolic,symbolic-22,symbolic-24,symbolic-32
-ScaledDirectories=scalable,scalable-48,emblems,emblems-8,emblems-24,emblems-32
-Hidden=true
+Directories=symbolic,symbolic-22,symbolic-24,symbolic-32,scalable,scalable-48,emblems,emblems-8,emblems-24,emblems-32
+#ScaledDirectories=scalable,scalable-48,emblems,emblems-8,emblems-24,emblems-32
+Hidden=false
 ########################################################################
 # Doesnt really matter since the theme will never get loaded on KDE due some ancient bugs in KDE
 # however I leave this here just for the case and until then we can use qt5ct which loads it fine
