@@ -184,7 +184,6 @@ class"*GtkToolButton"style"toolbutton"
 class"*GtkToggleToolButton"style"toolbutton"
 class"*GtkScaleButton"style"toolbutton"
 class"*GtkLinkButton"style"toolbutton"
-class"*GimpButton"style"toolbutton"
 
 style"toolmenubutton"{
 bg[NORMAL]=@base_color

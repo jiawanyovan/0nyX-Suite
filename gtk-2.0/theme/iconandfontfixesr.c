@@ -1,4 +1,6 @@
 style"gtklabelimage"{
+xthickness=0
+ythickness=0
 engine"mist"{}}
 class"*GtkImage"style"gtklabelimage"
 class"*GtkLabel"style"gtklabelimage"
