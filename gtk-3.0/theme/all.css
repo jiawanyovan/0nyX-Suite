@@ -193,6 +193,12 @@ list row:checked:backdrop{
 border-color:shade(@base_color,1.3);;
 background:shade(@base_color,1.3);}
 
+iconview:selected,
+iconview:active,
+iconview:selected:backdrop,
+iconview:active:backdrop{
+border-radius:5px;}
+
 .link label,
 link{
 text-decoration:underline;
