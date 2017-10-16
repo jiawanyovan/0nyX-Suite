@@ -198,3 +198,9 @@ border:1px solid transparent;}
 .caja-desktop-window scrolledwindow,
 .caja-desktop-window scrolledwindow:backdrop {
 background:transparent;}
+
+.mate-terminal notebook,
+.mate-terminal notebook:backdrop,
+.mate-terminal notebook scrollbar,
+.mate-terminal notebook scrollbar:backdrop{
+margin:-1px;}

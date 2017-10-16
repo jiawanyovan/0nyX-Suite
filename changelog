@@ -1,3 +1,8 @@
+0nyX (GIT) unstable; urgency=low
+
+  * many new icons
+  * gtk-auto-mnemonics is now on by default
+
 0nyX (0.96) unstable; urgency=low
 
   * some GTK contrast improvements
