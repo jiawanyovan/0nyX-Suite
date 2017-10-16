@@ -271,3 +271,8 @@ window>grid>*:backdrop,
 window>overlay>*:backdrop,
 window>notebook:backdrop{
 margin:3px;}
+
+window>frame>border,
+window>frame>border:backdrop {
+margin:0px;
+border:none;}
