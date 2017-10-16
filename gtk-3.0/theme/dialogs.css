@@ -4,3 +4,7 @@ margin:0px 8px;}
 printdialog.background>*,
 printdialog.background>*:backdrop{
 background:@bg_color;}
+
+filechooser>actionbar,
+filechooser>actionbar:backdrop
+{margin-top:5px;}
