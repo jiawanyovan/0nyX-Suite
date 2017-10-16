@@ -272,6 +272,10 @@ window>overlay>*:backdrop,
 window>notebook:backdrop{
 margin:3px;}
 
+window>grid>menubar,
+window>grid>menubar:backdrop{
+margin:0px;}
+
 window>frame>border,
 window>frame>border:backdrop {
 margin:0px;
