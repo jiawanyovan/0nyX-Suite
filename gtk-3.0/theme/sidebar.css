@@ -44,3 +44,7 @@ border-right:1px solid @border_color;}
 stack stacksidebar.sidebar>scrolledwindow:dir(rtl),
 stack stacksidebar.sidebar>scrolledwindow.frame:dir(rtl){
 border-left:1px solid @border_color;}
+
+placessidebar.sidebar row,
+placessidebar.sidebar row:backdrop {
+padding:2px 5px;}

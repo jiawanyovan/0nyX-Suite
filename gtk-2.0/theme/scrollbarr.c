@@ -19,3 +19,8 @@ GtkRange::stepper-spacing=0
 GtkRange::trough-border=0
 GtkRange::trough-under-steppers=1}
 class"GtkScrollbar"style"scrollbar"
+
+####FIXME
+style"scrolledwindowscrollbar"{}
+widget_class"*GtkScrolledWindow.GtkVScrollbar"style"scrolledwindowscrollbar"
+widget_class"*GtkScrolledWindow.GtkHScrollbar"style"scrolledwindowscrollbar"
