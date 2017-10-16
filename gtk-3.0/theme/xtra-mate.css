@@ -194,3 +194,7 @@ background:@selected_base_color;}
 .caja-pathbar button.slider-button:backdrop{ 
 background:none;
 border:1px solid transparent;}
+
+.caja-desktop-window scrolledwindow,
+.caja-desktop-window scrolledwindow:backdrop {
+background:transparent;}
