@@ -16,6 +16,10 @@ style"roxfiler-collection"{
 xthickness=2
 ythickness=2
 base[NORMAL]=@base_color
+}widget"rox-filer*ViewCollection"style"roxfiler-collection"
 
-}
-widget"rox-filer*ViewCollection"style"roxfiler-collection"
+style"roxicons"{
+stock["rox-select"] = {{ @"edit-select-invert" }}
+stock["rox-show-details"] = {{ @"rox-show-details" }}
+stock["rox-show-hidden"] = {{ @"rox-show-hidden" }}
+}class "*" style "roxicons"
