@@ -37,6 +37,7 @@ include "theme/xtra-lxder.c"
 include "theme/xtra-roxr.c"
 #####settings
 include "theme/iconandfontfixesr.c"
+include "theme/iconoverridesr.c"
 include "settings.ini"
 #####Docs
 ### https://wiki.gnome.org/Attic/GnomeArt/Tutorials/GtkThemes
