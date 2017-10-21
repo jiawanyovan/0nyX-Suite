@@ -1,6 +1,6 @@
 scrollbar.vertical,
 scrollbar.vertical:backdrop {
-min-width:17px;
+min-width:15px;
 min-height:60px;
 border:1px solid @border_color;
 background:shade(@base_color,0.8);}
@@ -8,40 +8,40 @@ background:shade(@base_color,0.8);}
 scrollbar.horizontal,
 scrollbar.horizontal:backdrop {
 min-width:60px;
-min-height:17px;
+min-height:15px;
 border:1px solid @border_color;
 background:shade(@base_color,0.8);}
 
 scrollbar>contents>button,
 scrollbar>contents>button:checked,
 scrollbar>contents>button:backdrop{
-min-width:16px;
-min-height:16px;
+min-width:14px;
+min-height:14px;
 margin:1px;
 -gtk-icon-source:-gtk-scaled(url("../../images/gtk-3.0/arrow-down_normal.svg"),url("../../images/gtk-3.0/arrow-down_normal2.svg"));}
 scrollbar.vertical>contents>button.down,
 scrollbar.vertical>contents>button.down:backdrop{
 border:none;
 background-color:transparent;
-background-size:16px 16px;}
+background-size:14px 14px;}
 scrollbar.vertical>contents>button.up,
 scrollbar.vertical>contents>button.up:backdrop{
 -gtk-icon-transform:rotate(0.5turn);
 border:none;
 background-color:transparent;
-background-size:16px 16px;}
+background-size:14px 14px;}
 scrollbar.horizontal>contents>button.down,
 scrollbar.horizontal>contents>button.down:backdrop{
 -gtk-icon-transform:rotate(0.75turn);
 border:none;
 background-color:transparent;
-background-size: 16px 16px;}
+background-size: 14px 14px;}
 scrollbar.horizontal>contents>button.up,
 scrollbar.horizontal>contents>button.up:backdrop{
 -gtk-icon-transform:rotate(0.25turn);
 border:none;
 background-color:transparent;
-background-size:16px 16px;}
+background-size:14px 14px;}
 
 scrollbar>contents>button:disabled,
 scrollbar>contents>button:disabled:backdrop{
@@ -50,7 +50,7 @@ scrollbar>contents>button:disabled:backdrop{
 scrollbar slider,
 scrollbar slider:backdrop{
 margin:-1px;
-min-width:18px;
+min-width:16px;
 min-height:21px;
 background-color:@selected_bg_color;
 border:1px solid @border_color;}
@@ -58,7 +58,7 @@ scrollbar.horizontal slider,
 scrollbar.horizontal slider:backdrop{
 margin:-1px;
 min-width:21px;
-min-height:18px;}
+min-height:16px;}
 scrolledwindow,
 scrolledwindow:backdrop,
 scrolledwindow.frame,
