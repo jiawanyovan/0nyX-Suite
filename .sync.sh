@@ -113,6 +113,6 @@ MESSAGE="$(date)"
 git commit -m "$MESSAGE"
 #git remote add origin https://github.com/sixsixfive/0nyX.git
 #git push -u --force origin master
-git push origin master
+git push origin master --force
 printf "\n...done\n"
 exit
