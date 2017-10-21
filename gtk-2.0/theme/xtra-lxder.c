@@ -136,3 +136,21 @@ detail="focus"
 file="../images/gtk-2.0/none.svg"
 stretch=FALSE}}}
 widget_class"*PanelToplevel*TaskButton*"style"lxpaneltask"
+
+style "pcmanfm"{
+xthickness=0
+ythickness=0
+engine"pixmap"{
+image{
+function=FLAT_BOX
+file="../images/gtk-2.0/window-color.svg"
+state=NORMAL
+stretch=TRUE
+border={0,1,0,0}}
+image{
+function=FLAT_BOX
+file="../images/gtk-2.0/selection-color.svg"
+state=SELECTED
+stretch=TRUE
+border={0,1,0,0}}}}
+widget_class "*FmSidePane*"style "pcmanfm"
