@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg height="5" xmlns="http://www.w3.org/2000/svg" shape-rendering="crispEdges" viewBox="0 0 1.3229167 1.3229167" width="5" version="1.1">
- <rect style="paint-order:normal" height="1.3229" width="1.3229" y="-1.3878e-16" x="-1.6653e-16" fill="#bf584e"/>
+ <rect style="paint-order:normal" height="1.3229" width="1.3229" y="-1.3878e-16" x="-1.6653e-16" fill="#4f79bf"/>
  <g transform="translate(0 -295.68)">
   <path style="paint-order:normal" d="m0 0v1 4h1 4v-1-3-1h-1-3-1zm1 1h3v3h-3v-3z" fill-opacity=".99237" transform="matrix(.26458 0 0 .26458 0 295.68)"/>
  </g>

@@ -2,7 +2,7 @@
 static char * taskbuttonactive_xpm[] = {
 "4 25 2 1",
 " 	c None",
-".	c #bf584e",
+".	c #4f79bf",
 "....",
 "....",
 "....",

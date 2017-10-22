@@ -5,7 +5,7 @@
 	overlay-outline: #c9c3a3ff;
 	overlay-text: #333333ff;
 	color-border: #666666ff;
-	hilight-color: #bf584e;
+	hilight-color: #4f79bf;
 	missing-icon: @try_icons("unknown", "image-missing", "gtk-missing-image");
 	view-icon: @try_icons("xfwm", "preferences-windows", @missing-icon);}
 

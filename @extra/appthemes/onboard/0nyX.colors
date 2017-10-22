@@ -6,7 +6,7 @@
         <color element="fill"   rgb="#323131"/>
         <color element="stroke" rgb="#000000" opacity="0.6"/>
         <color element="label"  rgb="#f1f2f2"/>
-        <color element="dwell-progress" rgb="#bf584e"/>
+        <color element="dwell-progress" rgb="#4f79bf"/>
         Prnt, Pause, Scroll,icon1, icon2, ESC, F1, F2, F3, 
         F4, F5, F6, F7, F8, F9, F10, F11, F12,
         INS, DELE, HOME, END, PGUP, PGDN,
@@ -46,9 +46,9 @@
 
             <!-- softened active color -->
             <key_group>
-                <color element="fill" active="true" locked="false" rgb="#bf584e"/>
+                <color element="fill" active="true" locked="false" rgb="#4f79bf"/>
                 hide, showclick, move, layer
-                <color element="fill" active="true" locked="true" rgb="#bf584e"/>
+                <color element="fill" active="true" locked="true" rgb="#4f79bf"/>
                 hide, showclick, move, layer
                 <color element="label" active="true" locked="false" rgb="#f1f2f2"/>
                 hide, showclick, move, layer
@@ -62,7 +62,7 @@
         </key_group>
 
         <key_group>
-            <color element="fill" rgb="#bf584e" opacity="0.6"/>
+            <color element="fill" rgb="#4f79bf" opacity="0.6"/>
             <color element="stroke" rgb="#000000" opacity="0.6"/>
             SPCE, LFSH, RTSH,
             settings

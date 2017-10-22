@@ -6,8 +6,8 @@
 @define-color text_color #f1f2f2;
 @define-color inactive_text_color #656666;
 
-@define-color selected_bg_color #bf584e;
-@define-color selected_base_color #bf584e;
+@define-color selected_bg_color #4f79bf;
+@define-color selected_base_color #4f79bf;
 @define-color selected_fg_color #f1f2f2;
 @define-color selected_text_color #f1f2f2;
 

@@ -6,7 +6,7 @@
 		<property name="factor">0.0</property>
 	</object>
 	<object id="colorize" class="ClutterColorizeEffect">
-		<property name="tint">#bf584e</property>
+		<property name="tint">#4f79bf</property>
 	</object>
 	<object id="window-urgency" class="XfdashboardEmblemEffect">
 		<property name="icon-name">dialog-information</property>

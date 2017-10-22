@@ -1,6 +1,6 @@
 [Text]
 Normal=#f1f2f2
-Current=#bf584e
+Current=#4f79bf
 Selected=#ff00ff
 NormalBG=#323131
 SelectedBG=#3c3b3b

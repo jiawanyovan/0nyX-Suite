@@ -42,7 +42,7 @@ ColorDisabledMenuItemText="#656666"
 
 ColorNormalButton="#323131"
 ColorNormalButtonText="#f1f2f2"
-ColorActiveButton="#bf584e"
+ColorActiveButton="#4f79bf"
 ColorActiveButtonText="#f1f2f2"
 
 ColorMoveSizeStatus="#323131"
@@ -51,7 +51,7 @@ ColorMoveSizeStatusText="#f1f2f2"
 ColorDefaultTaskBar="#141313"
 ColorNormalTaskBarApp="#141313"
 ColorNormalTaskBarAppText="#f1f2f2"
-ColorActiveTaskBarApp="#bf584e"
+ColorActiveTaskBarApp="#4f79bf"
 ColorActiveTaskBarAppText="#f1f2f2"
 ColorMinimizedTaskBarAppText="#656666"
 
@@ -65,11 +65,11 @@ ColorLabelText="#f1f2f2"
 
 ColorListBox="#323131"
 ColorListBoxText="#f1f2f2"
-ColorListBoxSelection="#bf584e"
+ColorListBoxSelection="#4f79bf"
 ColorListBoxSelectionText="#f1f2f2"
 
 ColorScrollBar="#272727"
-ColorScrollBarSlider="#bf584e"
+ColorScrollBarSlider="#4f79bf"
 ColorScrollBarButton="#272727"
 ColorScrollBarButtonArrow="#f1f2f2"
 
@@ -86,7 +86,7 @@ ColorNetIdle="#141313"
 
 ColorQuickSwitch="#242323"
 ColorQuickSwitchText="#f1f2f2"
-ColorQuickSwitchActive="#bf584e"
+ColorQuickSwitchActive="#4f79bf"
 
 TitleFontNameXft="sans:size=11:bold"
 MenuFontNameXft="sans:size=10:bold"

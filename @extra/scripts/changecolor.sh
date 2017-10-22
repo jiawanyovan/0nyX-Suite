@@ -43,9 +43,9 @@ while [ 1 ];do
 	_has_error=0
 	if [ -z ${newcolor} ]; then 
 		if type yad >/dev/null 2>&1; then
-			newcolor=$(yad --on-top --center --always-print-result --color --init-color=#bf584e --title="Please select a new #RRGGBB hilight color" --button="gtk-ok:0")
+			newcolor=$(yad --on-top --center --always-print-result --color --init-color=#4f79bf --title="Please select a new #RRGGBB hilight color" --button="gtk-ok:0")
 		else
-			read -p "Please enter your new hilight color in #RRGGBB(The '#' is a must!, #bf584e is currently set): " newcolor
+			read -p "Please enter your new hilight color in #RRGGBB(The '#' is a must!, #4f79bf is currently set): " newcolor
 		fi
 	fi
 #check if there is a color
@@ -96,17 +96,17 @@ _folders="images gtk gtk-3.0 gtk-2.0 gtk xfwm4 xfdashboard-1.0 openbox-3 balou \
 @extra/appthemes @extra/subthemes"
 for _folder in $_folders; do
 	cd $_folder
-	find "$basedir/$_folder" -type f -not -path "*/icons/*" -exec sed -i 's/#BF584E/'$newcolor'/g' {} \;
-	find "$basedir/$_folder" -type f -not -path "*/icons/*" -exec sed -i 's/#bf584e/'$newcolor'/g' {} \;
+	find "$basedir/$_folder" -type f -not -path "*/icons/*" -exec sed -i 's/#4f79bf/'$newcolor'/g' {} \;
+	find "$basedir/$_folder" -type f -not -path "*/icons/*" -exec sed -i 's/#4f79bf/'$newcolor'/g' {} \;
 	cd $basedir
 done
 #WINE
-sed -i 's/191 88 78/'$r' '$g' '$b'/g' "$basedir/@extra/appthemes/WINE/0nyX.reg"
+sed -i 's/79 121 191/'$r' '$g' '$b'/g' "$basedir/@extra/appthemes/WINE/0nyX.reg"
 
 #change initial colors
-sed -i 's#s/191 88 78#s/'$r' '$g' '$b'#g' "$basedir/@extra/scripts/changecolor.sh"
-sed -i 's/#bf584e/'$newcolor'/g' "$basedir/@extra/scripts/changecolor.sh"
-sed -i 's/#BF584E/'$newcolor'/g' "$basedir/@extra/scripts/changecolor.sh"
+sed -i 's#s/79 121 191#s/'$r' '$g' '$b'#g' "$basedir/@extra/scripts/changecolor.sh"
+sed -i 's/#4f79bf/'$newcolor'/g' "$basedir/@extra/scripts/changecolor.sh"
+sed -i 's/#4f79bf/'$newcolor'/g' "$basedir/@extra/scripts/changecolor.sh"
 cat <<\EOF
 
 
