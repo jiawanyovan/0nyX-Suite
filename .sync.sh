@@ -17,19 +17,19 @@ cd ${basedir}
 #rdfind -makesymlinks true .
 #symbolic icons!
 cd $basedir/@extra/icons/0nyX/symbolic
-#if [ -f "xfce_badge.svg" ]; then
-#	rm -f *-symbolic.svg
-#	for f in $(ls -L); do
-#		if [ ! -f "$f-symbolic" ];then
-#			ln -s $f $(echo $f|sed 's/.svg$/-symbolic.svg/g')
-#		fi
-#	done
-	#for f2 in $(ls -L|grep '\-symbolic-symbolic.svg'); do
-		#if [ ! -f "$(echo $f2|sed 's/-symbolic.svg$/.svg$/g')" ];then
-			#rm $f2
-		#fi
-	#done
-#fi
+if [ -f "xfce_badge.svg" ]; then
+	rm -f *-symbolic.svg
+	for f in $(ls -L); do
+		if [ ! -f "$f-symbolic" ];then
+			ln -s $f $(echo $f|sed 's/.svg$/-symbolic.svg/g')
+		fi
+	done
+	for f2 in $(ls -L|grep '\-symbolic-symbolic.svg'); do
+		if [ ! -f "$(echo $f2|sed 's/-symbolic.svg$/.svg$/g')" ];then
+			rm $f2
+		fi
+	done
+fi
 ##22px fake
 cd $basedir
 if [ -d $basedir/@extra/icons/0nyX/symbolic-22 ]; then
