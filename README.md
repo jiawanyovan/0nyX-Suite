@@ -14,7 +14,8 @@
   * Simplified Style without gradients, hovers or animations
   * Borders around widgets
   * Touchscreen unfriendly - made for mouses 
-  * Traditional Scrollbars with arrows 
+  * Traditional Scrollbars with arrows
+  * Full RTL support
 * Matching HighContrast icon theme
 
 ## Dependencies
@@ -177,7 +178,7 @@ gtk-xft-dpi=-1
 gtk-cursor-theme-name="DMZ-White"
 gtk-cursor-theme-size=16
 ```
-settings.ini
+
 for GTK3 create a file ${XDG_CONFIG_HOME}/gtk-3.0/settings.ini with something like:
 
 ```
@@ -208,7 +209,3 @@ xfconf-query -c xsettings -p /Gtk/IconSizes -s "gtk-menu=32,32:gtk-small-toolbar
 ```
 xfconf-query -c xsettings -p /Xft/DPI -s "192"
 ```
-
-#### double your cursor size
-
-* again, this can be done with [gtk2-settings](https://developer.gnome.org/gtk2/stable/GtkSettings.html#GtkSettings--gtk-cursor-theme-size)
