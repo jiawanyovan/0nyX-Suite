@@ -82,6 +82,7 @@ widget_class"*PanelToplevel*Button*"style"lxpanelbutton"
 style"lxpaneltask"{
 xthickness=3
 ythickness=3
+font_name="bold"
 GtkButton::inner-border={2,2,2,2}
 GtkButton::shadow-type=GTK_SHADOW_NONE
 GtkWidget::wide-separators=1
@@ -136,7 +137,6 @@ detail="focus"
 file="../images/gtk-2.0/none.svg"
 stretch=FALSE}}}
 widget_class"*PanelToplevel*TaskButton*"style"lxpaneltask"
-
 style "pcmanfm"{
 xthickness=0
 ythickness=0
@@ -154,3 +154,13 @@ state=SELECTED
 stretch=TRUE
 border={0,1,0,0}}}}
 widget_class "*FmSidePane*"style "pcmanfm"
+
+style"lxpanelbold"{
+xthickness=0
+ythickness=0
+font_name="bold"}
+widget_class"*PanelToplevel*TaskButton*"style"lxpanelbold"
+widget"*TaskButton*GtkLabel"style"lxpanelbold"
+widget"*taskbar*"style"lxpanelbold"
+widget"*dclock*"style"lxpanelbold"
+widget"*PanelIconGrid*"style"lxpanelbold"

@@ -154,3 +154,13 @@ state=SELECTED
 stretch=TRUE
 border={0,2,0,0}}}}
 widget_class "*FmSidePane*"style "pcmanfm"
+
+style"lxpanelbold"{
+xthickness=0
+ythickness=0
+font_name="bold"}
+widget_class"*PanelToplevel*TaskButton*"style"lxpanelbold"
+widget"*TaskButton*GtkLabel"style"lxpanelbold"
+widget"*taskbar*"style"lxpanelbold"
+widget"*dclock*"style"lxpanelbold"
+widget"*PanelIconGrid*"style"lxpanelbold"
