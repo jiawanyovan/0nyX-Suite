@@ -142,3 +142,7 @@ background:@selected_base_color;}
 XfdesktopIconView.rubberband{
 border:1px solid @selected_base_color;
 background:alpha(@selected_base_color,0.2);}
+
+#xfce4-terminal-notebook scrollbar,
+#xfce4-terminal-notebook scrollbar:backdrop{
+margin:-1px;}
