@@ -1,3 +1,6 @@
+
+![alt text](https://raw.githubusercontent.com/sixsixfive/0nyX/master/.screenshot.png)
+
 # Contents
 
 * [Main features](#main-features)
@@ -13,7 +16,6 @@
   * Touchscreen unfriendly - made for mouses 
   * Traditional Scrollbars with arrows 
 * Matching HighContrast icon theme
-* A consistent desktop experience
 
 ## Dependencies
 
