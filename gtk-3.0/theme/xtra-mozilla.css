@@ -3,7 +3,7 @@ background:@bg_color;
 color:@fg_color;}
 
 #MozillaGtkWidget border{
-border:1px solid @border_color;
+border:1px solid black;
 border-radius:2px;}
 
 #MozillaGtkWidget .separator{
@@ -11,3 +11,11 @@ color:@border_color;}
 
 #MozillaGtkWidget scrollbar>*{
 border:none;}
+
+#MozillaGtkWidget entry,
+#MozillaGtkWidget button,
+#MozillaGtkWidget check,
+#MozillaGtkWidget radio,
+MozillaGtkWidget scrollbar{
+color:@text_color;
+background:@base_color;}
