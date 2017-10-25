@@ -32,7 +32,7 @@
 * [Qt5ct](https://sourceforge.net/projects/qt5ct/) + (Qt SVG module + QGtkStyle)
 * DMZ-White cursor theme
 * Xfce, IceWM or Openbox
-* Chrome/Chromium(@GTK3)(any blink based browser will work due the internal styling of html forms)
+* Chrome/Chromium(@GTK3)(or any other browser with interal styling of html forms)
 
 ### Currently included: 
 

@@ -16,6 +16,6 @@ border:none;}
 #MozillaGtkWidget button,
 #MozillaGtkWidget check,
 #MozillaGtkWidget radio,
-MozillaGtkWidget scrollbar{
+#MozillaGtkWidget scrollbar{
 color:@text_color;
 background:@base_color;}
