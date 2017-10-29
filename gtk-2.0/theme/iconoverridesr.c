@@ -11,12 +11,13 @@ stock["rox-mounted"] = {{ @"emblem-mountpoint-unmounted" }}
 
 
 style"gimpicons"{
-#for f in $(find -name 'gimp-*' -not -name '*-symbolic.svg*'); do printf "stock[\x22$(echo $f|sed 's/.svg//g;s|./||g')\x22] = {{ @\x22"$(echo $f|sed 's/.svg//g;s|./||g')"\x22 }}\n" >>abc;done
+#for f in $(find -name 'gimp-*' -not -name '*-symbolic.svg*'); do printf "stock[\x22$(echo $f|sed 's/.svg//g;s|./||g')\x22] = {{ @\x22"$(echo $f|sed 's/.svg//g;s|./||g')"\x22 }}\n" >>$HOME/Desktop/abc;done
 stock["gimp-wilber-outline"] = {{ @"gimp-wilber-outline" }}
 stock["gimp-prefs-display"] = {{ @"gimp-prefs-display" }}
 stock["gimp-tool-flip"] = {{ @"gimp-tool-flip" }}
 stock["gimp-web"] = {{ @"gimp-web" }}
 stock["gimp-prefs-default-comment"] = {{ @"gimp-prefs-default-comment" }}
+stock["gimp-tool-ellipse-select"] = {{ @"gimp-tool-ellipse-select" }}
 stock["gimp-prefs-folders-plug-ins"] = {{ @"gimp-prefs-folders-plug-ins" }}
 stock["gimp-edit"] = {{ @"gimp-edit" }}
 stock["gimp-selection-shrink"] = {{ @"gimp-selection-shrink" }}
@@ -24,6 +25,7 @@ stock["gimp-tool-options"] = {{ @"gimp-tool-options" }}
 stock["gimp-menu-left"] = {{ @"gimp-menu-left" }}
 stock["gimp-layers"] = {{ @"gimp-layers" }}
 stock["gimp-tool-color-picker"] = {{ @"gimp-tool-color-picker" }}
+stock["gimp-prefs-image-windows-snapping"] = {{ @"gimp-prefs-image-windows-snapping" }}
 stock["gimp-tool-path"] = {{ @"gimp-tool-path" }}
 stock["gimp-shape-diamond"] = {{ @"gimp-shape-diamond" }}
 stock["gimp-color-picker-white"] = {{ @"gimp-color-picker-white" }}
@@ -110,6 +112,7 @@ stock["gimp-user-manual"] = {{ @"gimp-user-manual" }}
 stock["gimp-color-picker-gray"] = {{ @"gimp-color-picker-gray" }}
 stock["gimp-prefs-color-management"] = {{ @"gimp-prefs-color-management" }}
 stock["gimp-rotate-270"] = {{ @"gimp-rotate-270" }}
+stock["gimp-tool-rect-select"] = {{ @"gimp-tool-rect-select" }}
 stock["gimp-join-miter"] = {{ @"gimp-join-miter" }}
 stock["gimp-tool-smudge"] = {{ @"gimp-tool-smudge" }}
 stock["gimp-wilber-eek"] = {{ @"gimp-wilber-eek" }}
@@ -138,5 +141,4 @@ stock["gimp-prefs-folders-icon-themes"] = {{ @"gimp-prefs-folders-icon-themes" }
 stock["gimp-paste-as-new"] = {{ @"gimp-paste-as-new" }}
 stock["gimp-selection-all"] = {{ @"gimp-selection-all" }}
 stock["gimp-prefs-session"] = {{ @"gimp-prefs-session" }}
-
 }class "*" style "gimpicons"
