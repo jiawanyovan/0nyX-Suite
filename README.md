@@ -15,6 +15,7 @@
   * Borders around widgets
   * Touchscreen unfriendly - made for mouses 
   * Traditional Scrollbars with arrows
+  * HiDPI-support
   * Full RTL support
 * Matching HighContrast icon theme
 
@@ -37,7 +38,7 @@
 ### Currently included: 
 
 * GTK themes(GTK, GTK2, GTK3)
-* Xfce themes(XfDashboard, Balou, XfceNotifyd)
+* Xfce themes(XfDashboard, Balou, XfceNotifyd, xfce-terminal)
 * WindowManager themes(Xfwm, Metacity(Marco/Muffin), Openbox, IceWM)
 * Plank themes
 * Chrome/Chromium Scrollbars
@@ -56,7 +57,10 @@ Packages for Debian, SuSE and Manjaro can be found on the [Opendesktop-page](htt
 Note: Qt5ct for Debian can be found [here](https://github.com/mati75/qt5ct).
 
 ### Manual
+
 For example to install it for all users:
+
+Note: You have to symlink the subthemes instead of copying otherwise they will break!
 
 ```
 ## set your prefix usually /usr or /usr/local, 
@@ -128,8 +132,6 @@ just open chrome/chromium go to chrome://extensions/ enable developer mode and l
 ```
 $prefix/share/themes/0nyX/@extra/appthemes/Chromium_unpackedextension
 ```
-
-Note: You have to symlink the subthemes instead of copying otherwise they might break!
 
 ## Optional
 
