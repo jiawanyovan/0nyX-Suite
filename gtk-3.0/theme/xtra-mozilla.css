@@ -12,6 +12,16 @@ color:@border_color;}
 #MozillaGtkWidget scrollbar>*{
 border:none;}
 
+#MozillaGtkWidget scrollbar.vertical{
+margin-right:-1px;
+margin-top:-1px;
+margin-bottom:-1px;}
+
+#MozillaGtkWidget scrollbar.horizontal{
+margin-right:-1px;
+margin-left:-1px;
+margin-bottom:-1px;}
+
 #MozillaGtkWidget entry,
 #MozillaGtkWidget button,
 #MozillaGtkWidget check,
