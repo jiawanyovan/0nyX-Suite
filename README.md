@@ -18,6 +18,8 @@
   * HiDPI-support
   * Full RTL support
 * Matching HighContrast icon theme
+  * contains over 1000 icons
+  * covers more than 8500 icons from the last decade
 
 ## Dependencies
 
