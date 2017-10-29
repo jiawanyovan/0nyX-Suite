@@ -9,18 +9,6 @@ stock["rox-mount"] = {{ @"emblem-mountpoint-mounted" }}
 stock["rox-mounted"] = {{ @"emblem-mountpoint-unmounted" }}
 }class "*" style "roxicons"
 
-style"xfceicons"{
-stock["xfce-wm-maximize"] = {{ @"xfce-wm-maximize" }}
-stock["xfce-wm-menu"] = {{ @"xfce-wm-menu" }}
-stock["xfce-wm-shade"] = {{ @"xfce-wm-shade" }}
-stock["xfce-wm-unshade"] = {{ @"xfce-wm-unshade" }}
-stock["xfce-wm-unstick"] = {{ @"xfce-wm-unstick" }}
-stock["xfce-wm-close"] = {{ @"xfce-wm-close" }}
-stock["xfce-wm-minimize"] = {{ @"xfce-wm-minimize" }}
-stock["xfce-wm-unmaximize"] = {{ @"xfce-wm-unmaximize" }}
-stock["xfce-wm-stick"] = {{ @"xfce-wm-stick" }}
-}class "*" style "xfceicons"
-
 style"gimpicons"{
 #for f in $(find -name 'gimp-*' -not -name '*-symbolic.svg*'); do printf "stock[\x22$(echo $f|sed 's/.svg//g;s|./||g')\x22] = {{ @\x22"$(echo $f|sed 's/.svg//g;s|./||g')"\x22 }}\n" >>$HOME/Desktop/abc;done
 stock["gimp-wilber-outline"] = {{ @"gimp-wilber-outline" }}
