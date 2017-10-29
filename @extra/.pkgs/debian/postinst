@@ -80,6 +80,9 @@ if [ -d ${_tmpdir}/usr/share/themes/0nyX ]; then
 	ln -sf ../../themes/0nyX/@extra/appthemes/WinAMP/0nyX ${_tmpdir}/usr/share/audacious/Skins/0nyX
 	mkdir -p  ${_tmpdir}/usr/share/qmmp/skins
 	ln -sf ../../themes/0nyX/@extra/appthemes/WinAMP/0nyX ${_tmpdir}/usr/share/qmmp/skins/0nyX
+#xfceterm theme
+	mkdir -p ${_tmpdir}/usr/share/xfce4/terminal/colorschemes
+	ln -sf ../../../themes/0nyX/@extra/appthemes/xfce-terminal/0nyX.theme ${_tmpdir}/usr/share/xfce4/terminal/colorschemes/0nyX.theme
 #no overlay scrollbars
 #	mkdir -p ${_tmpdir}/etc/X11/Xsession.d
 #	printf "export GTK_OVERLAY_SCROLLING=0\nexport LIBOVERLAY_SCROLLBAR=0\n" > ${_tmpdir}/etc/X11/Xsession.d/98_0nyX
