@@ -146,3 +146,15 @@ background:alpha(@selected_base_color,0.2);}
 #xfce4-terminal-notebook scrollbar,
 #xfce4-terminal-notebook scrollbar:backdrop{
 margin:-1px;}
+#xfce4-terminal-notebook,
+#xfce4-terminal-notebook:backdrop{
+margin:2px;}
+#xfce4-terminal-notebook tab,
+#xfce4-terminal-notebook tab:backdrop{
+margin-right:-1px;}
+#xfce4-terminal-notebook tab:checked,
+#xfce4-terminal-notebook tab:checked:backdrop{
+border-left:1px solid @border_color;}
+window.fullscreen #xfce4-terminal-notebook,
+window.fullscreen #xfce4-terminal-notebook:backdrop{
+margin:-2px;}
