@@ -9,6 +9,12 @@ stock["rox-mount"] = {{ @"emblem-mountpoint-mounted" }}
 stock["rox-mounted"] = {{ @"emblem-mountpoint-unmounted" }}
 }class "*" style "roxicons"
 
+style"wnckicons"{
+stock["wnck-stock-minimize"] = {{ @"wnck-stock-minimize" }}
+stock["wnck-stock-maximize"] = {{ @"wnck-stock-maximize" }}
+stock["wnck-stock-delete"] = {{ @"wnck-stock-delete" }}
+}class "*" style "wnckicons"
+
 style"gimpicons"{
 #for f in $(find -name 'gimp-*' -not -name '*-symbolic.svg*'); do printf "stock[\x22$(echo $f|sed 's/.svg//g;s|./||g')\x22] = {{ @\x22"$(echo $f|sed 's/.svg//g;s|./||g')"\x22 }}\n" >>$HOME/Desktop/abc;done
 stock["gimp-wilber-outline"] = {{ @"gimp-wilber-outline" }}
