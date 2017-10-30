@@ -102,6 +102,7 @@ stock["gimp-prefs-theme"] = {{ @"gimp-prefs-theme" }}
 stock["gimp-selection-grow"] = {{ @"gimp-selection-grow" }}
 stock["gimp-char-picker"] = {{ @"gimp-char-picker" }}
 stock["gimp-grid"] = {{ @"gimp-grid" }}
+stock["gimp-tool-dodge"] = {{ @"gimp-tool-dodge" }}
 stock["gimp-controller-wheel"] = {{ @"gimp-controller-wheel" }}
 stock["gimp-shape-circle"] = {{ @"gimp-shape-circle" }}
 stock["gimp-flip-horizontal"] = {{ @"gimp-flip-horizontal" }}
