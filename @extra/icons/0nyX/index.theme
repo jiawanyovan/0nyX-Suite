@@ -252,36 +252,43 @@ Type=Scalable
 
 [scalable]
 Size=16
+MinSize=48
 Context=Animations
 Type=Scalable
 
 [scalable-48]
 Size=24
+MinSize=48
 Context=Actions
 Type=Scalable
 
 [scalable-48]
 Size=24
+MinSize=48
 Context=Applications
 Type=Scalable
 
 [scalable-48]
 Size=24
+MinSize=48
 Context=MimeTypes
 Type=Scalable
 
 [scalable-48]
 Size=24
+MinSize=48
 Context=Devices
 Type=Scalable
 
 [scalable-48]
 Size=24
+MinSize=48
 Context=Emotes
 Type=Scalable
 
 [scalable-48]
 Size=24
+MinSize=48
 Context=FileSystems
 Type=Scalable
 
@@ -292,15 +299,18 @@ Type=Scalable
 
 [scalable-48]
 Size=24
+MinSize=48
 Context=Categories
 Type=Scalable
 
 [scalable-48]
 Size=24
+MinSize=48
 Context=Status
 Type=Scalable
 
 [scalable-48]
 Size=24
+MinSize=48
 Context=Stock
 Type=Scalable

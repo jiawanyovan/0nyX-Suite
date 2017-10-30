@@ -4,6 +4,7 @@
   * gtk-auto-mnemonics is now on by default
   * better gtk2 scollbars inside notebooks
   * xfce4-terminal colorsheme
+  * extra gimp theme to remove blurry icons
 
 0nyX (0.96) unstable; urgency=low
 
