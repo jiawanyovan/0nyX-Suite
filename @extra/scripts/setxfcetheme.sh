@@ -21,12 +21,14 @@ if type xfconf-query >/dev/null 2>&1; then
 	xfconf-query -c xsettings -p /Net/ThemeName -s "0nyX" || true
 	xfconf-query -c xsettings -p /Gtk/ButtonImages -s false || true
 	xfconf-query -c xsettings -p /Gtk/MenuImages -s true || true
+	xfconf-query -c xsettings -p /Gtk/CursorThemeName -s "0nyX" || true
+	xfconf-query -c xsettings -p /Gtk/ToolbarIconSize -s "3" || true
+	xfconf-query -c xsettings -p /Gtk/MenuImages -s true || true
 	xfconf-query -c xfwm4 -p /general/theme -s "0nyX" || true
 	xfconf-query -c xfce4-notifyd -p /theme -s "0nyX" || true
 	xfconf-query -c xfce4-session -p /splash/Engine -s "balou" || true
 	xfconf-query -c xfce4-session -p /splash/engines/balou/Theme -s "0nyX" || true
 	xfconf-query -c xfdashboard -p /theme -s "0nyX" || true
-	xfconf-query -c xsettings -p /Net/IconThemeName -s "0nyX" || true
 fi
 printf "\ndone\n"
 sh "$basedir"/setgsettings.sh
