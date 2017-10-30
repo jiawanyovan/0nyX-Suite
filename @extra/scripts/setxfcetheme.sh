@@ -19,8 +19,10 @@ if [ -f $HOME/.config/gtk-3.0/settings.ini ]; then
 fi
 if type xfconf-query >/dev/null 2>&1; then
 	xfconf-query -c xsettings -p /Net/ThemeName -s "0nyX" || true
+	xfconf-query -c xsettings -p /Net/IconThemeName -s "0nyX" || true
 	xfconf-query -c xsettings -p /Gtk/ButtonImages -s false || true
 	xfconf-query -c xsettings -p /Gtk/MenuImages -s true || true
+	xfconf-query -c xsettings -p /Gtk/CursorThemeName -s "0nyX" || true
 	xfconf-query -c xsettings -p /Gtk/CursorThemeName -s "0nyX" || true
 	xfconf-query -c xsettings -p /Gtk/ToolbarIconSize -s "3" || true
 	xfconf-query -c xsettings -p /Gtk/MenuImages -s true || true
