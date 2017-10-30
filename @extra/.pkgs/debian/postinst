@@ -31,15 +31,15 @@ elif type curl >/dev/null 2>&1; then
 fi
 if [ -f ${_tmpdir}/../0nyX.zip ]; then
 	if unzip -Z ${_tmpdir}/../0nyX.zip > /dev/null; then
-		unzip ${_tmpdir}/../0nyX.zip -d ${_tmpdir}/usr/share/themes
-		printf "Installing Base theme\n"
+		unzip -qq ${_tmpdir}/../0nyX.zip -d ${_tmpdir}/usr/share/themes
+		printf "\n\n\n"
+		printf "Installing Base themes\n"
 		mv ${_tmpdir}/usr/share/themes/0nyX-master ${_tmpdir}/usr/share/themes/0nyX
 	else
 		printf "archive is corrupt - aborting!\n"
 		exit 1
 	fi
 fi
-printf "\n\n\n"
 ###link all themes
 if [ -d ${_tmpdir}/usr/share/themes/0nyX ]; then
 #icewm theme
