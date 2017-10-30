@@ -84,8 +84,8 @@ if [ -d ${_tmpdir}/usr/share/themes/0nyX ]; then
 	mkdir -p ${_tmpdir}/usr/share/xfce4/terminal/colorschemes
 	ln -sf ../../../themes/0nyX/@extra/appthemes/xfce-terminal/0nyX.theme ${_tmpdir}/usr/share/xfce4/terminal/colorschemes/0nyX.theme
 #gimp theme
-	mkdir -p ${_tmpdir}/usr/share/gimp/2.0/themes
-	ln -sf ../../../themes/0nyX/@extra/appthemes/gimp-2.0/gtkrc ${_tmpdir}/usr/share/gimp/2.0/themes/gtkrc
+	mkdir -p ${_tmpdir}/usr/share/gimp/2.0/themes/0nyX
+	ln -sf ../../../../themes/0nyX/@extra/appthemes/gimp-2.0/gtkrc ${_tmpdir}/usr/share/gimp/2.0/themes/0nyX/gtkrc
 #no overlay scrollbars
 #	mkdir -p ${_tmpdir}/etc/X11/Xsession.d
 #	printf "export GTK_OVERLAY_SCROLLING=0\nexport LIBOVERLAY_SCROLLBAR=0\n" > ${_tmpdir}/etc/X11/Xsession.d/98_0nyX
