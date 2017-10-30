@@ -1,10 +1,12 @@
-0nyX (GIT) unstable; urgency=low
+0nyX (0.97) unstable; urgency=low
 
   * many new icons
   * gtk-auto-mnemonics is now on by default
   * better gtk2 scollbars inside notebooks
   * xfce4-terminal colorsheme
   * extra gimp theme to remove blurry icons
+
+-- SSF <https://github.com/sixsixfive> Mon, 30 Oct 2017 11:02:21 +0100
 
 0nyX (0.96) unstable; urgency=low
 

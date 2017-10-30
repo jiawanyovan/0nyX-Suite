@@ -7,8 +7,9 @@ Directories=symbolic,symbolic-22,symbolic-24,symbolic-32,scalable,scalable-48,em
 ScaledDirectories=scalable,scalable-48,emblems,emblems-8,emblems-24,emblems-32
 Hidden=false
 ########################################################################
-# Doesnt really matter since the theme will never get loaded on KDE due some ancient bugs in KDE
-# however I leave this here just for the case and until then we can use qt5ct which loads it fine
+# Doesnt really matter since the theme will never get loaded on KDE due some ancient bugs in Qts/KDEs
+# Icon lookup implementaton. Qt itself also doesnt fully support the whole SVG standard!
+# however I leave this here just for the case and until we can use qt5ct which loads it fine
 DisplayDepth=32
 FollowsColorScheme=false
 DesktopDefault=48
@@ -31,47 +32,38 @@ Size=16
 Context=Actions
 Type=Fixed
 
-[symbolic]
 Size=16
 Context=Applications
 Type=Fixed
 
-[symbolic]
 Size=16
 Context=MimeTypes
 Type=Fixed
 
-[symbolic]
 Size=16
 Context=Devices
 Type=Fixed
 
-[symbolic]
 Size=16
 Context=Emotes
 Type=Fixed
 
-[symbolic]
 Size=16
 Context=FileSystems
 Type=Fixed
 
-[symbolic]
 Size=16
 Context=Places
 Type=Fixed
 
-[symbolic]
 Size=16
 Context=Categories
 Type=Fixed
 
-[symbolic]
 Size=16
 Context=Status
 Type=Fixed
 
-[symbolic]
 Size=16
 Context=Stock
 Type=Fixed
@@ -81,47 +73,38 @@ Size=22
 Context=Actions
 Type=Fixed
 
-[symbolic-22]
 Size=22
 Context=Applications
 Type=Fixed
 
-[symbolic-22]
 Size=22
 Context=MimeTypes
 Type=Fixed
 
-[symbolic-22]
 Size=22
 Context=Devices
 Type=Fixed
 
-[symbolic-22]
 Size=22
 Context=Emotes
 Type=Fixed
 
-[symbolic-22]
 Size=22
 Context=FileSystems
 Type=Fixed
 
-[symbolic-22]
 Size=22
 Context=Places
 Type=Fixed
 
-[symbolic-22]
 Size=22
 Context=Categories
 Type=Fixed
 
-[symbolic-22]
 Size=22
 Context=Status
 Type=Fixed
 
-[symbolic-22]
 Size=22
 Context=Stock
 Type=Fixed
@@ -131,47 +114,38 @@ Size=24
 Context=Actions
 Type=Fixed
 
-[symbolic-24]
 Size=24
 Context=Applications
 Type=Fixed
 
-[symbolic-24]
 Size=24
 Context=MimeTypes
 Type=Fixed
 
-[symbolic-24]
 Size=24
 Context=Devices
 Type=Fixed
 
-[symbolic-24]
 Size=24
 Context=Emotes
 Type=Fixed
 
-[symbolic-24]
 Size=24
 Context=FileSystems
 Type=Fixed
 
-[symbolic-24]
 Size=24
 Context=Places
 Type=Fixed
 
-[symbolic-24]
 Size=24
 Context=Categories
 Type=Fixed
 
-[symbolic-24]
 Size=24
 Context=Status
 Type=Fixed
 
-[symbolic-24]
 Size=24
 Context=Stock
 Type=Fixed
@@ -181,47 +155,38 @@ Size=32
 Context=Actions
 Type=Fixed
 
-[symbolic-32]
 Size=32
 Context=Applications
 Type=Fixed
 
-[symbolic-32]
 Size=32
 Context=MimeTypes
 Type=Fixed
 
-[symbolic-32]
 Size=32
 Context=Devices
 Type=Fixed
 
-[symbolic-32]
 Size=32
 Context=Emotes
 Type=Fixed
 
-[symbolic-32]
 Size=32
 Context=FileSystems
 Type=Fixed
 
-[symbolic-32]
 Size=32
 Context=Places
 Type=Fixed
 
-[symbolic-32]
 Size=32
 Context=Categories
 Type=Fixed
 
-[symbolic-32]
 Size=32
 Context=Status
 Type=Fixed
 
-[symbolic-32]
 Size=32
 Context=Stock
 Type=Fixed
@@ -262,55 +227,49 @@ MinSize=48
 Context=Actions
 Type=Scalable
 
-[scalable-48]
 Size=24
 MinSize=48
 Context=Applications
 Type=Scalable
 
-[scalable-48]
 Size=24
 MinSize=48
 Context=MimeTypes
 Type=Scalable
 
-[scalable-48]
 Size=24
 MinSize=48
 Context=Devices
 Type=Scalable
 
-[scalable-48]
 Size=24
 MinSize=48
 Context=Emotes
 Type=Scalable
 
-[scalable-48]
 Size=24
 MinSize=48
 Context=FileSystems
 Type=Scalable
 
-[scalable-48]
 Size=24
 Context=Places
 Type=Scalable
 
-[scalable-48]
 Size=24
 MinSize=48
 Context=Categories
 Type=Scalable
 
-[scalable-48]
 Size=24
 MinSize=48
 Context=Status
 Type=Scalable
 
-[scalable-48]
 Size=24
 MinSize=48
 Context=Stock
 Type=Scalable
+
+[Desktop Entry]
+Type=Application
