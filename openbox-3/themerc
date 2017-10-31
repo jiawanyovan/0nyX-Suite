@@ -60,6 +60,10 @@ window.inactive.border.color: #141313
 window.inactive.title.separator.color: #141313
 window.inactive.client.color: #424141
 
+### Pager
+osd.hilight.bg: Flat Solid
+osd.hilight.bg.color: #f1f2f2
+
 ### Everything else
 border.width: 1
 padding.width: 4
