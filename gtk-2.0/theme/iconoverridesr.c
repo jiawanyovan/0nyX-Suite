@@ -3,10 +3,11 @@ stock["rox-select"] = {{ @"edit-select-invert" }}
 stock["rox-show-details"] = {{ @"rox-show-details" }}
 stock["rox-show-hidden"] = {{ @"rox-show-hidden" }}
 stock["rox-symlink"] = {{ @"emblem-symbolic-link" }}
+stock["rox-xattr"] = {{ @"emblem-generic" }}
 stock["symlink"] = {{ @"emblem-symbolic-link" }}
 stock["dirs"] = {{ @"folder" }}
-stock["rox-mount"] = {{ @"emblem-mountpoint-mounted" }}
-stock["rox-mounted"] = {{ @"emblem-mountpoint-unmounted" }}
+stock["rox-mount"] = {{ @"emblem-none" }}
+stock["rox-mounted"] = {{ @"emblem-mountpoint-mounted" }}
 }class "*" style "roxicons"
 
 style"wnckicons"{
@@ -16,7 +17,7 @@ stock["wnck-stock-delete"] = {{ @"wnck-stock-delete" }}
 }class "*" style "wnckicons"
 
 style"gimpicons"{
-#for f in $(find -name 'gimp-*' -not -name '*-symbolic.svg*'); do printf "stock[\x22$(echo $f|sed 's/.svg//g;s|./||g')\x22] = {{ @\x22"$(echo $f|sed 's/.svg//g;s|./||g')"\x22 }}\n" >>$HOME/Desktop/abc;done
+#for f in $(find -name 'gimp-*' -not -name '*-symbolic.svg*'); do printf "stock[\x22$(echo $f|sed 's/.svg//g;s|./||g')\x22] = {{ @\x22"$(echo $f|sed 's/.svg//g;s|./||g')"\x22 }}\n" >>$HOME/Desktop/gimpicons;done
 stock["gimp-wilber-outline"] = {{ @"gimp-wilber-outline" }}
 stock["gimp-prefs-display"] = {{ @"gimp-prefs-display" }}
 stock["gimp-tool-flip"] = {{ @"gimp-tool-flip" }}
