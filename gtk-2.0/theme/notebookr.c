@@ -16,7 +16,7 @@ image{
 function=BOX_GAP
 file="../images/gtk-2.0/shadow.svg"
 detail="notebook"
-border={1,1,1,1}
+border={3,3,3,3}
 stretch=TRUE
 gap_file="../images/gtk-2.0/line.svg"
 gap_border={0,0,0,0}
