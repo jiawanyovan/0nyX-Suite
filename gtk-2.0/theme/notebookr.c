@@ -1,3 +1,5 @@
+#fixme add transparent border to outside and inside to remove double borders!
+
 style"gtknotebook"{
 xthickness=1
 ythickness=1
@@ -19,8 +21,7 @@ detail="notebook"
 border={1,1,1,1}
 stretch=TRUE
 gap_file="../images/gtk-2.0/line.svg"
-gap_border={0,0,0,0}
-}
+gap_border={0,0,0,0}}
 image{
 function=EXTENSION
 state=ACTIVE

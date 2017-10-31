@@ -14,3 +14,13 @@ rm -f /usr/share/themes/0nyX/files
 #re-enable the overlay scrollbars
 sed -i '/^#0nyX$/,+1 d' /etc/environment
 rm -rf /usr/share/themes/0nyX
+
+##################
+###Debian-only!###
+##################
+#DEBHELPER
+case "$1" in
+	remove|deconfigure|failed-upgrade)
+		update-alternatives --remove x-cursor-theme /usr/share/icons/0nyX/cursor.theme
+	;;
+esac

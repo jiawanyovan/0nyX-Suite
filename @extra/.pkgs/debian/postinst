@@ -119,3 +119,6 @@ EOF
 	chmod -R 755 ${_tmpdir}
 	cp -R ${_tmpdir}/* /
 fi
+
+#DEBHELPER
+update-alternatives --install /usr/share/icons/default/index.theme x-cursor-theme /usr/share/icons/0nyX/cursor.theme 150
