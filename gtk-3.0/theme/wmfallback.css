@@ -29,25 +29,29 @@ background:@selected_bg_color;}
 .titlebar .right button.minimize.titlebutton,
 .titlebar .right:dir(rtl) button.minimize.titlebutton,
 .titlebar .left button.minimize.titlebutton,
-.titlebar .left:dir(rtl) button.minimize.titlebutton {
+.titlebar .left:dir(rtl) button.minimize.titlebutton,
+window.csd>stack.titlebar headerbar button.minimize.titlebutton {
 background-image:-gtk-scaled(url("../../images/gtk-3.0/min.svg"),url("../../images/gtk-3.0/min2.svg"));}
 .default-decoration button.maximize.titlebutton,
 .titlebar .right button.maximize.titlebutton,
 .titlebar .right:dir(rtl) button.maximize.titlebutton,
 .titlebar .left button.maximize.titlebutton,
-.titlebar .left:dir(rtl) button.maximize.titlebutton {
+.titlebar .left:dir(rtl) button.maximize.titlebutton,
+window.csd>stack.titlebar headerbar button.maximize.titlebutton {
 background-image:-gtk-scaled(url("../../images/gtk-3.0/max.svg"),url("../../images/gtk-3.0/max2.svg"));}
 .maximized .default-decoration button.maximize.titlebutton,
 .maximized .titlebar .right button.maximize.titlebutton,
 .maximized .titlebar .right:dir(rtl) button.maximize.titlebutton,
 .maximized .titlebar .left button.maximize.titlebutton,
-.maximized .titlebar .left:dir(rtl) button.maximize.titlebutton {
+.maximized .titlebar .left:dir(rtl) button.maximize.titlebutton,
+window.maximized.csd>stack.titlebar headerbar button.maximize.titlebutton {
 background-image:-gtk-scaled(url("../../images/gtk-3.0/restore.svg"),url("../../images/gtk-3.0/restore2.svg"));}
 .default-decoration button.close.titlebutton,
 .titlebar .right button.close.titlebutton,
 .titlebar .right:dir(rtl) button.close.titlebutton,
 .titlebar .left button.close.titlebutton,
-.titlebar .left:dir(rtl) button.close.titlebutton {
+.titlebar .left:dir(rtl) button.close.titlebutton,
+window.csd>stack.titlebar headerbar button.close.titlebutton {
 background-image:-gtk-scaled(url("../../images/gtk-3.0/close.svg"),url("../../images/gtk-3.0/close2.svg"));}
 .default-decoration .titlebutton:backdrop,
 button.close.titlebutton:backdrop,
@@ -136,6 +140,24 @@ color:@inactive_fg_color;}
 background:shade(@titlebar_color,1.6);
 color:@titlebar_text;
 border:1px solid @border_color;}
+
+/*another way some apps use that headerbar crap eg gradio...*/
+window.csd>stack.titlebar,
+window.csd>stack.titlebar:backdrop,
+window.csd>grid.titlebar,
+window.csd>grid.titlebar:backdrop{
+border:none;
+box-shadow: inset 0px -1px 0px 0px shade(@titlebar_color,0.0);}
+window.csd>stack.titlebar headerbar button:not(:checked):not(.titlebutton),
+window.csd>stack.titlebar headerbar button:not(:checked):not(.titlebutton):backdrop,
+window.csd>grid.titlebar headerbar button:not(:checked):not(.titlebutton),
+window.csd>grid.titlebar headerbar button:not(:checked):not(.titlebutton):backdrop{
+background:shade(@titlebar_color,1.6);
+color:@titlebar_text;
+border:1px solid @border_color;}
+window.csd>stack.titlebar headerbar buttonbox button.text-button.toggle{
+font-weight:bold;}
+
 *.csd headerbar.titlebar button:checked:not(.titlebutton),
 *.csd headerbar.titlebar button:checked:not(.titlebutton):backdrop,
 *.csd headerbar.titlebar button:active:not(.titlebutton),
