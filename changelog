@@ -1,3 +1,14 @@
+0nyX (1.0) unstable; urgency=low
+
+  * final release
+  * some tiny fixes
+  * disable mnemonics again cause they are ugly!(just change gtk-enable-mnemonics to 1 to enable them)
+  * the icon theme is now seperate: https://github.com/sixsixfive/HighContrast-Icons
+  * removed all the debs, rpms and pkgbuild since it have no time to maintain them
+
+-- SSF <https://github.com/sixsixfive> Sun, 19 Nov 2017 11:01:42 +0100
+
+
 0nyX (0.97) unstable; urgency=low
 
   * many new icons

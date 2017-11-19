@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg xmlns="http://www.w3.org/2000/svg" version="1" viewBox="-3 -3 22 22">
- <path d="m6 2c-2 0-2 0-2 2v6h-1v-4h-2v5c0 1 0 1 1 1h2c0 2 0 2 2 2h2.264a4.5 4.5 0 0 1 -0.264 -1.5 4.5 4.5 0 0 1 0.264 -1.5h-1.264v-6h8v-3h-9zm5 5v1.264a4.5 4.5 0 0 1 1.5 -0.264 4.5 4.5 0 0 1 2.5 0.76v-0.76c0-1 0-1-1-1h-3z" fill="#f1f2f2"/>
- <circle cx="11.5" cy="11.5" r="4.5" fill="#333"/>
- <path style="color:#f1f2f2" d="m11.5 8a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0 -7zm-2.5 2.969h5v1.031h-5z" class="error" overflow="visible" fill="#c00"/>
-</svg>

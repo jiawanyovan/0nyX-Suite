@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=0nyX
+Comment=Everyday usable dark theme.
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=0nyX
+MetacityTheme=0nyX
+IconTheme=HighContrast
+CursorTheme=DMZ-white
+CursorSize=24

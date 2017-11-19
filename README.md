@@ -17,9 +17,6 @@
   * Traditional Scrollbars with arrows
   * HiDPI-support
   * Full RTL support
-* Matching HighContrast icon theme
-  * contains over 1000 icons
-  * covers more than 8500 icons from the last decade
 
 ## Dependencies
 
@@ -31,51 +28,29 @@
 ### Recommends: 
 
 * [GTK3-NOCSD](https://github.com/PCMan/gtk3-nocsd)
+* [HighContrast-Icons](https://github.com/sixsixfive/HighContrast-Icons)
 * GTK3>=3.20 + disabled GTK3 overlay scrollbars (export GTK_OVERLAY_SCROLLING=0)
 * [Qt5ct](https://sourceforge.net/projects/qt5ct/) + (Qt SVG module + QGtkStyle)
 * DMZ-White cursor theme
 * Xfce, IceWM or Openbox
 * Chrome/Chromium(@GTK3)(or any other browser with interal styling of html forms)
 
-### Currently included: 
-
-* GTK themes(GTK, GTK2, GTK3)
-* Xfce themes(XfDashboard, Balou, XfceNotifyd, xfce-terminal)
-* WindowManager themes(Xfwm, Metacity(Marco/Muffin), Openbox, IceWM)
-* Plank themes
-* Chrome/Chromium Scrollbars
-* SLiM theme
-* WinAMP 2.9x theme(Audacious, QMMP, XMMS etc.)
-* Onboard theme
-* Icon theme
-* Albert theme
-
 ## Installation
 
-### Packages
+you can build a debian package with: 
 
-Packages for Debian, SuSE and Manjaro can be found on the [Opendesktop-page](https://www.opendesktop.org/p/1175851).
-
-Note: Qt5ct for Debian can be found [here](https://github.com/mati75/qt5ct).
-
+```
+fakeroot debian/rules binary 
+```
 ### Manual
 
 For example to install it for all users:
 
+Copy the 0nyX folder to you themedir (usually $SYSPREFIX/share/themes) and link the desired sub-themes
+
 Note: You have to symlink the subthemes instead of copying otherwise they will break!
 
 ```
-## set your prefix usually /usr or /usr/local, 
-## if unsure try: (getconf PATH|sed -e 's/\/bin//g;s/://g') 
-prefix=/usr/local
-
-## Base themes: GTK, GTK2, GTK3, Xfce, MATE, Openbox
-mkdir /tmp/0nyX && cd /tmp/0nyX
-wget https://github.com/sixsixfive/0nyX/archive/master.zip
-unzip master.zip
-mkdir -p $prefix/share/themes
-mv /tmp/0nyX/0nyX-master $prefix/share/themes/0nyX
-
 ## HiDPI
 ln -s $prefix/share/themes/0nyX/@extra/subthemes/0nyX-HiDPI $prefix/share/themes/0nyX-HiDPI
 
@@ -205,7 +180,7 @@ the theme includes a fake HiDPI theme for GTK2 that doubles all GTK2 borders, pa
 xfconf-query -c xsettings -p /Gtk/IconSizes -s "gtk-menu=32,32:gtk-small-toolbar=48,48:gtk-large-toolbar=48,48:gtk-dnd=96,96:gtk-button=48,48:gtk-dialog=96,96:gtk-panel=48,48:panel-applications-menu=48,48:panel-tasklist-menu=64,64:panel-menu=48,48:panel-directory-menu=48,48:panel-launcher-menu=48,48:panel-window-menu=48,48:panel-menu-bar=48,48:ev-icon-size-annot-window=32,32:webkit-media-button-size=48,48"
 ```
 
-#### double your font dpi (eg:192)
+#### double your GTK2 font dpi (eg:192)
 
 * again, this can be done with [gtk2-settings](https://developer.gnome.org/gtk2/stable/GtkSettings.html#GtkSettings--gtk-xft-dpi)
 * on Xfce(@GTK2):

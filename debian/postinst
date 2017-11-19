@@ -1,0 +1,72 @@
+#!/bin/sh
+set -e
+###link all themes
+if [ -d /usr/share/themes/0nyX ]; then
+#icewm theme
+printf "Linking IceWM theme\n"
+	mkdir -p usr/share/icewm/themes
+	#ln -sf ../../themes/0nyX/@extra/appthemes/icewm/0nyX usr/share/icewm/themes/0nyX
+	for _f in $(find usr/share/themes/0nyX/@extra/appthemes/icewm/ -mindepth 1 -type d|sed 's\^.*/\\g'); do
+		ln -sf ../../themes/0nyX/@extra/appthemes/icewm/$_f usr/share/icewm/themes/$_f
+	done
+#plank theme
+printf "Linking Plank theme\n"
+	mkdir -p usr/share/plank/themes
+	for _f in $(find usr/share/themes/0nyX/@extra/appthemes/plank/ -mindepth 1 -type d|sed 's\^.*/\\g'); do
+		ln -sf ../../themes/0nyX/@extra/appthemes/plank/$_f usr/share/plank/themes/$_f
+	done
+#onboard
+printf "Linking Onboard theme\n"
+	mkdir -p usr/share/onboard/themes
+	for _f in $(find usr/share/themes/0nyX/@extra/appthemes/onboard -type f|sed 's\^.*/\\g'); do
+		ln -sf ../../themes/0nyX/@extra/appthemes/onboard/$_f usr/share/onboard/themes/$_f
+	done
+#SLiM
+printf "Linking SLiM theme\n"
+	mkdir -p usr/share/slim/themes
+	for _f in $(find usr/share/themes/0nyX/@extra/appthemes/SLiM -mindepth 1 -type d|sed 's\^.*/\\g'); do
+		ln -sf ../../themes/0nyX/@extra/appthemes/SLiM/$_f usr/share/slim/themes/$_f
+	done
+#qt5ct
+printf "Linking Qt5ct theme\n"
+	mkdir -p usr/share/qt5ct/colors usr/share/qt5ct/qss
+	ln -sf ../../themes/0nyX/@extra/appthemes/qt5ct/0nyX/colors/0nyX.conf usr/share/qt5ct/colors
+	for _f in $(find usr/share/themes/0nyX/@extra/appthemes/qt5ct/0nyX/qss -type f|sed 's\^.*/\\g'); do
+		ln -sf ../../themes/0nyX/@extra/appthemes/qt5ct/0nyX/qss/$_f usr/share/qt5ct/qss/$_f
+	done
+#albert(app does not support symlinks!)
+printf "Installing Albert theme\n"
+	mkdir -p usr/share/albert/themes
+	cp usr/share/themes/0nyX/@extra/appthemes/albert/0nyX/0nyX.qss usr/share/albert/themes/0nyX.qss
+#subthemes theme
+printf "Linking HiDPI theme\n"
+	ln -sf 0nyX/@extra/subthemes/0nyX-HiDPI usr/share/themes/0nyX-HiDPI
+#WinAMP theme
+printf "Linking WinAMP theme\n"
+	mkdir -p usr/share/audacious/Skins
+	ln -sf ../../themes/0nyX/@extra/appthemes/WinAMP/0nyX usr/share/audacious/Skins/0nyX
+	mkdir -p  usr/share/qmmp/skins
+	ln -sf ../../themes/0nyX/@extra/appthemes/WinAMP/0nyX usr/share/qmmp/skins/0nyX
+#xfceterm theme
+printf "Linking Xfce4-terminal theme\n"
+	mkdir -p usr/share/xfce4/terminal/colorschemes
+	ln -sf ../../../themes/0nyX/@extra/appthemes/xfce-terminal/0nyX.theme usr/share/xfce4/terminal/colorschemes/0nyX.theme
+#gimp theme
+printf "Linking GIMP theme\n"
+	mkdir -p usr/share/gimp/2.0/themes/0nyX
+	ln -sf ../../../../themes/0nyX/@extra/appthemes/gimp-2.0/gtkrc usr/share/gimp/2.0/themes/0nyX/gtkrc
+#no overlay scrollbars
+#	mkdir -p etc/X11/Xsession.d
+#	printf "export GTK_OVERLAY_SCROLLING=0\nexport LIBOVERLAY_SCROLLBAR=0\n" > etc/X11/Xsession.d/98_0nyX
+#xsession.d was a good idea however it wont work with root apps like synaptic so use /etc/environment instead
+	printf '\n#0nyX\nGTK_OVERLAY_SCROLLING=0\n#0nyX\nLIBOVERLAY_SCROLLBAR=0'>> /etc/environment
+##################
+###Debian-only!###
+##################
+#chromium scrollbars
+printf "Installing Chromium Browser theme\n"
+	mkdir -p etc/chromium.d
+	cat <<\EOF > etc/chromium.d/0nyX
+export CHROMIUM_FLAGS="$CHROMIUM_FLAGS --load-extension=/usr/share/themes/0nyX/@extra/appthemes/Chromium_unpackedextension/0nyX"
+EOF
+fi
