@@ -22,7 +22,6 @@ install: build
 	dh_installdirs
 	mkdir -p $(CURDIR)/debian/0nyx-theme/usr/share/themes
 	cp -R $(CURDIR)/0nyX $(CURDIR)/debian/0nyx-theme/usr/share/themes/0nyX
-	chmod 777 -R $(CURDIR)/debian/0nyx-theme/usr/share/themes/0nyX
 
 binary-indep: build install
 
