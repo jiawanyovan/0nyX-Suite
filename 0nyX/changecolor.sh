@@ -4,7 +4,7 @@ set -e
 #	x-terminal-emulator -e "$0"
 #	exit 0
 #fi
-basedir="$(dirname "$(readlink -f "${0}")")/../.."
+basedir="$(dirname "$(readlink -f "${0}")")"
 cd "$basedir"
 color="$1"
 case $color in
@@ -23,7 +23,7 @@ case $_missingdep in
 		exit 1;;
 esac
 #check if we have permissions
-if [ ! -w "$basedir"/Extras ]; then
+if [ ! -w "$basedir" ]; then
 		if type yad >/dev/null 2>&1; then
 			yad --on-top --center --title Error --image=dialog-error --text "\nYou don't have write permissions!" --button="gtk-ok:0"
 		else
