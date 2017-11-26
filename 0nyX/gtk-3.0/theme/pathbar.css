@@ -30,13 +30,13 @@ opacity:0;}
 #pathbarbox .slider-button:first-child,
 #pathbarbox .slider-button:last-child:dir(rtl) {
 -gtk-icon-source:none;
-background-image:-gtk-scaled(url("/home/ssf/.themes/Phlat/images/gtk-3.0/arrow-left_normal.svg"),url("/home/ssf/.themes/Phlat/images/gtk-3.0/arrow-left_normal2.svg"));
+background-image:-gtk-scaled(url("images/arrow-left_normal.svg"),url("images/arrow-left_normal2.svg"));
 background-repeat:no-repeat;
 background-position:50% 50%;}
 #pathbarbox .slider-button:first-child:dir(rtl),
 #pathbarbox .slider-button:last-child {
 -gtk-icon-source:none;
-background-image:-gtk-scaled(url("/home/ssf/.themes/Phlat/images/gtk-3.0/arrow-right_normal.svg"),url("/home/ssf/.themes/Phlat/images/gtk-3.0/arrow-right_normal2.svg"));
+background-image:-gtk-scaled(url("images/arrow-right_normal.svg"),url("images/arrow-right_normal2.svg"));
 background-repeat:no-repeat;
 background-position:50% 50%;}
 #pathbarbox .slider-button:disabled{

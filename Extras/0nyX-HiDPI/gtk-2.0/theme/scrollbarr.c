@@ -6,15 +6,15 @@ bg[ACTIVE]=shade (0.6, @bg_color)
 bg[INSENSITIVE]=@base_color
 xthickness=0
 ythickness=0
-GtkScrollbar::min-slider-length=40
+GtkScrollbar::min-slider-length=80
 GtkScrollbar::fixed-slider-length=1
 GtkScrollbar::has_secondary_backward_stepper=0
 GtkScrollbar::has_secondary_forward_stepper=0
 GtkScrollbar::has_backward_stepper=1
 GtkScrollbar::has_forward_stepper=1
 GtkRange::activate-slider=0
-GtkRange::slider-width=18
-GtkRange::stepper-size=18
+GtkRange::slider-width=36
+GtkRange::stepper-size=36
 GtkRange::stepper-spacing=0
 GtkRange::trough-border=0
 GtkRange::trough-under-steppers=1
@@ -26,7 +26,7 @@ function=BOX
 orientation=VERTICAL
 detail="trough"
 file="images/scrollbar.svg"
-border={1,1,1,1}
+border={2,2,2,2}
 stretch=TRUE
 }
 image
@@ -35,7 +35,7 @@ function=BOX
 orientation=HORIZONTAL
 detail="trough"
 file="images/scrollbar.svg"
-border={1,1,1,1}
+border={2,2,2,2}
 stretch=TRUE
 }
 image
@@ -47,7 +47,7 @@ file="images/selection-color.svg"
 stretch=FALSE
 overlay_file="images/shadow.svg"
 overlay_stretch=TRUE
-overlay_border={1,1,1,1}
+overlay_border={2,2,2,2}
 }
 image
 {
@@ -58,7 +58,7 @@ file="images/selection-color.svg"
 stretch=FALSE
 overlay_file="images/shadow.svg"
 overlay_stretch=TRUE
-overlay_border={1,1,1,1}
+overlay_border={2,2,2,2}
 }
 image
 {
@@ -69,7 +69,7 @@ file="images/window-color.svg"
 stretch=FALSE
 overlay_file="images/shadow.svg"
 overlay_stretch=TRUE
-overlay_border={1,1,1,1}
+overlay_border={2,2,2,2}
 }
 image
 {
@@ -80,7 +80,7 @@ file="images/window-color.svg"
 stretch=FALSE
 overlay_file="images/shadow.svg"
 overlay_stretch=TRUE
-overlay_border={1,1,1,1}}}}
+overlay_border={2,2,2,2}}}}
 class"GtkScrollbar"style"scrollbar"
 
 
@@ -93,7 +93,7 @@ function=BOX
 orientation=VERTICAL
 detail="trough"
 file="images/scrollbar_vertical-rightopen.svg"
-border={1,1,1,1}
+border={2,2,2,2}
 stretch=TRUE
 }
 image
@@ -102,7 +102,7 @@ function=BOX
 orientation=HORIZONTAL
 detail="trough"
 file="images/scrollbar_horizontal-bottomopen.svg"
-border={1,1,1,1}
+border={2,2,2,2}
 stretch=TRUE
 }
 image
@@ -114,7 +114,7 @@ file="images/selection-color.svg"
 stretch=FALSE
 overlay_file="images/shadow.svg"
 overlay_stretch=TRUE
-overlay_border={1,1,1,1}
+overlay_border={2,2,2,2}
 }
 image
 {
@@ -125,7 +125,7 @@ file="images/selection-color.svg"
 stretch=FALSE
 overlay_file="images/shadow.svg"
 overlay_stretch=TRUE
-overlay_border={1,1,1,1}
+overlay_border={2,2,2,2}
 }
 image
 {
@@ -136,7 +136,7 @@ file="images/window-color.svg"
 stretch=FALSE
 overlay_file="images/shadow.svg"
 overlay_stretch=TRUE
-overlay_border={1,1,1,1}
+overlay_border={2,2,2,2}
 }
 image
 {
@@ -147,7 +147,7 @@ file="images/window-color.svg"
 stretch=FALSE
 overlay_file="images/shadow.svg"
 overlay_stretch=TRUE
-overlay_border={1,1,1,1}}}}
+overlay_border={2,2,2,2}}}}
 widget_class"*GtkNotebook.GtkScrolledWindow.GtkHScrollbar"style"notebookscrolledwindowscrollbar"
 widget_class"*GtkNotebook.GtkScrolledWindow.GtkVScrollbar"style"notebookscrolledwindowscrollbar"
 widget_class"*GtkNotebook.GimpDisplayShell.GtkHBox.GtkVBox.GtkVScrollbar"style"notebookscrolledwindowscrollbar"
@@ -164,7 +164,7 @@ function=BOX
 orientation=VERTICAL
 detail="trough"
 file="images/scrollbar_vertical-leftopen.svg"
-border={1,1,1,1}
+border={2,2,2,2}
 stretch=TRUE
 }
 image
@@ -173,7 +173,7 @@ function=BOX
 orientation=HORIZONTAL
 detail="trough"
 file="images/scrollbar_horizontal-topopen.svg"
-border={1,1,1,1}
+border={2,2,2,2}
 stretch=TRUE
 }
 image
@@ -185,7 +185,7 @@ file="images/selection-color.svg"
 stretch=FALSE
 overlay_file="images/shadow.svg"
 overlay_stretch=TRUE
-overlay_border={1,1,1,1}
+overlay_border={2,2,2,2}
 }
 image
 {
@@ -196,7 +196,7 @@ file="images/selection-color.svg"
 stretch=FALSE
 overlay_file="images/shadow.svg"
 overlay_stretch=TRUE
-overlay_border={1,1,1,1}
+overlay_border={2,2,2,2}
 }
 image
 {
@@ -207,7 +207,7 @@ file="images/window-color.svg"
 stretch=FALSE
 overlay_file="images/shadow.svg"
 overlay_stretch=TRUE
-overlay_border={1,1,1,1}
+overlay_border={2,2,2,2}
 }
 image
 {
@@ -218,7 +218,7 @@ file="images/window-color.svg"
 stretch=FALSE
 overlay_file="images/shadow.svg"
 overlay_stretch=TRUE
-overlay_border={1,1,1,1}}}}
+overlay_border={2,2,2,2}}}}
 widget_class"*XfceSettingsManagerDialog.GtkVBox.GtkVBox.GtkScrolledWindow.GtkHScrollbar"style"notebookscrolledwindowscrollbar2"
 widget_class"*XfceSettingsManagerDialog.GtkVBox.GtkVBox.GtkScrolledWindow.GtkVScrollbar"style"notebookscrolledwindowscrollbar2"
 widget_class"*GtkPlug.GtkNotebook.GtkScrolledWindow.GtkHScrollbar"style"notebookscrolledwindowscrollbar2"

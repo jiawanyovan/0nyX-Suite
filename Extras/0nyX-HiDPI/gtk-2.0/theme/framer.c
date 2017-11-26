@@ -5,7 +5,7 @@ engine"pixmap"{
 image{
 function=SHADOW_GAP
 file="images/arrow-bg.svg"
-border={4,4,4,4}
+border={8,8,8,8}
 stretch=TRUE
 gap_start_file="images/none.svg"
 gap_start_border={0,0,0,0}

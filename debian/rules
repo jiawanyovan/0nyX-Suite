@@ -22,6 +22,46 @@ install: build
 	dh_installdirs
 	mkdir -p $(CURDIR)/debian/0nyx-theme/usr/share/themes
 	cp -R $(CURDIR)/0nyX $(CURDIR)/debian/0nyx-theme/usr/share/themes/0nyX
+	cp -R $(CURDIR)/Extras $(CURDIR)/debian/0nyx-theme/usr/share/themes/0nyX/Extras
+	ln -s 0nyX/Extras/0nyX-HiDPI $(CURDIR)/debian/0nyx-theme/usr/share/themes/0nyX-HiDPI
+	ln -s ../../0nyX/gtk-3.0 $(CURDIR)/debian/0nyx-theme/usr/share/themes/0nyX/Extras/0nyX-HiDPI/gtk-3.0
+#icewm
+	mkdir -p $(CURDIR)/debian/0nyx-theme/usr/share/icewm/themes
+	ln -s ../../themes/0nyX/Extras/App_themes/icewm/0nyX $(CURDIR)/debian/0nyx-theme/usr/share/icewm/themes/0nyX
+	ln -s ../../themes/0nyX/Extras/App_themes/icewm/0nyX-HiDPI $(CURDIR)/debian/0nyx-theme/usr/share/icewm/themes/0nyX-HiDPI
+#plank
+	mkdir -p $(CURDIR)/debian/0nyx-theme/usr/share/plank/themes
+	ln -s ../../themes/0nyX/Extras/App_themes/plank/0nyX $(CURDIR)/debian/0nyx-theme/usr/share/plank/themes/0nyX
+	ln -s ../../themes/0nyX/Extras/App_themes/plank/0nyX-HiDPI $(CURDIR)/debian/0nyx-theme/usr/share/plank/themes/0nyX-HiDPI
+	ln -s ../../themes/0nyX/Extras/App_themes/plank/0nyX-full $(CURDIR)/debian/0nyx-theme/usr/share/plank/themes/0nyX-full
+	ln -s ../../themes/0nyX/Extras/App_themes/plank/0nyX-full-HiDPI $(CURDIR)/debian/0nyx-theme/usr/share/plank/themes/0nyX-full-HiDPI
+#onboard
+	mkdir -p $(CURDIR)/debian/0nyx-theme/usr/share/onboard/themes
+	ln -s ../../themes/0nyX/Extras/App_themes/onboard/0nyX.colors $(CURDIR)/debian/0nyx-theme/usr/share/onboard/themes/0nyX.colors
+	ln -s ../../themes/0nyX/Extras/App_themes/onboard/0nyX.theme $(CURDIR)/debian/0nyx-theme/usr/share/onboard/themes/0nyX.theme
+#SLIM
+	mkdir -p $(CURDIR)/debian/0nyx-theme/usr/share/slim/themes
+	ln -s ../../themes/0nyX/Extras/App_themes/SLiM/0nyX $(CURDIR)/debian/0nyx-theme/usr/share/slim/themes/0nyX
+	ln -s ../../themes/0nyX/Extras/App_themes/SLiM/0nyX-HiDPI $(CURDIR)/debian/0nyx-theme/usr/share/slim/themes/0nyX-HiDPI
+#qt5ct
+	mkdir -p $(CURDIR)/debian/0nyx-theme/usr/share/qt5ct/colors
+	mkdir -p $(CURDIR)/debian/0nyx-theme/usr/share/qt5ct/qss
+	ln -s ../../themes/0nyX/Extras/App_themes/qt5ct/colors/0nyX.conf $(CURDIR)/debian/0nyx-theme/usr/share/qt5ct/colors/0nyX.conf
+	ln -s ../../themes/0nyX/Extras/App_themes/qt5ct/qss/0nyX_QGtkStylePluginFixes.qss $(CURDIR)/debian/0nyx-theme/usr/share/qt5ct/qss/0nyX_QGtkStylePluginFixes.qss
+#albert
+	mkdir -p $(CURDIR)/debian/0nyx-theme/usr/share/albert/themes
+	cp $(CURDIR)/debian/0nyx-theme/usr/share/themes/0nyX/Extras/App_themes/albert/0nyX.qss $(CURDIR)/debian/0nyx-theme/usr/share/albert/themes/0nyX.qss
+#WinAMP
+	mkdir -p $(CURDIR)/debian/0nyx-theme/usr/share/audacious/Skins
+	ln -s ../../themes/0nyX/Extras/App_themes/WinAMP/0nyX $(CURDIR)/debian/0nyx-theme/usr/share/audacious/Skins/0nyX
+	mkdir -p $(CURDIR)/debian/0nyx-theme/usr/share/qmmp/skins
+	ln -s ../../themes/0nyX/Extras/App_themes/WinAMP/0nyX $(CURDIR)/debian/0nyx-theme/usr/share/qmmp/skins/0nyX
+#xfceterm theme
+	mkdir -p $(CURDIR)/debian/0nyx-theme/usr/share/xfce4/terminal/colorschemes
+	ln -s ../../../themes/0nyX/Extras/App_themes/xfce-terminal/0nyX.theme $(CURDIR)/debian/0nyx-theme/usr/share/xfce4/terminal/colorschemes/0nyX.theme
+#gimp2 theme
+	mkdir -p $(CURDIR)/debian/0nyx-theme/usr/share/gimp/2.0/themes/0nyX
+	ln -s ../../../../themes/0nyX/Extras/App_themes/gimp-2.0/gtkrc $(CURDIR)/debian/0nyx-theme/usr/share/gimp/2.0/themes/0nyX/gtkrc
 
 binary-indep: build install
 

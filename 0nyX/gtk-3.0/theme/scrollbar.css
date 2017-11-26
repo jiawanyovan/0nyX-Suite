@@ -18,7 +18,7 @@ scrollbar>contents>button:backdrop{
 min-width:14px;
 min-height:14px;
 margin:1px;
--gtk-icon-source:-gtk-scaled(url("../../images/gtk-3.0/arrow-down_normal.svg"),url("../../images/gtk-3.0/arrow-down_normal2.svg"));}
+-gtk-icon-source:-gtk-scaled(url("images/arrow-down_normal.svg"),url("images/arrow-down_normal2.svg"));}
 scrollbar.vertical>contents>button.down,
 scrollbar.vertical>contents>button.down:backdrop{
 border:none;
@@ -45,7 +45,7 @@ background-size:14px 14px;}
 
 scrollbar>contents>button:disabled,
 scrollbar>contents>button:disabled:backdrop{
--gtk-icon-source:-gtk-scaled(url("../../images/gtk-3.0/arrow-down_insensitive.svg"),url("../../images/gtk-3.0/arrow-down_insensitive2.svg"));}
+-gtk-icon-source:-gtk-scaled(url("images/arrow-down_insensitive.svg"),url("images/arrow-down_insensitive2.svg"));}
 
 scrollbar slider,
 scrollbar slider:backdrop{

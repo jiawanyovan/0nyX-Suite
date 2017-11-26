@@ -14,25 +14,25 @@ check:checked:not(:disabled):backdrop{
 background-color:@selected_bg_color;
 border:1px solid @border_color;}
 check:indeterminate{
--gtk-icon-source:-gtk-scaled(url("../../images/gtk-3.0/check-semi.svg"),url("../../images/gtk-3.0/check-semi2.svg"));}
+-gtk-icon-source:-gtk-scaled(url("images/check-semi.svg"),url("images/check-semi2.svg"));}
 check:checked{
--gtk-icon-source:-gtk-scaled(url("../../images/gtk-3.0/check-check.svg"),url("../../images/gtk-3.0/check-check2.svg"));}
+-gtk-icon-source:-gtk-scaled(url("images/check-check.svg"),url("images/check-check2.svg"));}
 check:checked:disabled{
--gtk-icon-source:-gtk-scaled(url("../../images/gtk-3.0/check-check_insensitive.svg"),url("../../images/gtk-3.0/check-check_insensitive2.svg"));}
+-gtk-icon-source:-gtk-scaled(url("images/check-check_insensitive.svg"),url("images/check-check_insensitive2.svg"));}
 check:indeterminate:disabled{
--gtk-icon-source:-gtk-scaled(url("../../images/gtk-3.0/check-semi_insensitive.svg"),url("../../images/gtk-3.0/check-semi_insensitive2.svg"));}
+-gtk-icon-source:-gtk-scaled(url("images/check-semi_insensitive.svg"),url("images/check-semi_insensitive2.svg"));}
 radio:checked:not(:disabled),
 radio:checked:not(:disabled):backdrop{
 background-color:@selected_bg_color;
 border:1px solid @border_color;}
 radio:indeterminate{
--gtk-icon-source:-gtk-scaled(url("../../images/gtk-3.0/radio-semi.svg"),url("../../images/gtk-3.0/radio-semi2.svg"));}
+-gtk-icon-source:-gtk-scaled(url("images/radio-semi.svg"),url("images/radio-semi2.svg"));}
 radio:checked{
--gtk-icon-source:-gtk-scaled(url("../../images/gtk-3.0/radio-check.svg"),url("../../images/gtk-3.0/radio-check2.svg"));}
+-gtk-icon-source:-gtk-scaled(url("images/radio-check.svg"),url("images/radio-check2.svg"));}
 radio:checked:disabled{
--gtk-icon-source:-gtk-scaled(url("../../images/gtk-3.0/radio-check_insensitive.svg"),url("../../images/gtk-3.0/radio-check_insensitive2.svg"));}
+-gtk-icon-source:-gtk-scaled(url("images/radio-check_insensitive.svg"),url("images/radio-check_insensitive2.svg"));}
 radio:indeterminate:disabled{
--gtk-icon-source:-gtk-scaled(url("../../images/gtk-3.0/radio-semi_insensitive.svg"),url("../../images/gtk-3.0/radio-semi_insensitive2.svg"));}
+-gtk-icon-source:-gtk-scaled(url("images/radio-semi_insensitive.svg"),url("images/radio-semi_insensitive2.svg"));}
 
 *:selected check:not(:checked):not(:disabled),
 *:selected check:not(:checked):not(:disabled):backdrop,

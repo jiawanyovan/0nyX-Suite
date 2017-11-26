@@ -1,46 +1,6 @@
 #!/bin/sh
 #re-enable the overlay scrollbars
 sed -i '/^#0nyX$/,+1 d' /etc/environment
-###unlink subthemes
-printf "Unlinking IceWM theme\n"
-	#ln -sf ../../themes/0nyX/@extra/appthemes/icewm/0nyX usr/share/icewm/themes/0nyX
-	for _f in $(find usr/share/themes/0nyX/@extra/appthemes/icewm/ -mindepth 1 -type d|sed 's\^.*/\\g'); do
-		rm -f usr/share/icewm/themes/$_f
-	done
-#plank theme
-printf "Unlinking Plank theme\n"
-	for _f in $(find usr/share/themes/0nyX/@extra/appthemes/plank/ -mindepth 1 -type d|sed 's\^.*/\\g'); do
-		rm -f ../../themes/0nyX/@extra/appthemes/plank/$_f usr/share/plank/themes/$_f
-	done
-#onboard
-printf "Unlinking Onboard theme\n"
-	for _f in $(find usr/share/themes/0nyX/@extra/appthemes/onboard -type f|sed 's\^.*/\\g'); do
-		rm -f ../../themes/0nyX/@extra/appthemes/onboard/$_f usr/share/onboard/themes/$_f
-	done
-#SLiM
-printf "Unlinking SLiM theme\n"
-	for _f in $(find usr/share/themes/0nyX/@extra/appthemes/SLiM -mindepth 1 -type d|sed 's\^.*/\\g'); do
-		rm -f ../../themes/0nyX/@extra/appthemes/SLiM/$_f usr/share/slim/themes/$_f
-	done
-#qt5ct
-printf "Unlinking Qt5ct theme\n"
-	rm -f ../../themes/0nyX/@extra/appthemes/qt5ct/0nyX/colors/0nyX.conf usr/share/qt5ct/colors/0nyX.conf
-	for _f in $(find usr/share/themes/0nyX/@extra/appthemes/qt5ct/0nyX/qss -type f|sed 's\^.*/\\g'); do
-		rm -f ../../themes/0nyX/@extra/appthemes/qt5ct/0nyX/qss/$_f usr/share/qt5ct/qss/$_f
-	done
-#albert(app does not support symlinks!)
-printf "Uninstalling Albert theme\n"
-	rm -f  usr/share/albert/themes/0nyX.qss
-#subthemes theme
-printf "Unlinking HiDPI theme\n"
-	rm -f usr/share/themes/0nyX-HiDPI
-#WinAMP theme
-printf "Unlinking WinAMP theme\n"
-	rm -f ../../themes/0nyX/@extra/appthemes/WinAMP/0nyX usr/share/audacious/Skins/0nyX
-	rm -f ../../themes/0nyX/@extra/appthemes/WinAMP/0nyX usr/share/qmmp/skins/0nyX
-#xfceterm theme
-printf "Unlinking Xfce4-terminal theme\n"
-	rm -f ../../../themes/0nyX/@extra/appthemes/xfce-terminal/0nyX.theme usr/share/xfce4/terminal/colorschemes/0nyX.theme
-#gimp theme
-printf "Unlinking GIMP theme\n"
-	rm -f ../../../../themes/0nyX/@extra/appthemes/gimp-2.0/gtkrc usr/share/gimp/2.0/themes/0nyX/gtkrc
+if [ -f "/etc/chromium.d/0nyX" ]; then
+	rm -f /etc/chromium.d/0nyX
+fi

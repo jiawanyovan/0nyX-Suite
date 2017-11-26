@@ -2,8 +2,8 @@ style "lxpanelwindow"{
 xthickness=0
 ythickness=0
 GtkWidget::shadow-type=GTK_SHADOW_NONE
-GtkButton::inner-border={2,2,2,2}
-GtkButton::image-spacing=5
+GtkButton::inner-border={4,4,4,4}
+GtkButton::image-spacing=10
 engine"pixmap"{
 image{
 function=BOX
@@ -17,14 +17,14 @@ image{
 function=SHADOW
 shadow=OUT
 file="images/none.svg"
-border={1,1,0,1}
+border={2,2,0,2}
 stretch=TRUE}}}
 widget_class "*PanelToplevel*" style "lxpanelwindow"
 
 style"lxpanelbutton"{
 xthickness=0
 ythickness=0
-GtkButton::inner-border={2,2,2,2}
+GtkButton::inner-border={4,4,4,4}
 GtkButton::shadow-type=GTK_SHADOW_NONE
 GtkWidget::wide-separators=1
 GtkWidget::separator-height=0
@@ -82,8 +82,7 @@ widget_class"*PanelToplevel*Button*"style"lxpanelbutton"
 style"lxpaneltask"{
 xthickness=3
 ythickness=3
-font_name="bold"
-GtkButton::inner-border={2,2,2,2}
+GtkButton::inner-border={4,4,4,4}
 GtkButton::shadow-type=GTK_SHADOW_NONE
 GtkWidget::wide-separators=1
 GtkWidget::separator-height=0
@@ -137,6 +136,7 @@ detail="focus"
 file="images/none.svg"
 stretch=FALSE}}}
 widget_class"*PanelToplevel*TaskButton*"style"lxpaneltask"
+
 style "pcmanfm"{
 xthickness=0
 ythickness=0
@@ -146,13 +146,13 @@ function=FLAT_BOX
 file="images/window-color.svg"
 state=NORMAL
 stretch=TRUE
-border={0,1,0,0}}
+border={0,2,0,0}}
 image{
 function=FLAT_BOX
 file="images/selection-color.svg"
 state=SELECTED
 stretch=TRUE
-border={0,1,0,0}}}}
+border={0,2,0,0}}}}
 widget_class "*FmSidePane*"style "pcmanfm"
 
 style"lxpanelbold"{

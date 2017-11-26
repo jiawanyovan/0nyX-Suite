@@ -1,7 +1,7 @@
 style"pathbarbutton"{
 xthickness=0
 ythickness=0
-GtkButton::inner-border={5,5,4,4}
+GtkButton::inner-border={10,10,8,8}
 GtkButton::shadow-type=GTK_SHADOW_NONE
 engine"pixmap"{
 image{
@@ -13,7 +13,7 @@ image{
 function=BOX
 shadow=IN
 file="images/pathbar_active.svg"
-border={0,0,0,2}
+border={0,0,0,4}
 stretch=TRUE}
 image{
 detail="buttondefault"

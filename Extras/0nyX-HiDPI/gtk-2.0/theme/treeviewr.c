@@ -1,7 +1,7 @@
 style"gtktreeviewheader"{
 xthickness=0
-ythickness=2
-GtkButton::inner-border={4,4,1,4}
+ythickness=4
+GtkButton::inner-border={8,8,2,8}
 bg[NORMAL]=@base_color
 bg[SELECTED]=@selected_base_color
 bg[PRELIGHT]=@base_color
@@ -11,7 +11,7 @@ engine"pixmap"{
 image{
 function=SHADOW
 file="images/header-shadow.svg"
-border={0,1,0,1}
+border={0,2,0,2}
 stretch=TRUE}}}
 widget_class"*.<GtkTreeView>.<GtkButton>"style"gtktreeviewheader"
 widget_class"*.<GtkCTree>.<GtkButton>"style"gtktreeviewheader"

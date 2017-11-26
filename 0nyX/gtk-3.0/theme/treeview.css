@@ -57,15 +57,15 @@ border:1px solid @border_color;}
 
 treeview.view.expander:checked{
 -gtk-icon-transform:rotate(0.0turn);
--gtk-icon-source:-gtk-scaled(url("../../images/gtk-3.0/treeview-expander-active.svg"),url("../../images/gtk-3.0/treeview-expander-active2.svg"));}
+-gtk-icon-source:-gtk-scaled(url("images/treeview-expander-active.svg"),url("images/treeview-expander-active2.svg"));}
 treeview.view.expander:selected{
 -gtk-icon-transform:rotate(0.0turn);
--gtk-icon-source:-gtk-scaled(url("../../images/gtk-3.0/treeview-expander-normal.svg"),url("../../images/gtk-3.0/treeview-expander-normal2.svg"));}
+-gtk-icon-source:-gtk-scaled(url("images/treeview-expander-normal.svg"),url("images/treeview-expander-normal2.svg"));}
 treeview.view.expander{
--gtk-icon-source:-gtk-scaled(url("../../images/gtk-3.0/treeview-expander-normal.svg"),url("../../images/gtk-3.0/treeview-expander-normal2.svg"));
+-gtk-icon-source:-gtk-scaled(url("images/treeview-expander-normal.svg"),url("images/treeview-expander-normal2.svg"));
 -gtk-icon-transform:rotate(0.75turn);}
 treeview.view.expander:dir(rtl){
--gtk-icon-source:-gtk-scaled(url("../../images/gtk-3.0/treeview-expander-normal.svg"),url("../../images/gtk-3.0/treeview-expander-normal2.svg"));
+-gtk-icon-source:-gtk-scaled(url("images/treeview-expander-normal.svg"),url("images/treeview-expander-normal2.svg"));
 -gtk-icon-transform:rotate(0.25turn);}
 
 treeview.view header button:dir(ltr),

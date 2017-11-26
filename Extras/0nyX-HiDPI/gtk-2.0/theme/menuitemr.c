@@ -13,27 +13,27 @@ widget_class"*.<GtkMenu>.<GtkMenuItem>.<GtkLabel>"style"menuitem"
 
 style"menuseperator"{
 xthickness=0
-ythickness=1
+ythickness=2
 GtkSeparatorMenuItem::horizontal-padding=0
 GtkMenuItem::toggle-spacing=0
 GtkWidget::wide-separators=1
-GtkMenuItem::separator-height=1
+GtkMenuItem::separator-height=2
 GtkMenu::shadow-type=GTK_SHADOW_NONE
 engine"pixmap"{
 image{
 function=BOX
 file="images/line.svg"
-border={1,0,0,0}
+border={2,0,0,0}
 stretch=TRUE}}}
 widget_class"*<GtkSeparatorMenuItem>*"style"menuseperator"
 
 style"gtkmenucheckbutton"{
 xthickness=1
 ythickness=1
-GtkCheckButton::indicator-size=18
-GtkRadioButton::indicator-size=18
-GtkCheckMenuItem::indicator-size=18
-GtkRadioMenuItem::indicator-size=18
+GtkCheckButton::indicator-size=36
+GtkRadioButton::indicator-size=36
+GtkCheckMenuItem::indicator-size=36
+GtkRadioMenuItem::indicator-size=36
 engine"pixmap"{
 image{
 function=CHECK
@@ -41,7 +41,7 @@ state=INSENSITIVE
 shadow=OUT
 file="images/menu_check_normal.svg"
 stretch=TRUE
-border={1,1,1,1}
+border={2,2,2,2}
 overlay_file="images/none.svg"
 overlay_stretch=FALSE}
 image{
@@ -50,7 +50,7 @@ state=NORMAL
 shadow=OUT
 file="images/menu_check_normal.svg"
 stretch=TRUE
-border={1,1,1,1}
+border={2,2,2,2}
 overlay_file="images/none.svg"
 overlay_stretch=FALSE}
 image{
@@ -59,7 +59,7 @@ state=PRELIGHT
 shadow=OUT
 file="images/menu_check_normal.svg"
 stretch=TRUE
-border={1,1,1,1}
+border={2,2,2,2}
 overlay_file="images/none.svg"
 overlay_stretch=FALSE}
 image{
@@ -68,7 +68,7 @@ state=ACTIVE
 shadow=OUT
 file="images/menu_check_normal.svg"
 stretch=TRUE
-border={1,1,1,1}
+border={2,2,2,2}
 overlay_file="images/none.svg"
 overlay_stretch=FALSE}
 image{
@@ -77,7 +77,7 @@ state=INSENSITIVE
 shadow=ETCHED_IN
 file="images/menu_check_normal.svg"
 stretch=TRUE
-border={1,1,1,1}
+border={2,2,2,2}
 overlay_file="images/check-semi_insensitive.svg"
 overlay_stretch=FALSE}
 image{
@@ -86,7 +86,7 @@ state=NORMAL
 shadow=ETCHED_IN
 file="images/menu_check_normal.svg"
 stretch=TRUE
-border={1,1,1,1}
+border={2,2,2,2}
 overlay_file="images/check-semi.svg"
 overlay_stretch=FALSE}
 image{
@@ -95,7 +95,7 @@ state=PRELIGHT
 shadow=ETCHED_IN
 file="images/menu_check_normal.svg"
 stretch=TRUE
-border={1,1,1,1}
+border={2,2,2,2}
 overlay_file="images/check-semi.svg"
 overlay_stretch=FALSE}
 image{
@@ -104,7 +104,7 @@ state=ACTIVE
 shadow=ETCHED_IN
 file="images/menu_check_normal.svg"
 stretch=TRUE
-border={1,1,1,1}
+border={2,2,2,2}
 overlay_file="images/check-semi.svg"
 overlay_stretch=FALSE}
 image{
@@ -113,7 +113,7 @@ state=INSENSITIVE
 shadow=ETCHED_OUT
 file="images/menu_check_normal.svg"
 stretch=TRUE
-border={1,1,1,1}
+border={2,2,2,2}
 overlay_file="images/check-semi_insensitive.svg"
 overlay_stretch=FALSE}
 image{
@@ -122,7 +122,7 @@ state=NORMAL
 shadow=ETCHED_OUT
 file="images/menu_check_normal.svg"
 stretch=TRUE
-border={1,1,1,1}
+border={2,2,2,2}
 overlay_file="images/check-semi.svg"
 overlay_stretch=FALSE}
 image{
@@ -131,7 +131,7 @@ state=PRELIGHT
 shadow=ETCHED_OUT
 file="images/menu_check_normal.svg"
 stretch=TRUE
-border={1,1,1,1}
+border={2,2,2,2}
 overlay_file="images/check-semi.svg"
 overlay_stretch=FALSE}
 image{
@@ -140,7 +140,7 @@ state=ACTIVE
 shadow=ETCHED_OUT
 file="images/menu_check_normal.svg"
 stretch=TRUE
-border={1,1,1,1}
+border={2,2,2,2}
 overlay_file="images/check-semi.svg"
 overlay_stretch=FALSE}
 image{
@@ -149,7 +149,7 @@ state=INSENSITIVE
 shadow=IN
 file="images/menu_check_normal.svg"
 stretch=TRUE
-border={1,1,1,1}
+border={2,2,2,2}
 overlay_file="images/check-check_insensitive.svg"
 overlay_stretch=FALSE}
 image{
@@ -158,7 +158,7 @@ state=NORMAL
 shadow=IN
 file="images/tab_active.svg"
 stretch=TRUE
-border={1,1,1,1}
+border={2,2,2,2}
 overlay_file="images/check-check.svg"
 overlay_stretch=FALSE}
 image{
@@ -167,7 +167,7 @@ state=PRELIGHT
 shadow=IN
 file="images/tab_active.svg"
 stretch=TRUE
-border={1,1,1,1}
+border={2,2,2,2}
 overlay_file="images/check-check.svg"
 overlay_stretch=FALSE}
 image{
@@ -176,7 +176,7 @@ state=ACTIVE
 shadow=IN
 file="images/tab_active.svg"
 stretch=TRUE
-border={1,1,1,1}
+border={2,2,2,2}
 overlay_file="images/check-check.svg"
 overlay_stretch=FALSE}
 image{
@@ -185,7 +185,7 @@ state=INSENSITIVE
 shadow=OUT
 file="images/menu_radio_normal.svg"
 stretch=TRUE
-border={1,1,1,1}
+border={2,2,2,2}
 overlay_file="images/none.svg"
 overlay_stretch=FALSE}
 image{
@@ -194,7 +194,7 @@ state=NORMAL
 shadow=OUT
 file="images/menu_radio_normal.svg"
 stretch=TRUE
-border={1,1,1,1}
+border={2,2,2,2}
 overlay_file="images/none.svg"
 overlay_stretch=FALSE}
 image{
@@ -203,7 +203,7 @@ state=PRELIGHT
 shadow=OUT
 file="images/menu_radio_normal.svg"
 stretch=TRUE
-border={1,1,1,1}
+border={2,2,2,2}
 overlay_file="images/none.svg"
 overlay_stretch=FALSE}
 image{
@@ -212,7 +212,7 @@ state=ACTIVE
 shadow=OUT
 file="images/menu_radio_normal.svg"
 stretch=TRUE
-border={1,1,1,1}
+border={2,2,2,2}
 overlay_file="images/none.svg"
 overlay_stretch=FALSE}
 image{
@@ -221,7 +221,7 @@ state=INSENSITIVE
 shadow=ETCHED_IN
 file="images/menu_radio_normal.svg"
 stretch=TRUE
-border={1,1,1,1}
+border={2,2,2,2}
 overlay_file="images/radio-semi_insensitive.svg"
 overlay_stretch=FALSE}
 image{
@@ -230,7 +230,7 @@ state=NORMAL
 shadow=ETCHED_IN
 file="images/menu_radio_normal.svg"
 stretch=TRUE
-border={1,1,1,1}
+border={2,2,2,2}
 overlay_file="images/radio-semi.svg"
 overlay_stretch=FALSE}
 image{
@@ -239,7 +239,7 @@ state=PRELIGHT
 shadow=ETCHED_IN
 file="images/menu_radio_normal.svg"
 stretch=TRUE
-border={1,1,1,1}
+border={2,2,2,2}
 overlay_file="images/radio-semi.svg"
 overlay_stretch=FALSE}
 image{
@@ -248,7 +248,7 @@ state=ACTIVE
 shadow=ETCHED_IN
 file="images/menu_radio_normal.svg"
 stretch=TRUE
-border={1,1,1,1}
+border={2,2,2,2}
 overlay_file="images/radio-semi.svg"
 overlay_stretch=FALSE}
 image{
@@ -257,7 +257,7 @@ state=INSENSITIVE
 shadow=ETCHED_OUT
 file="images/menu_radio_normal.svg"
 stretch=TRUE
-border={1,1,1,1}
+border={2,2,2,2}
 overlay_file="images/radio-semi_insensitive.svg"
 overlay_stretch=FALSE}
 image{
@@ -266,7 +266,7 @@ state=NORMAL
 shadow=ETCHED_OUT
 file="images/menu_radio_normal.svg"
 stretch=TRUE
-border={1,1,1,1}
+border={2,2,2,2}
 overlay_file="images/radio-semi.svg"
 overlay_stretch=FALSE}
 image{
@@ -275,7 +275,7 @@ state=PRELIGHT
 shadow=ETCHED_OUT
 file="images/menu_radio_normal.svg"
 stretch=TRUE
-border={1,1,1,1}
+border={2,2,2,2}
 overlay_file="images/radio-semi.svg"
 overlay_stretch=FALSE}
 image{
@@ -284,7 +284,7 @@ state=ACTIVE
 shadow=ETCHED_OUT
 file="images/menu_radio_normal.svg"
 stretch=TRUE
-border={1,1,1,1}
+border={2,2,2,2}
 overlay_file="images/radio-semi.svg"
 overlay_stretch=FALSE}
 image{
@@ -293,7 +293,7 @@ state=INSENSITIVE
 shadow=IN
 file="images/menu_radio_normal.svg"
 stretch=TRUE
-border={1,1,1,1}
+border={2,2,2,2}
 overlay_file="images/radio-check_insensitive.svg"
 overlay_stretch=FALSE}
 image{
@@ -302,7 +302,7 @@ state=NORMAL
 shadow=IN
 file="images/radio_active.svg"
 stretch=TRUE
-border={1,1,1,1}
+border={2,2,2,2}
 overlay_file="images/radio-check.svg"
 overlay_stretch=FALSE}
 image{
@@ -311,7 +311,7 @@ state=PRELIGHT
 shadow=IN
 file="images/radio_active.svg"
 stretch=TRUE
-border={1,1,1,1}
+border={2,2,2,2}
 overlay_file="images/radio-check.svg"
 overlay_stretch=FALSE}
 image{
@@ -320,7 +320,7 @@ state=ACTIVE
 shadow=IN
 file="images/radio_active.svg"
 stretch=TRUE
-border={1,1,1,1}
+border={2,2,2,2}
 overlay_file="images/radio-check.svg"
 overlay_stretch=FALSE}}}
 class"GtkMenu*"style"gtkmenucheckbutton"

@@ -1,8 +1,8 @@
 style"infobar"{
-GtkInfoBar::action-area-border=5
-GtkInfoBar::button-spacing=3
-GtkInfoBar::content-area-border=4
-GtkInfoBar::content-area-spacing=16
+GtkInfoBar::action-area-border=10
+GtkInfoBar::button-spacing=6
+GtkInfoBar::content-area-border=8
+GtkInfoBar::content-area-spacing=32
 engine"pixmap"{
 image{
 function=BOX
