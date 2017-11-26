@@ -33,7 +33,7 @@ if [ ! -w "$basedir" ]; then
 fi
 #check for the right dir
 if [ ! -d "$basedir"/Extras ]; then
-	printf "wrong dir! or wrong installed\n"
+	printf "wrong dir! or wrongly installed\n"
 	exit 1
 fi
 ####################

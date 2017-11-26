@@ -17,7 +17,7 @@
 you can build a debian package with: 
 
 ```
-fakeroot debian/rules binary && su -c "dpkg -i ../0nyx-theme*.deb && apt install -f --no-install-recommends
+fakeroot debian/rules binary && su -c "dpkg -i ../0nyx-theme*.deb || apt install -f --no-install-recommends"
 ```
 ### Manual
 
