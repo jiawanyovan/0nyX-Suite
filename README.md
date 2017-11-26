@@ -23,13 +23,10 @@ fakeroot debian/rules binary && su -c "dpkg -i ../0nyx-theme*.deb && apt install
 
 For example to install it for all users:
 
-#1 Copy the 0nyX folder to your themedir (usually $SYSPREFIX/share/themes) 
-
-#1.1 copy the Extras folder to $SYSPREFIX/share/themes/0nyXv2/Extras(this is needed or the colorchange script is unable to change the colors of the extras themes)
-
-#2 link the $SYSPREFIX/share/themes/0nyXv2/Extras/0nyX-HiDPI folder to $SYSPREFIX/share/themes/0nyX-HiDPI
-
-#2.1 link the $SYSPREFIX/share/themes/0nyX/gtk-3.0 folder to $SYSPREFIX/share/themes/0nyX-HiDPI/gtk-3.0
+* 1 Copy the 0nyX folder to your themedir (usually $SYSPREFIX/share/themes) 
+	* 1.1 copy the Extras folder to $SYSPREFIX/share/themes/0nyXv2/Extras(this is needed or the colorchange script is unable to change the colors of the extras themes)
+* 2 link the $SYSPREFIX/share/themes/0nyXv2/Extras/0nyX-HiDPI folder to $SYSPREFIX/share/themes/0nyX-HiDPI
+	* 2.1 link the $SYSPREFIX/share/themes/0nyX/gtk-3.0 folder to $SYSPREFIX/share/themes/0nyX-HiDPI/gtk-3.0
 
 Note: You have to symlink the subthemes instead of copying otherwise the colorscript will break!
 
