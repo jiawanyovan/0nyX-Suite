@@ -112,7 +112,7 @@ XfceWindowMenuPlugin::max-width-chars = 48
 # hide the icon) and 100 (don't lighten the icon).
 XfceWindowMenuPlugin::minimized-icon-lucency = 50
 # Fix the panel images to a default gtk icon size
-XfcePanelImage::force-gtk-icon-sizes=true}
+XfcePanelImage::force-gtk-icon-sizes=1}
 class "*" style "xfcepanelsettings"
 widget "*" style "xfcepanelsettings"
 
@@ -408,3 +408,12 @@ file="images/none.svg"
 stretch=TRUE
 border={2,2,2,2}}}}
 widget"*XfsmLogoutDialog*Gtk*Box*GtkCheckButton*"style"xfcelogout3"
+
+style"xfcepager"{
+font_name="bold"
+xthickness=0
+ythickness=0
+fg[PRELIGHT]=shade(1.4,@selected_bg_color)
+fg[ACTIVE]=@selected_bg_color
+engine"mist"{}}
+widget_class"*.XfcePagerPlugin*"style"xfcepager"
