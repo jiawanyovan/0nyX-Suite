@@ -8,9 +8,14 @@
 
 ### Recommends: 
 
-* [GTK3-NOCSD](https://github.com/PCMan/gtk3-nocsd)
 * [HighContrast-Icons](https://github.com/sixsixfive/HighContrast-Icons)
 * GTK3>=3.20 + disabled GTK3 overlay scrollbars (export GTK_OVERLAY_SCROLLING=0)
+
+### Suggests: 
+
+* [GTK3-NOCSD](https://github.com/PCMan/gtk3-nocsd)
+* [0nyXv2](https://github.com/sixsixfive/0nyXv2-Suite)
+
 
 ## Installation
 
